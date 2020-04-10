@@ -3,7 +3,7 @@ layout: post
 title: "Maximum Subarray Problem Using Brute Force, Divide And Conquer"
 author: Navneet
 categories: [Jekyll, tutorial]
-image: assets/images/16.jpg
+image: assets\images\Content\maximum-subarray.png
 ---
 
 <p>In this blog post you would learn</p>
@@ -19,11 +19,11 @@ Discuss the algorithm, pseudocode, analyze the complexity and write a program re
 <p>
 Suppose you are working in a firm that analyzes the behavior of bitcoin in last 10 hours and you are assigned a task to check what would have been the right time to invest and right time to withdraw your bitcoins to have the maximum profit. Of course you want to “buy low , sell high”. You want to buy at the lowest price and sell at the highest price in order to maximize the profit. However, that’s not always the case. Let us consider the following example.
 </p><p>
-<img class="alignnone size-medium wp-image-64 center-div max-width" src="https://makemetechie.com/wp-content/uploads/2018/02/bitcoinPriceAnalysis.png" alt="" style="width:80%" />
+<img class="alignnone size-medium wp-image-64 center-div max-width" src="\assets\images\Content\bitcoinPriceAnalysis.png" alt="" style="width:80%" />
 </p><p>
 In the above graph x-axis shows dates and y-axis shows price of bitcoin.
 </p>
-<img class="alignnone size-medium wp-image-65 center-div" src="https://makemetechie.com/wp-content/uploads/2018/02/bitcoinTable-260x300.png" alt="" width="240" height="300" />
+<img class="alignnone size-medium wp-image-65 center-div" src="\assets\images\Content\bitcoinTable.png" alt="" width="240" height="300" />
 <p>
 In the above table we show the date, price and change of price of bitcoin. We see that even though the minimum price of bitcoin is on 25<sup>th</sup> Feb and maximum price of bitcoin is on 22<sup>nd</sup> Feb, however in order to maximize the profit, one should buy the stock on 23<sup>rd</sup> Feb and sell it on 24<sup>th</sup> Feb which is neither the highest nor the lowest price.
 </p><p>
