@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Maximum Subarray Problem Using Brute Force, Divide And Conquer"
+author: Navneet
+categories: [Jekyll, tutorial]
+image: assets/images/16.jpg
+---
+
 <p>In this blog post you would learn</p>
 <ul>
 <li>Very interesting example of maximum subarray problem</li>
