@@ -5,7 +5,7 @@ description: "Build, break, repeat"
 logo: "assets/images/logo/mainlogo.png"
 favicon: "assets/images/logo/mainlogo.png"
 google_analytics: "UA-46278016-1"
-disqus: "demowebsite"
+disqus: "makemetechie"
 include: ["_pages"]
 permalink: /:title/
 
@@ -16,8 +16,8 @@ authors:
     display_name: Navneet Singh
     avatar: "assets\\images\\logo\\nav.jpg"
     email: navneet_prakash_singh@live.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
+    web: https://twitter.com/tweet_navneet
+    twitter: https://twitter.com/tweet_navneet
     description: "Once a wise man said me, 'words are mighter than a sword'. Living up to the wise man wisdom."
 
 # Plugins
