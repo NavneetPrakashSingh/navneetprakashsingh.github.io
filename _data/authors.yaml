@@ -1,0 +1,22 @@
+Navneet:
+  professional_summary:
+    - Current working as a software developer intern at SAP.
+    - Currently in my co-op term of my master’s degree in Applied Computer Science from Dalhousie University.
+    - Total experience of 2 years as a software engineer.
+    - Skilled in full stack development using technologies in frontend, backend and databases.
+  timeline_keys:
+    - sap
+    - gorevizon
+  timeline:
+    sap:
+      icon: fa-user-graduate
+      header: SAP
+      content:
+        - first section
+        - second section
+    gorevizon:
+      icon: fa-laptop-code
+      header: Revizon Consulting Groups
+      content:
+        - first section
+        - second section

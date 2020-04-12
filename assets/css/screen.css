@@ -58,6 +58,16 @@ pre {
   margin-top: 57px;
   transition: all 0.4s;
 }
+.timeline-parent {
+  margin-top: 6rem;
+}
+.author-icon {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-left: 12px;
+}
 
 section {
   margin-bottom: 20px;
@@ -187,6 +197,15 @@ section.recent-posts {
   border-radius: 100%;
 }
 
+.navneet-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+.author-summary {
+  display: inline-block;
+  position: absolute;
+}
 .post-top-meta {
   margin-bottom: 2rem;
 }
@@ -360,6 +379,11 @@ blockquote {
 .share {
   text-align: center;
 }
+.author-share {
+  text-align: left;
+  color: rgba(0, 81, 128, 0.8);
+  fill: rgba(0, 0, 0, 0.44);
+}
 
 .share p {
   margin-bottom: 10px;
@@ -473,6 +497,10 @@ blockquote {
 @media (max-width: 767px) {
   .post-top-meta.authorpage {
     text-align: center;
+  }
+  .author-summary {
+    display: inline-block;
+    position: relative;
   }
 }
 
@@ -846,8 +874,16 @@ iframe {
 }
 
 @media (max-width: 768px) {
+  .timeline-parent {
+    margin-top: 0rem;
+  }
   .share {
     margin-top: 30px;
+  }
+  .author-share {
+    text-align: center;
+    color: rgba(0, 81, 128, 0.8);
+    fill: rgba(0, 0, 0, 0.44);
   }
 }
 
