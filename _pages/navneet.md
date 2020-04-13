@@ -8,8 +8,8 @@ author: Navneet
 
 <div class="row justify-content-between">
 <div class="col">
-        {% assign author = site.authors["Navneet"] %}
-        {% assign authorData = site.data.authors["Navneet"] %}
+        {% assign author = site.authors[page.author] %}
+        {% assign authorData = site.data.authors[page.author] %}
         <div class="flex-first flex-md-unordered">
             <div class="mainheading">
                 <!-- Author Box -->
