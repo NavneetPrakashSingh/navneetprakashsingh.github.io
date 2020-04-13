@@ -1,0 +1,41 @@
+<!-- begin post -->
+
+<div class="row">
+  {% assign authorData = site.data.authors[page.author] %} {% for projectName in
+  authorData.project-list%}
+  <a href="{{authorData.projects[projectName].link}}">
+    <div class="col-md-6 mb-30px">
+      <div class="listfeaturedtag h-100">
+        <div class="row h-100">
+          <div class="col-12 col-md-12 col-lg-5 pr-lg-0">
+            <div class="h-100">
+              <div class="wrapthumbnail project-image">
+                <i
+                  class="project-image-child {{authorData.projects[projectName].icon-pack}} {{authorData.projects[projectName].icon}} {{authorData.projects[projectName].icon-color}}"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-7">
+            <div class="h-100 card-group">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="card-title">
+                    <a class="text-dark" href="{{ site.baseurl }}{{ post.url }}"
+                      >{{authorData.projects[projectName].heading}}</a
+                    >
+                  </h2>
+                  <h4 class="card-text">
+                    {{authorData.projects[projectName].summary}}
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+<!-- end post -->

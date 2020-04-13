@@ -44,7 +44,7 @@ author: Navneet
                 <h2><span>Journey So Far</span></h2>
                 </section>
                 </div>
-                <div class="row">
+                <div class="row section-width">
                 <div class="container">
                 <div id="timeline">
                     {% for sections in authorData.timeline_keys %}
@@ -53,32 +53,87 @@ author: Navneet
                     <div class="timeline-item">
                         <div class="timeline-icon">
                         <!-- code for icon from config -->
-                        {% assign icon = "fas " | append: authorData.timeline[sections].icon %}
-                        <i id="author-icon" class={{icon}}></i>
+                        {% assign icon = authorData.timeline[sections].icon %}
+                        <i class="author-icon fas {{icon}}"></i>
                         </div>
                         <div class="timeline-content">
                             <h4>{{authorData.timeline[sections].header}}</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                Atque, facilis quo maiores magnam modi ab libero praesentium blanditiis.
-                            </p>
-                            <a href="#" class="btn">button</a>
+                            <div>
+                            <ul class="timeline-content-left">
+                                <li>{{authorData.timeline[sections].title}}</li>
+                                <li>{{authorData.timeline[sections].duration}}</li>
+                                <li>{{authorData.timeline[sections].location}}</li>
+                            </ul>  
+                            </div>                          
+                            <div class="btn btn-outline-timeline" onclick="showModal('{{sections}}')">{{authorData.timeline[sections].buttonContent}}</div>                            
                         </div>
                     </div>
+                      <!-- Modal -->
+                    <div class="modal" id="{{sections}}" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Roles And Responsibilities</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                            {% for content in authorData.timeline[sections].content %}
+                            <li>{{content}}</li>
+                            {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- modal ends here -->
                     {% else %}
                     <div class="timeline-item">
                         <div class="timeline-icon"> 
-                        <i class={{authorData.timeline[sections].icon}}><i>                           
+                        {% assign icon = authorData.timeline[sections].icon %}
+                        <i class="author-icon fas {{icon}}"></i>                           
                         </div>
                         <div class="timeline-content right">
-                        {% assign icon = "fas " | append: authorData.timeline[sections].icon %}
-                        <i class={{icon}}></i>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
-                            </p>
-                            <a href="#" class="btn">button</a>
+                        <h4>{{authorData.timeline[sections].header}}</h4>
+                        <div>
+                        <ul class="timeline-content-left">
+                                <li>{{authorData.timeline[sections].title}}</li>
+                                <li>{{authorData.timeline[sections].duration}}</li>
+                                <li>{{authorData.timeline[sections].location}}</li>
+                        </ul>                   
+                        </div>         
+                        <div class="btn btn-outline-timeline" onclick="showModal('{{sections}}')">{{authorData.timeline[sections].buttonContent}}</div>
                         </div>
                     </div>
+                    <!-- Modal -->
+                    <div class="modal" id="{{sections}}" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Roles And Responsibilities</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                            {% for content in authorData.timeline[sections].content %}
+                            <li>{{content}}</li>
+                            {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- modal ends here -->
                     {% endif %}
                     {% endfor %}
                     <!-- right side of the timeline item -->
@@ -87,6 +142,17 @@ author: Navneet
             </div>
             </div>
             <!-- timeline ends here -->
+            <div class="row">
+                <div class="col-12 section-title">
+                    <section class="">
+                        <h2><span>Personal Projects</span></h2>
+                    </section>
+                    <section>
+                    {% include projectbox.html %}
+                    </section>
+                </div>
+            </div>
+            </div>
         </div>
 </div>
 </div>

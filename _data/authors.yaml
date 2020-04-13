@@ -6,17 +6,105 @@ Navneet:
     - Skilled in full stack development using technologies in frontend, backend and databases.
   timeline_keys:
     - sap
+    - masters
     - gorevizon
+    - indiarush
+    - bachelor
   timeline:
     sap:
-      icon: fa-user-graduate
+      icon: fa-file-code
       header: SAP
+      location: "Vancouver, BC"
+      title: "Software Developer Intern"
+      duration: "August 2019 - May 2020"
+      buttonContent: "Check out my roles & responsibilties"
       content:
-        - first section
-        - second section
+        - "Implemented test automation suite and wrote test cases (using unit and integration test in Java and Angular) for the microservices leading to TDD approach."
+        - "Researched and implemented various aspects like OData, Hadoop MapReduce and machine learning solutions for their business problem."
+        - "Maintaining and managing backend web fleet and services using CI/CD tools like Jenkins, Kubernetes and maintaining code quality by doing code reviews."
+    masters:
+      icon: fa-user-graduate
+      header: "Dalhousie University"
+      location: "Halifax, NS"
+      title: "Masters In Applied Computer Science"
+      duration: "August 2018 - May 2020"
+      buttonContent: "See my subjects taken"
+      content:
+        - "Implemented test automation suite and wrote test cases (using unit and integration test in Java and Angular) for the microservices leading to TDD approach."
     gorevizon:
-      icon: fa-laptop-code
+      icon: fa-file-code
+      location: "Delhi, India"
       header: Revizon Consulting Groups
+      title: "Software Engineer"
+      duration: "September 2017 - March 2018"
+      buttonContent: "Check out my roles & responsibilties"
       content:
-        - first section
-        - second section
+        - "Made high-level design choices and ensured technical standards within the application (e.g. using test driven development for project implementation)."
+        - "Lead the team of 4 people on various module implementation using project management tools like (JIRA, Assembla, etc.) and regular code reviews."
+        - "Collaborated with other departments within the organization to implement the requirements and tools necessary for increasing productivity within the organization."
+    indiarush:
+      icon: fa-file-code
+      location: "Delhi, India"
+      header: Indiarush
+      title: "Software Engineer"
+      duration: "September 2016 - July 2017"
+      buttonContent: "Check out my roles & responsibilties"
+      content:
+        - "Designed and architected different e-commerce web modules within the organization leading to a more structured and scalable code using Agile methodologies."
+        - "Participated in daily standup meetings led by our Scrum Master providing daily task updates and timeline."
+        - "Architected a RESTful structure leading to increase in efficiency of the application."
+    bachelor:
+      icon: fa-user-graduate
+      header: "Guru Gobind Singh Indraprastha University"
+      location: "Delhi, India"
+      title: "Bachelors in Computer Science & Engineering"
+      duration: "August 2012 - August 2016"
+      buttonContent: "See my subjects taken"
+      content:
+        - "Implemented test automation suite and wrote test cases (using unit and integration test in Java and Angular) for the microservices leading to TDD approach."
+  project-list:
+    - firstProject
+    - secondProject
+    - thirdProject
+    - fourthProject
+    - fifthProject
+  projects:
+    firstProject:
+      link: "https://github.com/NavneetPrakashSingh/natural-python"
+      icon-pack: fab
+      icon: fa-python
+      icon-color: cadetblue-color
+      heading: "Natural Language Processing"
+      summary: "One of the Kaggle challenges, where we compared the similarity between two sentences using cosine similarity and machine learning algorithm (Naïve Bayes) and compared the result on the basis of acc…"
+    secondProject:
+      link: "https://github.com/NavneetPrakashSingh/code-quality-assurance"
+      icon-pack: fab
+      icon: fa-java
+      icon-color: burlywood-color
+      heading: "Recipe Website"
+      summary: "Implemented and integrated a recipe app website using Java and Spring Boot as the backend. The main focus of the project was to write maintainable code using best backend practices like SOLID princ…"
+    thirdProject:
+      link: "https://github.com/NavneetPrakashSingh/Geospatial-Mapping"
+      icon-pack: fab
+      icon: fa-js
+      icon-color: mediumpurple-color
+      heading: "Geospatial Mapping"
+      summary: "Geospatial mapping of a company's profits and sales using D3 JS on the american map"
+    fourthProject:
+      link: "https://github.com/NavneetPrakashSingh/programming-practice/tree/master/src"
+      icon-pack: fas
+      icon: fa-code
+      icon-color: indianred-color
+      heading: "Geospatial Mapping"
+      summary: "Geospatial mapping of a company's profits and sales using D3 JS on the american map"
+    fifthProject:
+      link: "https://github.com/NavneetPrakashSingh/Design-Patterns-In-Python"
+      icon-pack: fas
+      icon: fa-code
+      icon-color: indianred-color
+      heading: "Design Patterns"
+      summary: "Implemented design patterns to have a better understanding of the flow of objects and classes"
+  skillset:
+    firstSet:
+      skill: "RDBMS (SQL Server) "
+      color: blue

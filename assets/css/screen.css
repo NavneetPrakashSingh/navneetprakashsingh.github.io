@@ -84,6 +84,9 @@ section.recent-posts {
   font-size: 1.4rem;
   margin-bottom: 27px;
 }
+.modal-title {
+  margin-bottom: 0rem !important;
+}
 
 .section-title span {
   border-bottom: 1px solid rgba(0, 0, 0, 0.44);

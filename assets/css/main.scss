@@ -18,7 +18,8 @@ $bg-body: #f9f9f9;
 
 $red: #ee4d4d;
 $blue: #2b2e48;
-$primary-color: $red;
+$customBlue: #3da9dc;
+$primary-color: $customBlue;
 $secondary-color: $blue;
 
 // Typography
@@ -80,6 +81,21 @@ a {
   margin: 0 auto;
 }
 
+.section-width {
+  width: 100%;
+}
+
+.btn-outline-timeline {
+  color: $timeline-color;
+  background-color: transparent;
+  background-image: none;
+  border-color: $timeline-color;
+}
+
+.timeline-content-left {
+  margin-bottom: 1rem !important;
+  padding-top: 10px;
+}
 // Timeline
 #timeline {
   width: 100%;
@@ -197,3 +213,27 @@ a {
   }
 }
 //timeline code ends here
+
+.project-image {
+  text-align: center;
+  padding: 20px;
+}
+
+.project-image-child {
+  font-size: 100px;
+}
+
+.cadetblue-color {
+  color: cadetblue;
+}
+
+.burlywood-color {
+  color: burlywood;
+}
+
+.mediumpurple-color {
+  color: mediumpurple;
+}
+.indianred-color {
+  color: indianred;
+}

@@ -2,6 +2,18 @@
   {% assign author = site.authors[page.author] %}
   <ul>
     <li class="ml-1 mr-1">
+      <span
+        class="d-inline-block"
+        tabindex="0"
+        data-toggle="tooltip"
+        title="Email: navneet_prakash_singh@live.com"
+      >
+        <a target="_blank" href="mailto:{{author.email}}">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </span>
+    </li>
+    <li class="ml-1 mr-1">
       <a target="_blank" href="{{author.linkedIn}}">
         <i class="fab fa-linkedin-in"></i>
       </a>
