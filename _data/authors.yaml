@@ -30,7 +30,7 @@ Navneet:
       duration: "August 2018 - May 2020"
       buttonContent: "See my subjects taken"
       content:
-        - "Implemented test automation suite and wrote test cases (using unit and integration test in Java and Angular) for the microservices leading to TDD approach."
+        - "Data Management, Warehousing and Analytics, Mobile Computing, Quality Assurance, Adv. Topics in Web Development, Natural Language Processing, Cloud Computing, Visual Analytics"
     gorevizon:
       icon: fa-file-code
       location: "Delhi, India"
@@ -61,7 +61,7 @@ Navneet:
       duration: "August 2012 - August 2016"
       buttonContent: "See my subjects taken"
       content:
-        - "Implemented test automation suite and wrote test cases (using unit and integration test in Java and Angular) for the microservices leading to TDD approach."
+        - "Well TBH, I don't remember. That was a long time ago!"
   project-list:
     - firstProject
     - secondProject
@@ -105,6 +105,29 @@ Navneet:
       heading: "Design Patterns"
       summary: "Implemented design patterns to have a better understanding of the flow of objects and classes"
   skillset:
-    firstSet:
-      skill: "RDBMS (SQL Server) "
-      color: blue
+    skill:
+      - "RDBMS (SQL Server) "
+      - "NoSQL (Neo4j)"
+      - "Angular 6"
+      - "Javascript"
+      - "React"
+      - "Redux"
+      - "JSP"
+      - "Java EE"
+      - "MEAN Stack"
+      - "Spring MVC"
+      - "Grails"
+      - "Python"
+      - "Hibernate"
+      - "Microservices"
+      - "UML"
+      - "Design Patterns"
+      - "SOLID Principles"
+      - "Agile"
+      - "Scrums"
+      - "Jenkins"
+      - "Docker"
+      - "Kubernetes"
+      - "JUnit"
+      - "Git"
+      - "Github"

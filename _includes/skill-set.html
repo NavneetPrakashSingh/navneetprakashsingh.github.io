@@ -1,0 +1,10 @@
+<div class="row">
+  {% assign authorData = site.data.authors[page.author] %}
+  <div class="col-12">
+    {% for projectName in authorData.skillset.skill%}
+    <div class="btn btn-outline-timeline margin-skillset skillset-text-color">
+      {{projectName}}
+    </div>
+    {% endfor %}
+  </div>
+</div>

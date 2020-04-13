@@ -34,19 +34,21 @@
       <div class="wrapfooter">
         {% if post.author %}
         <span class="meta-footer-thumb">
-          {% if author.avatar %}
-          <img
-            class="author-thumb"
-            src="{{site.baseurl}}/{{ author.avatar }}"
-            alt="{{ author.display_name }}"
-          />
-          {% else %}
-          <img
-            class="author-thumb"
-            src="{{site.baseurl}}/{{ author.avatar }}"
-            alt="{{ author.display_name }}"
-          />
-          {% endif %}
+          <a target="_blank" href="{{site.baseurl}}{{ author.web }}">
+            {% if author.avatar %}
+            <img
+              class="author-thumb"
+              src="{{site.baseurl}}/{{ author.avatar }}"
+              alt="{{ author.display_name }}"
+            />
+            {% else %}
+            <img
+              class="author-thumb"
+              src="{{site.baseurl}}/{{ author.avatar }}"
+              alt="{{ author.display_name }}"
+            />
+            {% endif %}
+          </a>
         </span>
         <span class="author-meta">
           <span class="post-name"

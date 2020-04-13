@@ -152,6 +152,15 @@ author: Navneet
                     </section>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12 section-title">
+                <section>
+                    <h2><span>Skill Set</span></h2>
+                </section>
+                <section>
+                    {% include skill-set.html %}
+                </section>
+            </div>
             </div>
         </div>
 </div>
