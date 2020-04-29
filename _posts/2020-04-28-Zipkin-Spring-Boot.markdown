@@ -6,6 +6,7 @@ categories: [Jekyll, tutorial]
 image: assets\images\Content\Zipkin.png
 ---
 
+Have you ever wondered how does loggin happen in a microservice architecture. Where having logs for each and every service would just make it difficult as the services would increase. To solve the problem,we have tools like Zipkin which can be integrated with major frameworks and be used to keep trace of requests and measure the latency for the services.
 In this tutorial we will be covering the following topics:
 
 <ul>
@@ -44,7 +45,7 @@ The above screenshot shows the result of GET request when we hit dataService2
 The above screenshot shows the result of GET request when we hit customerService
 <p>This means that we have done our setup for the APIs correctly, next we want to see if these results are registed to Zipkin or not. </p>
 <img src="\assets\images\Content\zipkin-output.png" alt="Zipkin Output" class="pb-2">
-<img src="\assets\images\Content\zipkin-analysis.png" alt="Zipkin Analysis" class="pb-2">
+<img src="\assets\images\Content\Zipkin-analysis.png" alt="Zipkin Analysis" class="pb-2">
 <img src="\assets\images\Content\zipkin-visualize.png" alt="Zipkin Visualize" class="pb-2">
 <h3>Analyzing results from Zipkin</h3>
 <p>From this we can see we have a centralized logging system such that each request has one trace ID which is unique for each request. We also have a span ID that is unique for each service.</p>
