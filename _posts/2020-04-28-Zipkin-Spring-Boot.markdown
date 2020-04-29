@@ -36,13 +36,16 @@ The code for the all the API is shown in the following gist:
 <script src="https://gist.github.com/NavneetPrakashSingh/0c0b5af193f3e4fbc04d5792106c082b.js"></script>
 <script src="https://gist.github.com/NavneetPrakashSingh/7b65a767cc588b8c405c300b99cef49f.js"></script>
 Now, when we call the API using postman, we get the following output:
-<img src="\assets\images\Content\GetRequestService1.png" alt="GET Request Service 1">
-<img src="\assets\images\Content\service2.png" alt="GET Request Service 2">
-<img src="\assets\images\Content\service3.png" alt="GET Request Service 3">
+<img src="\assets\images\Content\GetRequestService1.png" alt="GET Request Service 1" class="pb-2">
+The above screenshot shows the result of GET request when we hit dataService1
+<img src="\assets\images\Content\service2.png" alt="GET Request Service 2" class="pb-2">
+The above screenshot shows the result of GET request when we hit dataService2
+<img src="\assets\images\Content\service3.png" alt="GET Request CustomerService" class="pb-2">
+The above screenshot shows the result of GET request when we hit customerService
 <p>This means that we have done our setup for the APIs correctly, next we want to see if these results are registed to Zipkin or not. </p>
-<img src="\assets\images\Content\zipkin-output.png" alt="Zipkin Output">
-<img src="\assets\images\Content\zipkin-analysis.png" alt="Zipkin Analysis">
-<img src="\assets\images\Content\zipkin-visualize.png" alt="Zipkin Visualize">
+<img src="\assets\images\Content\zipkin-output.png" alt="Zipkin Output" class="pb-2">
+<img src="\assets\images\Content\zipkin-analysis.png" alt="Zipkin Analysis" class="pb-2">
+<img src="\assets\images\Content\zipkin-visualize.png" alt="Zipkin Visualize" class="pb-2">
 <h3>Analyzing results from Zipkin</h3>
 <p>From this we can see we have a centralized logging system such that each request has one trace ID which is unique for each request. We also have a span ID that is unique for each service.</p>
 <p>From the above screenshot related to Zipkin, we see that the customer service takes 3.116 sec to execute, out of this the contact details take 3.016 sec to execute and that is where we had added our latency. The vehicle service takes only 7.29 ms since it didn’t have any latency code.</p>
