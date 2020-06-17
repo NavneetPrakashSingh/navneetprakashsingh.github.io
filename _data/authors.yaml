@@ -1,9 +1,8 @@
 Navneet:
   professional_summary:
-    - Current working as a software developer intern at SAP.
-    - Currently in my co-op term of my master’s degree in Applied Computer Science from Dalhousie University.
-    - Total experience of 2 years as a software engineer.
-    - Skilled in full stack development using technologies in frontend, backend and databases.
+    - "Completed my master’s in Applied Computer Science from Dalhousie University."
+    - "2+ years’ experience as a software engineer involving software design and development using backend and frontend stacks."
+    - "Having varied amount of interest ranging from scalable architecture, distributed computing, micro services, and cloud infrastructure."
   timeline_keys:
     - sap
     - masters
@@ -19,9 +18,12 @@ Navneet:
       duration: "August 2019 - May 2020"
       buttonContent: "Check out my roles & responsibilties"
       content:
-        - "Implemented test automation suite and wrote test cases (using unit and integration test in Java and Angular) for the microservices leading to TDD approach."
-        - "Researched and implemented various aspects like OData, Hadoop MapReduce and machine learning solutions for their business problem."
-        - "Maintaining and managing backend web fleet and services using CI/CD tools like Jenkins, Kubernetes and maintaining code quality by doing code reviews."
+        - "Contributed to their codebase using OO principles and practices (SOLID, design patterns) using Java Spring Boot as backend (REST format) and Angular as frontend."
+        - "Implemented machine learning services using Python (Flask) as the backend."
+        - "Integrated automated testing using Test Driven Development increasing test coverage to over 80%."
+        - "Researched and implemented various technologies like OData, Hadoop MapReduce and machine learning solutions for their business problem."
+        - "Created tools to contribute that helped contribute to their open source business problems."
+        - "Using GIT as version control system and by doing regular code reviews on GitHub."
     masters:
       icon: fa-user-graduate
       header: "Dalhousie University"
@@ -39,9 +41,9 @@ Navneet:
       duration: "September 2017 - March 2018"
       buttonContent: "Check out my roles & responsibilties"
       content:
-        - "Made high-level design choices and ensured technical standards within the application (e.g. using test driven development for project implementation)."
-        - "Lead the team of 4 people on various module implementation using project management tools like (JIRA, Assembla, etc.) and regular code reviews."
-        - "Collaborated with other departments within the organization to implement the requirements and tools necessary for increasing productivity within the organization."
+        - "Designed, developed, troubleshoot and debug backend systems for commercial services using latest software development methods (REST, design patterns)"
+        - "Worked in an Agile environment using modern languages like JavaScript, CSS3 and Java (Spring Boot) to implement their microservices in REST format."
+        - "Using GIT as version control system and performing various Git operations on GitHub."
     indiarush:
       icon: fa-file-code
       location: "Delhi, India"
@@ -50,9 +52,10 @@ Navneet:
       duration: "September 2016 - July 2017"
       buttonContent: "Check out my roles & responsibilties"
       content:
-        - "Designed and architected different e-commerce web modules within the organization leading to a more structured and scalable code using Agile methodologies."
-        - "Participated in daily standup meetings led by our Scrum Master providing daily task updates and timeline."
-        - "Architected a RESTful structure leading to increase in efficiency of the application."
+        - "Designed and architected different backend e-commerce web modules, contributing to both frontend (JavaScript, Ajax, HTML, CSS3) and backend stacks (Java Spring Boot) using REST format."
+        - "Experience working with source control system (GIT) in an Agile environment (sprint, daily standup, and sprint reviews)"
+        - "Collaborating with team members and team lead to deliver task in a timely and effective manner."
+        - "Improve the authentication system by integrating OAuth2 with their microservices."
     bachelor:
       icon: fa-user-graduate
       header: "Guru Gobind Singh Indraprastha University"
