@@ -6,6 +6,7 @@ categories: [Jekyll, tutorial]
 image: assets\images\Content\dailyLife.png
 ---
 
+<p>Time to read: {{ content | reading_time }}</p>
 <p>
 Ubuntu by default gives option to either restart or power off ubuntu, but what if we want to sleep our laptop. Sleep gives us the advantage to save electricity and upon resume allows user to resume work instead of rebooting your laptop.You can know more about sleep <a href="https://en.wikipedia.org/wiki/Sleep_mode">here</a> 
 </p><p>
