@@ -1,0 +1,39 @@
+---
+layout: page
+title: News
+permalink: <%= @news_page_link %>
+comments: false
+---
+
+<div class="row">
+<div class="col-12">
+<h2><%= @news_page_heading %></h2>
+</div>
+</div>
+<div class="row">
+<div class="col-12">
+<img src="<%= @news_image %>">
+</div>
+</div>
+<div class="row">
+<div class="col-12 mt-2">
+<button type="button" class="btn btn-outline-info"><%= @news_source %></button>
+</div>
+</div>
+<div class="row">
+<div class="col-12">
+<div><%= @news_summary %></div>
+</div>
+</div>
+<div class="row">
+<div class="col-12">
+<div><%= @news_body %></div>
+</div>
+</div>
+<div class="row">
+<div class="col-12 text-center">
+<a href="<%= @news_more %>">
+<button type="button" class="btn btn-info">Read More</button>
+</a>
+</div>
+</div>
