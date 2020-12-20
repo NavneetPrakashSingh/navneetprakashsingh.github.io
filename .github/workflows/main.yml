@@ -21,12 +21,11 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
 
-      - name: Granting access to docker
-        run: sudo chown -R $USER:$USER /home/github/actions-runner/_work/navneetprakashsingh.github.io
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-
+      - name: Granting access to docker
+        run: sudo chown -R $USER:$USER /home/github/actions-runner/_work/navneetprakashsingh.github.io
 
       # Runs a single command using the runners shell
       - name: Checking docker-compose
