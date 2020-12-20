@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Granting access to docker
-        run: sudo chown -R $USER:$USER /home/github/actions-runner/_work/navneetprakashsingh.github.io
+        run: sudo chown -R $USER:$USER /home/runner/work/navneetprakashsingh.github.io/navneetprakashsingh.github.io
 
       # Runs a single command using the runners shell
       - name: Checking docker-compose
