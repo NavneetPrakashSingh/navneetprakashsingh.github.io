@@ -1,6 +1,6 @@
 jekyll:
     image: jekyll/jekyll:latest
-    command: jekyll build
+    command: bash -c "touch Gemfile.lock && chmod a+w Gemfile.lock && jekyll build"
     ports:
         - 4000:4000
     volumes:
