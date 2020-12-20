@@ -24,9 +24,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Granting access to docker
-        run: sudo chown -R $USER:$USER /home/runner/work/navneetprakashsingh.github.io/navneetprakashsingh.github.io
-
       # Runs a single command using the runners shell
-      - name: Checking docker-compose
+      - name: docker-compose up
         run: docker-compose up
+
+      - name: Pushing changes to repository
+        uses: ad-m/github-push-action@master
+        with:                                 
+          github_token: ${{ secrets.JEKYLL_PAT }}
