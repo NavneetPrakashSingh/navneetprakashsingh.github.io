@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="icon"
+      href="/assets/images/logo/mainlogo.png"
+    />
+
+    <title>Caesar Cipher in Python | Programming Question | MakeMeTechie | Tech Blog | Tech News</title>
+
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Caesar Cipher in Python Programming Question | Tech Blog Tech News</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Caesar Cipher in Python Programming Question" />
+<meta name="author" content="Navneet" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Suppose you want to send a message to another person and you want that only that person should be able to read the message and no one else, what would you do? One of the possible solution is to encrypt it using a key and such that only the other person knows what the key is. You would encrypt it using the key and the other person having the same key would be able to decrypt it. One such famous and simple algorithm was developed by Julius Caesar know as Caesar cipher and in this blog post we will Discuss the algorithm used in Caesar cipher Write a pseudocode related to the same Write a program in python related to the same Before we begin, this question has been taken from hackerrank and the link is available here You can learn more about Caesar cipher here Algorithm used in Caesar cipher The basic algorithm used in Caesar cipher is you are given a string to encrypt and a key value which is integer. You must shift each value in the given string by the position in alphabetic order according to the key. Suppose you have key as 2 and you have string as ‘abc’, now you must shift every value of the string by that 2 such that a-&gt;c, b-&gt;d, c-&gt;e. Hence, the encrypted string will become ‘cde’ Do remember only alphabets must be shifted and nothing else like special characters, or dashes must not be shifted and hence remains same. Basic Algorithm Used We will take a list of character containing only alphabets in lower case. We will Initially take an array containing only alphabets in lower case, we would use the position of the array to calculate the final string further. Parse the given string in the list. Initially check if the value is lower case, upper case or not a character. If it’s in upper case we would change it to lower case and put a flag as true that its upper case. Once we increment the position by key passed we would change the case back to upper case and add it to the new string. If the value of the string is lower case and is in the array of alphabets, we would take the index of the alphabet. Next, we would add the key to the string and take remainder after dividing it with 26. We do this because to take care of the upper count. Suppose we have ‘z’ in the string and we need to increment it by 2, it shouldn’t give an error but rather it should give ‘b’, in that case we need to take remainder when divide by 26 (26 because there are 26 alphabets). Finally, we return the string and pseudocode is provided as below Pseudocode for Caesar cipher We wrote our pseudocode above and explained it above. Now we write a program in python related to the same which can be found here That&#39;s all for now! There are many other ways of implementing the Caesar cipher, so make sure to explore other ways as well." />
+<meta property="og:description" content="Suppose you want to send a message to another person and you want that only that person should be able to read the message and no one else, what would you do? One of the possible solution is to encrypt it using a key and such that only the other person knows what the key is. You would encrypt it using the key and the other person having the same key would be able to decrypt it. One such famous and simple algorithm was developed by Julius Caesar know as Caesar cipher and in this blog post we will Discuss the algorithm used in Caesar cipher Write a pseudocode related to the same Write a program in python related to the same Before we begin, this question has been taken from hackerrank and the link is available here You can learn more about Caesar cipher here Algorithm used in Caesar cipher The basic algorithm used in Caesar cipher is you are given a string to encrypt and a key value which is integer. You must shift each value in the given string by the position in alphabetic order according to the key. Suppose you have key as 2 and you have string as ‘abc’, now you must shift every value of the string by that 2 such that a-&gt;c, b-&gt;d, c-&gt;e. Hence, the encrypted string will become ‘cde’ Do remember only alphabets must be shifted and nothing else like special characters, or dashes must not be shifted and hence remains same. Basic Algorithm Used We will take a list of character containing only alphabets in lower case. We will Initially take an array containing only alphabets in lower case, we would use the position of the array to calculate the final string further. Parse the given string in the list. Initially check if the value is lower case, upper case or not a character. If it’s in upper case we would change it to lower case and put a flag as true that its upper case. Once we increment the position by key passed we would change the case back to upper case and add it to the new string. If the value of the string is lower case and is in the array of alphabets, we would take the index of the alphabet. Next, we would add the key to the string and take remainder after dividing it with 26. We do this because to take care of the upper count. Suppose we have ‘z’ in the string and we need to increment it by 2, it shouldn’t give an error but rather it should give ‘b’, in that case we need to take remainder when divide by 26 (26 because there are 26 alphabets). Finally, we return the string and pseudocode is provided as below Pseudocode for Caesar cipher We wrote our pseudocode above and explained it above. Now we write a program in python related to the same which can be found here That&#39;s all for now! There are many other ways of implementing the Caesar cipher, so make sure to explore other ways as well." />
+<meta property="og:site_name" content="Tech Blog Tech News" />
+<meta property="og:image" content="/assets%5Cimages%5CContent%5Cprogramming.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-01-19T00:00:00+00:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","image":"/assets%5Cimages%5CContent%5Cprogramming.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo/mainlogo.png"},"name":"Navneet"},"mainEntityOfPage":{"@type":"WebPage","@id":"/caesar-cipher/"},"author":{"@type":"Person","name":"Navneet"},"url":"/caesar-cipher/","description":"Suppose you want to send a message to another person and you want that only that person should be able to read the message and no one else, what would you do? One of the possible solution is to encrypt it using a key and such that only the other person knows what the key is. You would encrypt it using the key and the other person having the same key would be able to decrypt it. One such famous and simple algorithm was developed by Julius Caesar know as Caesar cipher and in this blog post we will Discuss the algorithm used in Caesar cipher Write a pseudocode related to the same Write a program in python related to the same Before we begin, this question has been taken from hackerrank and the link is available here You can learn more about Caesar cipher here Algorithm used in Caesar cipher The basic algorithm used in Caesar cipher is you are given a string to encrypt and a key value which is integer. You must shift each value in the given string by the position in alphabetic order according to the key. Suppose you have key as 2 and you have string as ‘abc’, now you must shift every value of the string by that 2 such that a-&gt;c, b-&gt;d, c-&gt;e. Hence, the encrypted string will become ‘cde’ Do remember only alphabets must be shifted and nothing else like special characters, or dashes must not be shifted and hence remains same. Basic Algorithm Used We will take a list of character containing only alphabets in lower case. We will Initially take an array containing only alphabets in lower case, we would use the position of the array to calculate the final string further. Parse the given string in the list. Initially check if the value is lower case, upper case or not a character. If it’s in upper case we would change it to lower case and put a flag as true that its upper case. Once we increment the position by key passed we would change the case back to upper case and add it to the new string. If the value of the string is lower case and is in the array of alphabets, we would take the index of the alphabet. Next, we would add the key to the string and take remainder after dividing it with 26. We do this because to take care of the upper count. Suppose we have ‘z’ in the string and we need to increment it by 2, it shouldn’t give an error but rather it should give ‘b’, in that case we need to take remainder when divide by 26 (26 because there are 26 alphabets). Finally, we return the string and pseudocode is provided as below Pseudocode for Caesar cipher We wrote our pseudocode above and explained it above. Now we write a program in python related to the same which can be found here That&#39;s all for now! There are many other ways of implementing the Caesar cipher, so make sure to explore other ways as well.","headline":"Caesar Cipher in Python Programming Question","dateModified":"2020-01-19T00:00:00+00:00","datePublished":"2020-01-19T00:00:00+00:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <link href="/assets/css/screen.css" rel="stylesheet" />
+
+    <link href="/assets/css/main.css" rel="stylesheet" />
+
+    <script src="/assets/js/jquery.min.js"></script>
+  </head>
+  "development"  
+  <body class="layout-post">
+    <!-- defer loading of font and font awesome -->
+    <noscript id="deferred-styles">
+      <link
+        href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous"
+      />
+    </noscript>
+
+    <!-- Begin Menu Navigation
+================================================== -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down"
+    >
+      <div class="container pr-0">
+        <!-- Begin Logo -->
+        <a class="navbar-brand" href="/">
+          <img src="/assets/images/logo/mainlogo.png" alt="MakeMeTechie | Tech Blog | Tech News" />
+        </a>
+        <!-- End Logo -->
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarMediumish"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMediumish">
+          <!-- Begin Menu -->
+
+          <ul class="navbar-nav ml-auto">
+            
+            </li>
+
+            <li class="nav-item">
+              
+              <a class="nav-link" href="/index.html">Blog</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/author/Navneet-Singh"
+                >Author</a
+              >
+            </li>
+
+            <script src="/assets/js/lunr.js"></script>
+
+
+<style>
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+</form>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+          </ul>
+
+          <!-- End Menu -->
+        </div>
+      </div>
+    </nav>
+    <!-- End Navigation
+================================================== -->
+
+    <div class="site-content">
+      <div class="container">
+        <!-- Site Title
+================================================== -->
+        <div class="mainheading">
+          <h1 class="sitetitle">MakeMeTechie | Tech Blog | Tech News</h1>
+          <p class="lead">
+            Build, break, repeat
+          </p>
+        </div>
+
+        <!-- Content
+================================================== -->
+        <div class="main-content">
+          <!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            <div class="share sticky-top sticky-top-offset">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=Caesar Cipher in Python | Programming Question&url=/caesar-cipher/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=/caesar-cipher/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=/caesar-cipher/" onclick="window.open(this.href, 'width=550,height=435');return false;">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+
+    </ul>
+    
+    <div class="sep">
+    </div>
+    <ul>
+        <li>
+        <a class="small smoothscroll" href="#disqus_thread"></a>
+        </li>
+    </ul>
+    
+</div>
+
+        </div>
+
+        <!-- Post -->
+        
+
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                <!-- Author Box -->
+                
+                <div class="row post-top-meta">
+                    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+                        <a target="_blank" href="/author/Navneet-Singh">
+                        
+                        <img class="author-thumb" src="/assets\images\logo\nav.jpg" alt="Navneet Singh">
+                        
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
+                        <a target="_blank" class="link-dark" href="/author/Navneet-Singh">Navneet Singh</a><a target="_blank" href="https://twitter.com/tweet_navneet" class="btn follow">Follow</a>
+                        <span class="author-description">Once a wise man said me, 'words are mighter than a sword'. Living up to the wise man wisdom.</span>
+                    </div>
+                </div>
+                
+
+                <!-- Post Title -->
+                <h1 class="posttitle">Caesar Cipher in Python | Programming Question</h1>
+
+            </div>
+
+            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+            
+            <!-- End Adsense -->
+
+            <!-- Post Featured Image -->
+            
+
+            
+            <img class="featured-image img-fluid" src="/assets\images\Content\programming.png" alt="Caesar Cipher in Python | Programming Question">
+            
+
+            
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+                <!-- Toc if any -->
+                
+                <!-- End Toc -->
+                <p>
+Suppose you want to send a message to another person and you want that only that person should be able to read the message and no one else, what would you do? One of the possible solution is to encrypt it using a key and such that only the other person knows what the key is. You would encrypt it using the key and the other person having the same key would be able to decrypt it.
+</p>
+<p>
+One such famous and simple algorithm was developed by Julius Caesar know as Caesar cipher and in this blog post we will
+</p>
+<p>
+<ul>
+<li>Discuss the algorithm used in Caesar cipher</li>
+<li>Write a pseudocode related to the same</li>
+<li>Write a program in python related to the same</li>
+</ul>
+</p>
+<p>
+Before we begin, this question has been taken from hackerrank and the link is available <a href="https://www.hackerrank.com/challenges/caesar-cipher-1/problem">here </a>
+</p>
+<p>
+You can learn more about Caesar cipher <a href="https://en.wikipedia.org/wiki/Caesar_cipher">here </a>
+</p>
+<p>
+<strong>Algorithm used in Caesar cipher</strong>
+</p>
+<p>
+The basic algorithm used in Caesar cipher is you are given a string to encrypt and a key value which is integer. You must shift each value in the given string by the position in alphabetic order according to the key. Suppose you have key as 2 and you have string as ‘abc’, now you must shift every value of the string by that 2 such that a-&gt;c, b-&gt;d, c-&gt;e. Hence, the encrypted string will become ‘cde’
+</p>
+<p>
+Do remember only alphabets must be shifted and nothing else like special characters, or dashes must not be shifted and hence remains same.
+</p>
+<p>
+<strong>Basic Algorithm Used </strong>
+</p>
+<p>
+We will take a list of character containing only alphabets in lower case. We will 
+</p>
+<p>
+Initially take an array containing only alphabets in lower case, we would use the position of the array to calculate the final string further.
+</p>
+<p>
+Parse the given string in the list. Initially check if the value is lower case, upper case or not a character. If it’s in upper case we would change it to lower case and put a flag as true that its upper case. Once we increment the position by key passed we would change the case back to upper case and add it to the new string.
+</p>
+<p>
+If the value of the string is lower case and is in the array of alphabets, we would take the index of the alphabet. Next, we would add the key to the string and take remainder after dividing it with 26. We do this because to take care of the upper count. Suppose we have ‘z’ in the string and we need to increment it by 2, it shouldn’t give an error but rather it should give ‘b’, in that case we need to take remainder when divide by 26 (26 because there are 26 alphabets).
+</p>
+<p>
+Finally, we return the string and pseudocode is provided as below
+</p>
+<p>
+<strong>Pseudocode for Caesar cipher</strong>
+</p>
+<p>
+<script src="https://gist.github.com/NavneetPrakashSingh/11900722307741a220f11c3ce421acf8.js"></script>
+</p>
+<p>
+We wrote our pseudocode above and explained it above. Now we write a program in python related to the same which can be found <a href="https://github.com/NavneetPrakashSingh/Getting-Started-With-Python/blob/master/HackerRankPython-CeasarCipher.py">here </a> That's all for now! There are many other ways of implementing the Caesar cipher, so make sure to explore other ways as well.
+</p>
+
+            </div>
+
+            <!-- Rating -->
+            
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="2020-01-19">19 Jan 2020</time></span>           
+                
+                </small>
+            </p>
+
+            <!-- Post Categories -->
+            <div class="after-post-cats">
+                <ul class="tags mb-4">
+                    
+                    
+                    <li>
+                        <a class="smoothscroll" href="/categories#Jekyll">Jekyll</a>
+                    </li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/categories#tutorial">tutorial</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- End Categories -->
+
+            <!-- Post Tags -->
+            <div class="after-post-tags">
+                <ul class="tags">
+                    
+                    
+                </ul>
+            </div>
+            <!-- End Tags -->
+
+            <!-- Prev/Next -->
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            
+            <a class="prev d-block col-md-6" href="/basics-of-object-oriented-programming/"> &laquo; Basics of Object Oriented programming - Part 1</a>
+            
+            
+            <a class="next d-block col-md-6 text-lg-right" href="/check-if-a-string-is-a-pangram/">Check if string is a pangram or not using python | Programming Question &raquo; </a>
+            
+            <div class="clearfix"></div>
+            </div>
+            <!-- End Categories -->
+
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+<!-- End Article
+================================================== -->
+
+<!-- Begin Comments
+================================================== -->
+
+    <div class="container">
+        <div id="comments" class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'makemetechie'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+            </div>
+        </div>
+    </div>
+
+<!--End Comments
+================================================== -->
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+
+        </div>
+
+        
+      </div>
+
+      <!-- Categories Jumbotron
+================================================== -->
+      <div class="jumbotron fortags">
+        <div class="d-md-flex h-100">
+          <div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div
+              class="d-md-flex align-items-center justify-content-center h-100"
+            >
+              <h2 class="d-md-block align-self-center py-1 font-weight-light">
+                Explore <span class="d-none d-md-inline">→</span>
+              </h2>
+            </div>
+          </div>
+          <div class="col-md-8 p-5 align-self-center text-center">
+              
+            <a
+              class="mt-1 mb-1"
+              href="/categories#Jekyll"
+              >Jekyll (32)</a
+            >
+            
+            <a
+              class="mt-1 mb-1"
+              href="/categories#tutorial"
+              >tutorial (32)</a
+            >
+              
+          </div>
+        </div>
+      </div>
+
+      <!-- Begin Footer
+================================================== -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+              Copyright © 2020 MakeMeTechie | Tech Blog | Tech News
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right"></div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer
+================================================== -->
+    </div>
+    <!-- /.site-content -->
+
+    <!-- Scripts
+================================================== -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/assets/js/mediumish.js"></script>
+
+    
+
+    <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    
+    <script
+      id="dsq-count-scr"
+      src="//makemetechie.disqus.com/count.js"
+    ></script>
+    
+  </body>
+</html>

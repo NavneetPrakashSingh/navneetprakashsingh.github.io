@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="icon"
+      href="/assets/images/logo/mainlogo.png"
+    />
+
+    <title>The Graph Theory | Breadth First Search | Lemma And Theorems | MakeMeTechie | Tech Blog | Tech News</title>
+
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>The Graph Theory Breadth First Search Lemma And Theorems | Tech Blog Tech News</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="The Graph Theory Breadth First Search Lemma And Theorems" />
+<meta name="author" content="Navneet" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Within this blog post we will be going over 3 lemma and 1 theorem related to breadth first search. If you haven’t gone through our previous Breadth First Search algorithm, we recommend going through that first. For all those who don’t know what lemma is, it’s an intermediate proof used to prove a theorem. Lemma 1 : Let G(V,E) be a directed or undirected graph and let s belonging to set of vertices be an arbitrary vertex, then for any edge (u,v) belongs to set of edges such that Shortest distance between s and v &lt;= (shortest distance between s and u) + 1 Proof: We are given that u and v are the vertices to a graph G having edge as uv. If source vertex ‘s’ is reachable from ‘u’ then its reachable to ‘v’. In this case the shortest path from s to v cannot be longer than the shortest path from s to u followed by the edge of uv and thus our inequality holds true. If u is not reachable from s, then shortest distance from s and u does not exist and the inequality holds. Lemma 2 : Let G = (V,E) be a directed or undirected graph and suppose that BFS is run on G from a given source vertex s which belongs to set of vertices V. Then upon termination, for each vertex v belonging to V, the value v.d computed by BFS satisfies v.d &gt;= shortest distance between s and v. Proof : Our inductive hypothesis is that v.d &gt;= shortest distance between s,v for all v belonging to set of vertices. We’ll prove it via induction. Within the bfs algorithm check line 9. Immediately after value is enqueued the value of s.d = 0, since it’s the source vertex in the queue and v.d = not defined, hence greater than shortest distance of s and v for all values of v belonging to vertex V except for the source vertex. Hence, our induction hypothesis holds here. For the inductive step, consider a white vertex v that is discovered during the search from a vertex u. The inductive hypothesis implies that u.d &gt;= shortest distance between s and u. From lemma1, we get v.d = u.d + 1 &gt;= shortest distance between s and u + 1 &gt;= shortest distance between s and v Vertex v once enqueued is never parsed again. Thus value of v.d never changes hence the lemma i.e v.d&gt;= shortest distance betwnee s and v is proved. Lemma3 : Suppose that during the execution of BFS on a graph G = (V,E), the queue contains the vertices &lt;v 1, v2,. . .,vr &gt;, where v 1 is the head of Q and v r is the tail. Then v r.d &lt;= v1.d+1 and v i.d &lt;= vi+1.d for I = 1,2,. . .,r-1 Proof : The proof is by induction on the number of queue operations. Initially, when the queue contains only s, the lemma certainly holds. For the inductive step, we must prove that the lemma holds after both dequeuing and enqueuing a vertex. If the head v1 of the queue is dequeued, v2 becomes the new head. By the inductive hypothesis, v1.d &lt;= v2.d When we enqueuer a vertex v in line 17 of BFS algorithm, it becomes vr+1. At that time, we have already removed vertex u, whose adjacency list is currently being scanned from the queue Q, and by the inductive hypothesis, the new head v1 has v1.d &gt;= u.d and the remaining inequalities are unaffected. Thus the lemma follows when v is enqueued. Theorem 1 : Let G=(V,E) be a directed or undirected graph and suppose that BFS is run on G from a given source vertex s belonging to V. Then, during its execution, BFS discovers every vertex v belongs to V that is reachable from the source s, and upon termination, v.d = shortest distance of s and v for all v belonging to V. Moreover, for any vertex v != s that is reachable from s, one of the shortest path from s to v is a shortest path from s to v.a followed by the edge (v.a,v). Proof: Let us assume that some vertex receives a value ‘d’ not equal to its shortest path distance. Let v be the vertex with minimum of s,v that receives such an incorrect d value. By lemma 2, v.d &gt;= shortest distance of (s,v) an thus we have that v.d &gt; shortest distance of (s,v). Vertex v must be reachable from s, for if not, then shortest distance of (s,v) is not defined, which is greater than v.d. Let u be the vertex immediately preceding v on a shortest path from s to v, such that shortest distance of (s,v) = shortest distance of s and u + 1. Hence we have u.d = shortest distane of s and u. Putting these two properties together, we have v.d &gt; shortest distance of (s,v) = shortest distance of (s,u) +1 &gt; u.d + 1 Now when BFS dequeues vertex u from Q in line 11 in the BFS pseudocode, vertex v is either white, gray or black. In each of the cases, we derive the same case of inequality as mentioned above. If v is white, then the above inequality is set to v.d = u.d + 1 which is against the above inequality. If v is black then it was already removed from the queue, and we have v.d &lt; = u.d, again contradicting the above inequality. If v is gray, then it ws painted gray upon dequeuing some vertex w, which was removed from the queue earlier than u and for which v.d = w.d + 1 Thus we conclude that v.d = shortest distance of s and v for all v belonging to V.Observe that if v.a = u, then v.d = u.d + 1. Thus, we can obtain a shortest path from s to v by taking a shortest path from s to v .a and then traversing the edge (v.a,v) That’s all folks! We have discussed our lemma and an important theorem related to BFS. Within the next blog post we will begin with depth first search algorithm." />
+<meta property="og:description" content="Within this blog post we will be going over 3 lemma and 1 theorem related to breadth first search. If you haven’t gone through our previous Breadth First Search algorithm, we recommend going through that first. For all those who don’t know what lemma is, it’s an intermediate proof used to prove a theorem. Lemma 1 : Let G(V,E) be a directed or undirected graph and let s belonging to set of vertices be an arbitrary vertex, then for any edge (u,v) belongs to set of edges such that Shortest distance between s and v &lt;= (shortest distance between s and u) + 1 Proof: We are given that u and v are the vertices to a graph G having edge as uv. If source vertex ‘s’ is reachable from ‘u’ then its reachable to ‘v’. In this case the shortest path from s to v cannot be longer than the shortest path from s to u followed by the edge of uv and thus our inequality holds true. If u is not reachable from s, then shortest distance from s and u does not exist and the inequality holds. Lemma 2 : Let G = (V,E) be a directed or undirected graph and suppose that BFS is run on G from a given source vertex s which belongs to set of vertices V. Then upon termination, for each vertex v belonging to V, the value v.d computed by BFS satisfies v.d &gt;= shortest distance between s and v. Proof : Our inductive hypothesis is that v.d &gt;= shortest distance between s,v for all v belonging to set of vertices. We’ll prove it via induction. Within the bfs algorithm check line 9. Immediately after value is enqueued the value of s.d = 0, since it’s the source vertex in the queue and v.d = not defined, hence greater than shortest distance of s and v for all values of v belonging to vertex V except for the source vertex. Hence, our induction hypothesis holds here. For the inductive step, consider a white vertex v that is discovered during the search from a vertex u. The inductive hypothesis implies that u.d &gt;= shortest distance between s and u. From lemma1, we get v.d = u.d + 1 &gt;= shortest distance between s and u + 1 &gt;= shortest distance between s and v Vertex v once enqueued is never parsed again. Thus value of v.d never changes hence the lemma i.e v.d&gt;= shortest distance betwnee s and v is proved. Lemma3 : Suppose that during the execution of BFS on a graph G = (V,E), the queue contains the vertices &lt;v 1, v2,. . .,vr &gt;, where v 1 is the head of Q and v r is the tail. Then v r.d &lt;= v1.d+1 and v i.d &lt;= vi+1.d for I = 1,2,. . .,r-1 Proof : The proof is by induction on the number of queue operations. Initially, when the queue contains only s, the lemma certainly holds. For the inductive step, we must prove that the lemma holds after both dequeuing and enqueuing a vertex. If the head v1 of the queue is dequeued, v2 becomes the new head. By the inductive hypothesis, v1.d &lt;= v2.d When we enqueuer a vertex v in line 17 of BFS algorithm, it becomes vr+1. At that time, we have already removed vertex u, whose adjacency list is currently being scanned from the queue Q, and by the inductive hypothesis, the new head v1 has v1.d &gt;= u.d and the remaining inequalities are unaffected. Thus the lemma follows when v is enqueued. Theorem 1 : Let G=(V,E) be a directed or undirected graph and suppose that BFS is run on G from a given source vertex s belonging to V. Then, during its execution, BFS discovers every vertex v belongs to V that is reachable from the source s, and upon termination, v.d = shortest distance of s and v for all v belonging to V. Moreover, for any vertex v != s that is reachable from s, one of the shortest path from s to v is a shortest path from s to v.a followed by the edge (v.a,v). Proof: Let us assume that some vertex receives a value ‘d’ not equal to its shortest path distance. Let v be the vertex with minimum of s,v that receives such an incorrect d value. By lemma 2, v.d &gt;= shortest distance of (s,v) an thus we have that v.d &gt; shortest distance of (s,v). Vertex v must be reachable from s, for if not, then shortest distance of (s,v) is not defined, which is greater than v.d. Let u be the vertex immediately preceding v on a shortest path from s to v, such that shortest distance of (s,v) = shortest distance of s and u + 1. Hence we have u.d = shortest distane of s and u. Putting these two properties together, we have v.d &gt; shortest distance of (s,v) = shortest distance of (s,u) +1 &gt; u.d + 1 Now when BFS dequeues vertex u from Q in line 11 in the BFS pseudocode, vertex v is either white, gray or black. In each of the cases, we derive the same case of inequality as mentioned above. If v is white, then the above inequality is set to v.d = u.d + 1 which is against the above inequality. If v is black then it was already removed from the queue, and we have v.d &lt; = u.d, again contradicting the above inequality. If v is gray, then it ws painted gray upon dequeuing some vertex w, which was removed from the queue earlier than u and for which v.d = w.d + 1 Thus we conclude that v.d = shortest distance of s and v for all v belonging to V.Observe that if v.a = u, then v.d = u.d + 1. Thus, we can obtain a shortest path from s to v by taking a shortest path from s to v .a and then traversing the edge (v.a,v) That’s all folks! We have discussed our lemma and an important theorem related to BFS. Within the next blog post we will begin with depth first search algorithm." />
+<meta property="og:site_name" content="Tech Blog Tech News" />
+<meta property="og:image" content="/assets%5Cimages%5CContent%5CgraphTheory.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-01-19T00:00:00+00:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","image":"/assets%5Cimages%5CContent%5CgraphTheory.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo/mainlogo.png"},"name":"Navneet"},"mainEntityOfPage":{"@type":"WebPage","@id":"/Graph-Theory-Breadth-First-Search-Lemma-And-Theorems/"},"author":{"@type":"Person","name":"Navneet"},"url":"/Graph-Theory-Breadth-First-Search-Lemma-And-Theorems/","description":"Within this blog post we will be going over 3 lemma and 1 theorem related to breadth first search. If you haven’t gone through our previous Breadth First Search algorithm, we recommend going through that first. For all those who don’t know what lemma is, it’s an intermediate proof used to prove a theorem. Lemma 1 : Let G(V,E) be a directed or undirected graph and let s belonging to set of vertices be an arbitrary vertex, then for any edge (u,v) belongs to set of edges such that Shortest distance between s and v &lt;= (shortest distance between s and u) + 1 Proof: We are given that u and v are the vertices to a graph G having edge as uv. If source vertex ‘s’ is reachable from ‘u’ then its reachable to ‘v’. In this case the shortest path from s to v cannot be longer than the shortest path from s to u followed by the edge of uv and thus our inequality holds true. If u is not reachable from s, then shortest distance from s and u does not exist and the inequality holds. Lemma 2 : Let G = (V,E) be a directed or undirected graph and suppose that BFS is run on G from a given source vertex s which belongs to set of vertices V. Then upon termination, for each vertex v belonging to V, the value v.d computed by BFS satisfies v.d &gt;= shortest distance between s and v. Proof : Our inductive hypothesis is that v.d &gt;= shortest distance between s,v for all v belonging to set of vertices. We’ll prove it via induction. Within the bfs algorithm check line 9. Immediately after value is enqueued the value of s.d = 0, since it’s the source vertex in the queue and v.d = not defined, hence greater than shortest distance of s and v for all values of v belonging to vertex V except for the source vertex. Hence, our induction hypothesis holds here. For the inductive step, consider a white vertex v that is discovered during the search from a vertex u. The inductive hypothesis implies that u.d &gt;= shortest distance between s and u. From lemma1, we get v.d = u.d + 1 &gt;= shortest distance between s and u + 1 &gt;= shortest distance between s and v Vertex v once enqueued is never parsed again. Thus value of v.d never changes hence the lemma i.e v.d&gt;= shortest distance betwnee s and v is proved. Lemma3 : Suppose that during the execution of BFS on a graph G = (V,E), the queue contains the vertices &lt;v 1, v2,. . .,vr &gt;, where v 1 is the head of Q and v r is the tail. Then v r.d &lt;= v1.d+1 and v i.d &lt;= vi+1.d for I = 1,2,. . .,r-1 Proof : The proof is by induction on the number of queue operations. Initially, when the queue contains only s, the lemma certainly holds. For the inductive step, we must prove that the lemma holds after both dequeuing and enqueuing a vertex. If the head v1 of the queue is dequeued, v2 becomes the new head. By the inductive hypothesis, v1.d &lt;= v2.d When we enqueuer a vertex v in line 17 of BFS algorithm, it becomes vr+1. At that time, we have already removed vertex u, whose adjacency list is currently being scanned from the queue Q, and by the inductive hypothesis, the new head v1 has v1.d &gt;= u.d and the remaining inequalities are unaffected. Thus the lemma follows when v is enqueued. Theorem 1 : Let G=(V,E) be a directed or undirected graph and suppose that BFS is run on G from a given source vertex s belonging to V. Then, during its execution, BFS discovers every vertex v belongs to V that is reachable from the source s, and upon termination, v.d = shortest distance of s and v for all v belonging to V. Moreover, for any vertex v != s that is reachable from s, one of the shortest path from s to v is a shortest path from s to v.a followed by the edge (v.a,v). Proof: Let us assume that some vertex receives a value ‘d’ not equal to its shortest path distance. Let v be the vertex with minimum of s,v that receives such an incorrect d value. By lemma 2, v.d &gt;= shortest distance of (s,v) an thus we have that v.d &gt; shortest distance of (s,v). Vertex v must be reachable from s, for if not, then shortest distance of (s,v) is not defined, which is greater than v.d. Let u be the vertex immediately preceding v on a shortest path from s to v, such that shortest distance of (s,v) = shortest distance of s and u + 1. Hence we have u.d = shortest distane of s and u. Putting these two properties together, we have v.d &gt; shortest distance of (s,v) = shortest distance of (s,u) +1 &gt; u.d + 1 Now when BFS dequeues vertex u from Q in line 11 in the BFS pseudocode, vertex v is either white, gray or black. In each of the cases, we derive the same case of inequality as mentioned above. If v is white, then the above inequality is set to v.d = u.d + 1 which is against the above inequality. If v is black then it was already removed from the queue, and we have v.d &lt; = u.d, again contradicting the above inequality. If v is gray, then it ws painted gray upon dequeuing some vertex w, which was removed from the queue earlier than u and for which v.d = w.d + 1 Thus we conclude that v.d = shortest distance of s and v for all v belonging to V.Observe that if v.a = u, then v.d = u.d + 1. Thus, we can obtain a shortest path from s to v by taking a shortest path from s to v .a and then traversing the edge (v.a,v) That’s all folks! We have discussed our lemma and an important theorem related to BFS. Within the next blog post we will begin with depth first search algorithm.","headline":"The Graph Theory Breadth First Search Lemma And Theorems","dateModified":"2020-01-19T00:00:00+00:00","datePublished":"2020-01-19T00:00:00+00:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <link href="/assets/css/screen.css" rel="stylesheet" />
+
+    <link href="/assets/css/main.css" rel="stylesheet" />
+
+    <script src="/assets/js/jquery.min.js"></script>
+  </head>
+  "development"  
+  <body class="layout-post">
+    <!-- defer loading of font and font awesome -->
+    <noscript id="deferred-styles">
+      <link
+        href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous"
+      />
+    </noscript>
+
+    <!-- Begin Menu Navigation
+================================================== -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down"
+    >
+      <div class="container pr-0">
+        <!-- Begin Logo -->
+        <a class="navbar-brand" href="/">
+          <img src="/assets/images/logo/mainlogo.png" alt="MakeMeTechie | Tech Blog | Tech News" />
+        </a>
+        <!-- End Logo -->
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarMediumish"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMediumish">
+          <!-- Begin Menu -->
+
+          <ul class="navbar-nav ml-auto">
+            
+            </li>
+
+            <li class="nav-item">
+              
+              <a class="nav-link" href="/index.html">Blog</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/author/Navneet-Singh"
+                >Author</a
+              >
+            </li>
+
+            <script src="/assets/js/lunr.js"></script>
+
+
+<style>
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+</form>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+          </ul>
+
+          <!-- End Menu -->
+        </div>
+      </div>
+    </nav>
+    <!-- End Navigation
+================================================== -->
+
+    <div class="site-content">
+      <div class="container">
+        <!-- Site Title
+================================================== -->
+        <div class="mainheading">
+          <h1 class="sitetitle">MakeMeTechie | Tech Blog | Tech News</h1>
+          <p class="lead">
+            Build, break, repeat
+          </p>
+        </div>
+
+        <!-- Content
+================================================== -->
+        <div class="main-content">
+          <!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            <div class="share sticky-top sticky-top-offset">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=The Graph Theory | Breadth First Search | Lemma And Theorems&url=/Graph-Theory-Breadth-First-Search-Lemma-And-Theorems/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=/Graph-Theory-Breadth-First-Search-Lemma-And-Theorems/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=/Graph-Theory-Breadth-First-Search-Lemma-And-Theorems/" onclick="window.open(this.href, 'width=550,height=435');return false;">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+
+    </ul>
+    
+    <div class="sep">
+    </div>
+    <ul>
+        <li>
+        <a class="small smoothscroll" href="#disqus_thread"></a>
+        </li>
+    </ul>
+    
+</div>
+
+        </div>
+
+        <!-- Post -->
+        
+
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                <!-- Author Box -->
+                
+                <div class="row post-top-meta">
+                    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+                        <a target="_blank" href="/author/Navneet-Singh">
+                        
+                        <img class="author-thumb" src="/assets\images\logo\nav.jpg" alt="Navneet Singh">
+                        
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
+                        <a target="_blank" class="link-dark" href="/author/Navneet-Singh">Navneet Singh</a><a target="_blank" href="https://twitter.com/tweet_navneet" class="btn follow">Follow</a>
+                        <span class="author-description">Once a wise man said me, 'words are mighter than a sword'. Living up to the wise man wisdom.</span>
+                    </div>
+                </div>
+                
+
+                <!-- Post Title -->
+                <h1 class="posttitle">The Graph Theory | Breadth First Search | Lemma And Theorems</h1>
+
+            </div>
+
+            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+            
+            <!-- End Adsense -->
+
+            <!-- Post Featured Image -->
+            
+
+            
+            <img class="featured-image img-fluid" src="/assets\images\Content\graphTheory.png" alt="The Graph Theory | Breadth First Search | Lemma And Theorems">
+            
+
+            
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+                <!-- Toc if any -->
+                
+                <!-- End Toc -->
+                <p>
+Within this blog post we will be going over 3 lemma and 1 theorem related to breadth first search. If you haven’t gone through our previous <a href="https://makemetechie.com/2018/03/20/the-graph-theory-breadth-first-search/">Breadth First Search algorithm</a>, we recommend going through that first. For all those who don’t know what lemma is, it’s an intermediate proof used to prove a theorem. 
+</p>
+<p>
+<hr />
+<strong>Lemma 1 : Let G(V,E) be a directed or undirected graph and let s belonging to set of vertices be an arbitrary vertex, then for any edge (u,v) belongs to set of edges such that
+Shortest distance between s and v &lt;=  (shortest distance between s and u)  +  1</strong>
+</p>
+<p>
+Proof: We are given that u and v are the vertices to a graph G having edge as uv. If source vertex ‘s’ is reachable from ‘u’ then its reachable to ‘v’. In this case the shortest path from s to v cannot be longer than the shortest path from s to u followed by the edge of uv and thus our inequality holds true. If u is not reachable from s, then shortest distance from s and u does not exist and the inequality holds.
+</p>
+<p>
+<hr />
+<strong>Lemma 2 : Let G = (V,E) be a directed or undirected graph and suppose that BFS is run on G from a given source vertex s which belongs to set of vertices V. Then upon termination, for each vertex v belonging to V, the value v.d computed by BFS satisfies v.d &gt;= shortest distance between s and v.</strong>
+</p>
+<p>
+Proof : Our inductive hypothesis is that v.d &gt;= shortest distance between s,v for all v belonging to set of vertices. We’ll prove it via induction.
+</p>
+<p>
+Within the bfs algorithm check line 9. Immediately after value is enqueued the value of s.d = 0, since it’s the source vertex in the queue and v.d = not defined, hence greater than shortest distance of s and v for all values of v belonging to vertex V except for the source vertex. Hence, our induction hypothesis holds here.
+</p>
+<p>
+For the inductive step, consider a white vertex v that is discovered during the search from a vertex u. The inductive hypothesis implies that u.d &gt;= shortest distance between s and u. From lemma1, we get
+v.d = u.d + 1 
+</p>
+<p>
+&gt;= shortest distance between s and u + 1
+</p>
+<p>
+&gt;= shortest distance between s and v
+</p>
+<p>
+Vertex v once enqueued is never parsed again. Thus value of v.d never changes hence the lemma i.e v.d&gt;= shortest distance betwnee s and v is proved.
+</p>
+<p>
+<hr />
+<strong>Lemma3 : Suppose that during the execution of BFS on a graph G = (V,E), the queue contains the vertices &lt;v <sub>1</sub>, v<sub>2</sub>,. . .,v<sub>r</sub> &gt;, where v <sub> 1 </sub> is the head of Q and v <sub> r </sub> is the tail. Then v <sub>r</sub>.d &lt;= v<sub>1</sub>.d+1 and v <sub>i</sub>.d &lt;= v<sub>i+1</sub>.d for I = 1,2,. . .,r-1 </strong>
+</p>
+<p>
+Proof : The proof is by induction on the number of queue operations. Initially, when the queue contains only s, the lemma certainly holds.
+</p>
+<p>
+For the inductive step, we must prove that the lemma holds after both dequeuing and enqueuing a vertex. If the head v<sub>1</sub> of the queue is dequeued, v<sub>2</sub> becomes the new head. By the inductive hypothesis, v<sub>1</sub>.d &lt;= v<sub>2</sub>.d
+</p>
+<p>
+When we enqueuer a vertex v in line 17 of BFS algorithm, it becomes v<sub>r+1</sub>. At that time, we have already removed vertex u, whose adjacency list is currently being scanned from the queue Q, and by the inductive hypothesis, the new head v<sub>1</sub> has v<sub>1</sub>.d &gt;= u.d and the remaining inequalities are unaffected. Thus the lemma follows when v is enqueued.
+</p>
+<p>
+<hr />
+<strong> Theorem 1 : Let G=(V,E) be a directed or undirected graph and suppose that BFS is run on G from a given source vertex s belonging to V. Then, during its execution, BFS discovers every vertex v belongs to V that is reachable from the source s, and upon termination, v.d = shortest distance of s and v for all v belonging to V. Moreover, for any vertex v != s that is reachable from s, one of the shortest path from s to v is a shortest path from s to v.a followed by the edge (v.a,v). </strong>
+</p>
+<p>
+Proof: Let us assume that some vertex receives a value ‘d’ not equal to its shortest path distance. Let v be the vertex with minimum of s,v that receives such an incorrect d value. 
+</p>
+<p>
+By lemma 2, v.d &gt;= shortest distance of (s,v) an thus we have that v.d &gt; shortest distance of (s,v). Vertex v must be reachable from s, for if not, then shortest distance of (s,v) is not defined, which is greater than v.d. Let u be the vertex immediately preceding v on a shortest path from s to v, such that shortest distance of (s,v) = shortest distance of s and u  + 1. Hence we have u.d = shortest distane of s and u. Putting these two properties together, we have
+</p>
+<p>
+v.d &gt; shortest distance of (s,v) = shortest distance of (s,u) +1 &gt; u.d + 1
+</p>
+<p>
+Now when BFS dequeues vertex u from Q in line 11 in the BFS pseudocode, vertex v is either white, gray or black. In each of the cases, we derive the same case of inequality as mentioned above.
+</p>
+<p>
+If v is white, then the above inequality is set to v.d = u.d + 1 which is against the above inequality.
+If v is black then it was already removed from the queue, and we have v.d &lt; = u.d, again contradicting the above inequality.
+</p>
+<p>
+If v is gray, then it ws painted gray upon dequeuing some vertex w, which was removed from the queue earlier than u and for which v.d = w.d + 1
+</p>
+<p>
+Thus we conclude that v.d = shortest distance of s and v for all v belonging to V.Observe that if v.a = u, then v.d = u.d + 1. Thus, we can obtain a shortest path from s to v by taking a shortest path from s to v .a and then traversing the edge (v.a,v)
+</p>
+<p>
+That’s all folks! We have discussed our lemma and an important theorem related to BFS. Within the next blog post we will begin with depth first search algorithm.
+</p>
+
+            </div>
+
+            <!-- Rating -->
+            
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="2020-01-19">19 Jan 2020</time></span>           
+                
+                </small>
+            </p>
+
+            <!-- Post Categories -->
+            <div class="after-post-cats">
+                <ul class="tags mb-4">
+                    
+                    
+                    <li>
+                        <a class="smoothscroll" href="/categories#Jekyll">Jekyll</a>
+                    </li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/categories#tutorial">tutorial</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- End Categories -->
+
+            <!-- Post Tags -->
+            <div class="after-post-tags">
+                <ul class="tags">
+                    
+                    
+                </ul>
+            </div>
+            <!-- End Tags -->
+
+            <!-- Prev/Next -->
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            
+            <a class="prev d-block col-md-6" href="/Getting-started-with-Sublime-text-editor/"> &laquo; Getting started with Sublime text editor</a>
+            
+            
+            <a class="next d-block col-md-6 text-lg-right" href="/Graph-Theory-Breadth-First-Search/">The Graph Theory | Breadth First Search &raquo; </a>
+            
+            <div class="clearfix"></div>
+            </div>
+            <!-- End Categories -->
+
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+<!-- End Article
+================================================== -->
+
+<!-- Begin Comments
+================================================== -->
+
+    <div class="container">
+        <div id="comments" class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'makemetechie'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+            </div>
+        </div>
+    </div>
+
+<!--End Comments
+================================================== -->
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+
+        </div>
+
+        
+      </div>
+
+      <!-- Categories Jumbotron
+================================================== -->
+      <div class="jumbotron fortags">
+        <div class="d-md-flex h-100">
+          <div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div
+              class="d-md-flex align-items-center justify-content-center h-100"
+            >
+              <h2 class="d-md-block align-self-center py-1 font-weight-light">
+                Explore <span class="d-none d-md-inline">→</span>
+              </h2>
+            </div>
+          </div>
+          <div class="col-md-8 p-5 align-self-center text-center">
+              
+            <a
+              class="mt-1 mb-1"
+              href="/categories#Jekyll"
+              >Jekyll (32)</a
+            >
+            
+            <a
+              class="mt-1 mb-1"
+              href="/categories#tutorial"
+              >tutorial (32)</a
+            >
+              
+          </div>
+        </div>
+      </div>
+
+      <!-- Begin Footer
+================================================== -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+              Copyright © 2020 MakeMeTechie | Tech Blog | Tech News
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right"></div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer
+================================================== -->
+    </div>
+    <!-- /.site-content -->
+
+    <!-- Scripts
+================================================== -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/assets/js/mediumish.js"></script>
+
+    
+
+    <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    
+    <script
+      id="dsq-count-scr"
+      src="//makemetechie.disqus.com/count.js"
+    ></script>
+    
+  </body>
+</html>

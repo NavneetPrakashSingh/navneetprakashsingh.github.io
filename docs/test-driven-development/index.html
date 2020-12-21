@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="icon"
+      href="/assets/images/logo/mainlogo.png"
+    />
+
+    <title>Test Driven Development | Code Quality | MakeMeTechie | Tech Blog | Tech News</title>
+
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Test Driven Development Code Quality | Tech Blog Tech News</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Test Driven Development Code Quality" />
+<meta name="author" content="Navneet" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Within the previous topic we have a brief overview regarding dependency injection and we had a look at a poor code and we changed it to an object oriented code which was robust and cohesive. Link can be found here ." />
+<meta property="og:description" content="Within the previous topic we have a brief overview regarding dependency injection and we had a look at a poor code and we changed it to an object oriented code which was robust and cohesive. Link can be found here ." />
+<meta property="og:site_name" content="Tech Blog Tech News" />
+<meta property="og:image" content="/assets%5Cimages%5CContent%5Ccode_quality_banner.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-01-19T00:00:00+00:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","image":"/assets%5Cimages%5CContent%5Ccode_quality_banner.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo/mainlogo.png"},"name":"Navneet"},"mainEntityOfPage":{"@type":"WebPage","@id":"/test-driven-development/"},"author":{"@type":"Person","name":"Navneet"},"url":"/test-driven-development/","description":"Within the previous topic we have a brief overview regarding dependency injection and we had a look at a poor code and we changed it to an object oriented code which was robust and cohesive. Link can be found here .","headline":"Test Driven Development Code Quality","dateModified":"2020-01-19T00:00:00+00:00","datePublished":"2020-01-19T00:00:00+00:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <link href="/assets/css/screen.css" rel="stylesheet" />
+
+    <link href="/assets/css/main.css" rel="stylesheet" />
+
+    <script src="/assets/js/jquery.min.js"></script>
+  </head>
+  "development"  
+  <body class="layout-post">
+    <!-- defer loading of font and font awesome -->
+    <noscript id="deferred-styles">
+      <link
+        href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous"
+      />
+    </noscript>
+
+    <!-- Begin Menu Navigation
+================================================== -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down"
+    >
+      <div class="container pr-0">
+        <!-- Begin Logo -->
+        <a class="navbar-brand" href="/">
+          <img src="/assets/images/logo/mainlogo.png" alt="MakeMeTechie | Tech Blog | Tech News" />
+        </a>
+        <!-- End Logo -->
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarMediumish"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMediumish">
+          <!-- Begin Menu -->
+
+          <ul class="navbar-nav ml-auto">
+            
+            </li>
+
+            <li class="nav-item">
+              
+              <a class="nav-link" href="/index.html">Blog</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/author/Navneet-Singh"
+                >Author</a
+              >
+            </li>
+
+            <script src="/assets/js/lunr.js"></script>
+
+
+<style>
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+</form>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+          </ul>
+
+          <!-- End Menu -->
+        </div>
+      </div>
+    </nav>
+    <!-- End Navigation
+================================================== -->
+
+    <div class="site-content">
+      <div class="container">
+        <!-- Site Title
+================================================== -->
+        <div class="mainheading">
+          <h1 class="sitetitle">MakeMeTechie | Tech Blog | Tech News</h1>
+          <p class="lead">
+            Build, break, repeat
+          </p>
+        </div>
+
+        <!-- Content
+================================================== -->
+        <div class="main-content">
+          <!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            <div class="share sticky-top sticky-top-offset">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=Test Driven Development | Code Quality&url=/test-driven-development/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=/test-driven-development/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=/test-driven-development/" onclick="window.open(this.href, 'width=550,height=435');return false;">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+
+    </ul>
+    
+    <div class="sep">
+    </div>
+    <ul>
+        <li>
+        <a class="small smoothscroll" href="#disqus_thread"></a>
+        </li>
+    </ul>
+    
+</div>
+
+        </div>
+
+        <!-- Post -->
+        
+
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                <!-- Author Box -->
+                
+                <div class="row post-top-meta">
+                    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+                        <a target="_blank" href="/author/Navneet-Singh">
+                        
+                        <img class="author-thumb" src="/assets\images\logo\nav.jpg" alt="Navneet Singh">
+                        
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
+                        <a target="_blank" class="link-dark" href="/author/Navneet-Singh">Navneet Singh</a><a target="_blank" href="https://twitter.com/tweet_navneet" class="btn follow">Follow</a>
+                        <span class="author-description">Once a wise man said me, 'words are mighter than a sword'. Living up to the wise man wisdom.</span>
+                    </div>
+                </div>
+                
+
+                <!-- Post Title -->
+                <h1 class="posttitle">Test Driven Development | Code Quality</h1>
+
+            </div>
+
+            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+            
+            <!-- End Adsense -->
+
+            <!-- Post Featured Image -->
+            
+
+            
+            <img class="featured-image img-fluid" src="/assets\images\Content\code_quality_banner.png" alt="Test Driven Development | Code Quality">
+            
+
+            
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+                <!-- Toc if any -->
+                
+                <!-- End Toc -->
+                <p>Within the previous topic we have a brief overview regarding dependency injection and we had a look at a poor code and we changed it to an object oriented code which was robust and cohesive. Link can be found here .</p>
+
+<p> </p>
+
+<p>Within this blog post we would be looking at the same code base of adding sum of two numbers and apply test driven development to the code base. Before that we would look at the following aspects:</p>
+
+<ul>
+ 	<li>What is test driven development?</li>
+ 	<li>Tools needed to apply test driven development</li>
+ 	<li>Apply test driven development to a code</li>
+ 	<li>When to apply test driven development</li>
+</ul>
+<h1>What is test driven development?</h1>
+<p>Before we jump to an example, lets understand what test driven development is using a real life example. Consider a Formula 1 pit crew whose job is to get the car serviced in minimum time as possible and consider a car service company that lazily gets your car serviced. There is a difference between these two approaches. In the first approach, everything is crosschecked twice and everything is done in harmony. No chances of mishaps and a view like this is seen as shown below:</p>
+
+<p><img class="center-div aligncenter size-medium wp-image-223" src="\assets\images\Content\pitcrew.jpg" alt="" width="196" height="300" /></p>
+
+<p>Whereas, in the lazy car service, people are breaking your car while servicing and applying patches wherever possible. Something like the car below:</p>
+
+<p><img class="center-div alignnone size-medium wp-image-224" src="\assets\images\Content\duckTape.png" alt="" width="300" height="200" /></p>
+
+<p>Similar is the approach with your code. You can choose to write it as a maintainable code where even if someone else works on it, still works or you can choose it to write a code that is often required to be maintained and is applies patches so that it works.</p>
+
+<p> </p>
+
+<p>To create your code similar to the F1 service, you have to include test driven development to your project. One of the main things to keep in mind is that the entire process is an agile process. You write a certain test case, then write your code. Then write new test cases and then modify your code. The entire process is a continuous cycle which gives advantage to you in the way such that whenever there is another developer working on the project with you and does changes to your code, it must pass the unit test cases.</p>
+
+<p> </p>
+
+<p> </p>
+
+<h1>What are the tools needed for test driven development?</h1>
+<h3>Junit for unit test</h3>
+<p>Junit is used for testing unit code that uses Java as a programming language. It takes the code in isolation and runs the code against the given test cases. It would show which all test cases failed and why they failed. Cheat sheet related to Junit is shown here.</p>
+<h3>Mockito for REST API testing</h3>
+<p>Mockito allows developers to create and test objects (mock objects) in unit test for test driven development.
+There are many other tools to write code using test driven development depending upon the programming language.</p>
+<h3>Apply test driven development to existing code.</h3>
+<p>Let us consider the example of adding two numbers as shown in previous post. We want to make sure that it is able to add two numbers like two positive numbers, two negative numbers, one positive and one negative number. We are going to approach it by:</p>
+<ul>
+ 	<li>Creating a separate test layer within the project</li>
+ 	<li>Next we are going to create mock objects which would simulate the behaviour of a real object and call it MockSum.java</li>
+ 	<li>Next create a separate class for writing test cases and call it SumTest.java within the test layer.</li>
+ 	<li>Next add Junit library to the project by following steps mentioned in the next section.</li>
+</ul>
+<h3>Adding Junit to project</h3>
+<p>Simply right click on the main project and click on Build path. Once the build path sub menu appears, select add library and select Junit. Click on next and it would add the necessary files for Junit.</p>
+
+<p>Refer the following screenshot for doubts.</p>
+
+<p><img class="center-div alignnone size-medium wp-image-225" src="\assets\images\Content\Junit.png" alt="" width="300" height="241" /></p>
+
+<p>Now we have the Junit within our project, we want to write mock values and test cases for the same.</p>
+
+<p>Mock values are a simulation of the real object and act as input for the code you are testing. These are then tested against the real values and expected values that are written in the test file.</p>
+
+<p>Code snippet for mock objects are shown below:</p>
+
+<script src="https://gist.github.com/NavneetPrakashSingh/03b277f559717542c396ade58cca177b.js"></script>
+
+<p>Code snippet for test file is shown below:</p>
+
+<script src="https://gist.github.com/NavneetPrakashSingh/ef3088febfe884f64e8fdd5b9cc4b17b.js"></script>
+
+<p>What we are doing is creating a test file that takes in the mock objects as input and testing our values using Junit against the expected values and real values.</p>
+
+<p>Using such type of approach is test driven development. We start of writing test cases, then write the code against it, then write test cases again and then write code against it.</p>
+
+<p>Code is also available at github: https://github.com/NavneetPrakashSingh/Code-Quality</p>
+
+<p> </p>
+
+<p>That’s all for now! Now we have a firm understating of dependency injection and test driven development, we can now focus on SOLID principles and apply these principles on examples.</p>
+
+            </div>
+
+            <!-- Rating -->
+            
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="2020-01-19">19 Jan 2020</time></span>           
+                
+                </small>
+            </p>
+
+            <!-- Post Categories -->
+            <div class="after-post-cats">
+                <ul class="tags mb-4">
+                    
+                    
+                    <li>
+                        <a class="smoothscroll" href="/categories#Jekyll">Jekyll</a>
+                    </li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/categories#tutorial">tutorial</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- End Categories -->
+
+            <!-- Post Tags -->
+            <div class="after-post-tags">
+                <ul class="tags">
+                    
+                    
+                </ul>
+            </div>
+            <!-- End Tags -->
+
+            <!-- Prev/Next -->
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            
+            <a class="prev d-block col-md-6" href="/install-python-on-sublime-text-editor/"> &laquo; Install Python On Sublime Text Editor 3</a>
+            
+            
+            <a class="next d-block col-md-6 text-lg-right" href="/Zipkin-Spring-Boot/">Zipkin with Spring Boot &raquo; </a>
+            
+            <div class="clearfix"></div>
+            </div>
+            <!-- End Categories -->
+
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+<!-- End Article
+================================================== -->
+
+<!-- Begin Comments
+================================================== -->
+
+    <div class="container">
+        <div id="comments" class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'makemetechie'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+            </div>
+        </div>
+    </div>
+
+<!--End Comments
+================================================== -->
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+
+        </div>
+
+        
+      </div>
+
+      <!-- Categories Jumbotron
+================================================== -->
+      <div class="jumbotron fortags">
+        <div class="d-md-flex h-100">
+          <div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div
+              class="d-md-flex align-items-center justify-content-center h-100"
+            >
+              <h2 class="d-md-block align-self-center py-1 font-weight-light">
+                Explore <span class="d-none d-md-inline">→</span>
+              </h2>
+            </div>
+          </div>
+          <div class="col-md-8 p-5 align-self-center text-center">
+              
+            <a
+              class="mt-1 mb-1"
+              href="/categories#Jekyll"
+              >Jekyll (32)</a
+            >
+            
+            <a
+              class="mt-1 mb-1"
+              href="/categories#tutorial"
+              >tutorial (32)</a
+            >
+              
+          </div>
+        </div>
+      </div>
+
+      <!-- Begin Footer
+================================================== -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+              Copyright © 2020 MakeMeTechie | Tech Blog | Tech News
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right"></div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer
+================================================== -->
+    </div>
+    <!-- /.site-content -->
+
+    <!-- Scripts
+================================================== -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/assets/js/mediumish.js"></script>
+
+    
+
+    <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    
+    <script
+      id="dsq-count-scr"
+      src="//makemetechie.disqus.com/count.js"
+    ></script>
+    
+  </body>
+</html>

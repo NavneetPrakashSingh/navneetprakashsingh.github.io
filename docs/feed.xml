@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech Blog | Tech News</title>
+    <description>Build, break, repeat</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 21 Dec 2020 06:43:09 +0000</pubDate>
+    <lastBuildDate>Mon, 21 Dec 2020 06:43:09 +0000</lastBuildDate>
+    <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>Zipkin with Spring Boot</title>
+        <description>&lt;p&gt;Have you ever wondered how does loggin happen in a microservice architecture. Where having logs for each and every service would just make it difficult as the services would increase. To solve the problem,we have tools like Zipkin which can be integrated with major frameworks and be used to keep trace of requests and measure the latency for the services.
+In this tutorial we will be covering the following topics:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What is Zipkin and why do we need Zipkin?&lt;/li&gt;
+&lt;li&gt;How to integrate Zipking with spring boot application?&lt;/li&gt;
+&lt;li&gt;Running microservices in spring boot and sending logs request to Zipkin&lt;/li&gt;
+&lt;li&gt;Analyzing the results in Zipkin UI&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So, lets get started with our first topic.&lt;/p&gt;
+&lt;h3&gt;What is Zipkin and why do we need Zipkin?&lt;/h3&gt;
+&lt;p&gt;Have you wondered how would you connect the various logs within your microservices? Such that whenever a user/client hits one of your microservice and it calls a set of other microservices and just like a good developer you log all the requests to the logs. But you still don’t know what was the latency related to the microservice, what microservice was not hit and what was the error that occurred. To simplify, let us consider the following UML diagram of a simple microservice. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\assets\images\Content\Zipkin-UML.png&quot; alt=&quot;UML Diagram Microservice&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Within the above UML diagram, you can see that there is a CustomerService, DataService1 and DataService2. This is a very common example of microservice architecture and we see that all these services are connected to a zipkin server.&lt;/p&gt;
+&lt;p&gt;This is where zipkin comes in, Zipkin is a tracing system that is used in a distributed architecture or system. It also logs the time for each service, helping us to analyze which service is taking more time, thereby giving more time to analyze where you can improve the efficiency of the system.&lt;/p&gt;
+&lt;p&gt;How Zipkin does is, it has a trace ID and span ID. Whenever a client comes to your system, a trace ID is issued, which remains unique to the entire request and span ID remains unique to the microservice that is being used. So, now if you want to trace your request against a specific user, you can follow the trace ID which Zipkin presents in a visualized manner as well. &lt;/p&gt;
+&lt;p&gt;Now we have a brief understanding of zipkin, we can create a zipkin server to which these microservices would then send request. To set up the Zipkin server, run the following commands on the &lt;/p&gt;
+&lt;script src=&quot;https://gist.github.com/NavneetPrakashSingh/b8b36ef83f9096e2ccada888727e9971.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Once we have the instance of Zipkin running on http://localhost:9411/zipkin/ the next step is to integrate it with Spring boot application. If we see our command prompt we get
+&lt;img src=&quot;\assets\images\Content\zipkin-running.png&quot; alt=&quot;Zipkin Running Successfully&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The above screenshot shows that the zipkin server is up and running&lt;/p&gt;
+&lt;h3&gt;Integrating Zipkin with spring boot application&lt;/h3&gt;
+&lt;p&gt;To integrate Zipkin with Spring boot, we need to add Zipkin and Spring Sleuth dependency to our project. Once the dependencies are added to the project, we need to configure our application property to set our sampler size as 1 for Zipkin. Sampler is a way to keep track of how many traces (samplers) to keep against each request. You can find more about Spring Cloud Sleuth &amp;lt;a href=”https://spring.io/projects/spring-cloud-sleuth”&amp;gt;here&amp;lt;/a&amp;gt;&lt;/p&gt;
+&lt;p&gt;The property file and the pom.xml file is shown below:
+&lt;script src=&quot;https://gist.github.com/NavneetPrakashSingh/3e5844a4237029e50d7ecf060ba43d93.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Now once, we have the dependency set up in our project, we need to create the microservice that we discussed in the UML diagram above. We will be using three microservices: dataService1, dataService2 and customerService. DataService1 has the API that gives the result related to the contacts. DataService2 has the API that gives the result related to the Vehicle. In dataservice2, we have added a latency which we will see in the Zipkin output and use it to analyze our service. We also have customerservice that calls both these services and returns back the result.&lt;/p&gt;
+&lt;p&gt;The code for the all the API is shown in the following gist:
+&lt;script src=&quot;https://gist.github.com/NavneetPrakashSingh/e35d1d2fbb4661813ee3ed640be6c300.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://gist.github.com/NavneetPrakashSingh/0c0b5af193f3e4fbc04d5792106c082b.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://gist.github.com/NavneetPrakashSingh/7b65a767cc588b8c405c300b99cef49f.js&quot;&gt;&lt;/script&gt;
+Now, when we call the API using postman, we get the following output:
+&lt;img src=&quot;\assets\images\Content\GetRequestService1.png&quot; alt=&quot;GET Request Service 1&quot; class=&quot;pb-2&quot; /&gt;
+The above screenshot shows the result of GET request when we hit dataService1
+&lt;img src=&quot;\assets\images\Content\service2.png&quot; alt=&quot;GET Request Service 2&quot; class=&quot;pb-2&quot; /&gt;
+The above screenshot shows the result of GET request when we hit dataService2
+&lt;img src=&quot;\assets\images\Content\service3.png&quot; alt=&quot;GET Request CustomerService&quot; class=&quot;pb-2&quot; /&gt;
+The above screenshot shows the result of GET request when we hit customerService&lt;/p&gt;
+&lt;p&gt;This means that we have done our setup for the APIs correctly, next we want to see if these results are registed to Zipkin or not. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\assets\images\Content\zipkin-output.png&quot; alt=&quot;Zipkin Output&quot; class=&quot;pb-2&quot; /&gt;
+&lt;img src=&quot;\assets\images\Content\Zipkin-analysis.png&quot; alt=&quot;Zipkin Analysis&quot; class=&quot;pb-2&quot; /&gt;
+&lt;img src=&quot;\assets\images\Content\zipkin-visualize.png&quot; alt=&quot;Zipkin Visualize&quot; class=&quot;pb-2&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;Analyzing results from Zipkin&lt;/h3&gt;
+&lt;p&gt;From this we can see we have a centralized logging system such that each request has one trace ID which is unique for each request. We also have a span ID that is unique for each service.&lt;/p&gt;
+&lt;p&gt;From the above screenshot related to Zipkin, we see that the customer service takes 3.116 sec to execute, out of this the contact details take 3.016 sec to execute and that is where we had added our latency. The vehicle service takes only 7.29 ms since it didn’t have any latency code.&lt;/p&gt;
+&lt;h3&gt;Github Code &lt;/h3&gt;
+&lt;p&gt;You can get the complete code from github in my Spring Boot Series: &lt;a href=&quot;https://github.com/NavneetPrakashSingh/Spring-Boot-Series/tree/master/springcloud-m5-dataservice1&quot;&gt;DataService1&lt;/a&gt;, &lt;a href=&quot;https://github.com/NavneetPrakashSingh/Spring-Boot-Series/tree/master/springcloud-m5-dataservice2&quot;&gt;DataService2&lt;/a&gt;,&lt;a href=&quot;https://github.com/NavneetPrakashSingh/Spring-Boot-Series/tree/master/springcloud-m5-customerservice&quot;&gt;CustomerService&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+        <link>/Zipkin-Spring-Boot/</link>
+        <guid isPermaLink="true">/Zipkin-Spring-Boot/</guid>
+        
+        
+        <category>Jekyll</category>
+        
+        <category>tutorial</category>
+        
+      </item>
+    
+      <item>
+        <title>Test Driven Development | Code Quality</title>
+        <description>&lt;p&gt;Within the previous topic we have a brief overview regarding dependency injection and we had a look at a poor code and we changed it to an object oriented code which was robust and cohesive. Link can be found here .&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Within this blog post we would be looking at the same code base of adding sum of two numbers and apply test driven development to the code base. Before that we would look at the following aspects:&lt;/p&gt;
+
+&lt;ul&gt;
+ 	&lt;li&gt;What is test driven development?&lt;/li&gt;
+ 	&lt;li&gt;Tools needed to apply test driven development&lt;/li&gt;
+ 	&lt;li&gt;Apply test driven development to a code&lt;/li&gt;
+ 	&lt;li&gt;When to apply test driven development&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;What is test driven development?&lt;/h1&gt;
+&lt;p&gt;Before we jump to an example, lets understand what test driven development is using a real life example. Consider a Formula 1 pit crew whose job is to get the car serviced in minimum time as possible and consider a car service company that lazily gets your car serviced. There is a difference between these two approaches. In the first approach, everything is crosschecked twice and everything is done in harmony. No chances of mishaps and a view like this is seen as shown below:&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;center-div aligncenter size-medium wp-image-223&quot; src=&quot;\assets\images\Content\pitcrew.jpg&quot; alt=&quot;&quot; width=&quot;196&quot; height=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Whereas, in the lazy car service, people are breaking your car while servicing and applying patches wherever possible. Something like the car below:&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;center-div alignnone size-medium wp-image-224&quot; src=&quot;\assets\images\Content\duckTape.png&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;200&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Similar is the approach with your code. You can choose to write it as a maintainable code where even if someone else works on it, still works or you can choose it to write a code that is often required to be maintained and is applies patches so that it works.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;To create your code similar to the F1 service, you have to include test driven development to your project. One of the main things to keep in mind is that the entire process is an agile process. You write a certain test case, then write your code. Then write new test cases and then modify your code. The entire process is a continuous cycle which gives advantage to you in the way such that whenever there is another developer working on the project with you and does changes to your code, it must pass the unit test cases.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h1&gt;What are the tools needed for test driven development?&lt;/h1&gt;
+&lt;h3&gt;Junit for unit test&lt;/h3&gt;
+&lt;p&gt;Junit is used for testing unit code that uses Java as a programming language. It takes the code in isolation and runs the code against the given test cases. It would show which all test cases failed and why they failed. Cheat sheet related to Junit is shown here.&lt;/p&gt;
+&lt;h3&gt;Mockito for REST API testing&lt;/h3&gt;
+&lt;p&gt;Mockito allows developers to create and test objects (mock objects) in unit test for test driven development.
+There are many other tools to write code using test driven development depending upon the programming language.&lt;/p&gt;
+&lt;h3&gt;Apply test driven development to existing code.&lt;/h3&gt;
+&lt;p&gt;Let us consider the example of adding two numbers as shown in previous post. We want to make sure that it is able to add two numbers like two positive numbers, two negative numbers, one positive and one negative number. We are going to approach it by:&lt;/p&gt;
+&lt;ul&gt;
+ 	&lt;li&gt;Creating a separate test layer within the project&lt;/li&gt;
+ 	&lt;li&gt;Next we are going to create mock objects which would simulate the behaviour of a real object and call it MockSum.java&lt;/li&gt;
+ 	&lt;li&gt;Next create a separate class for writing test cases and call it SumTest.java within the test layer.&lt;/li&gt;
+ 	&lt;li&gt;Next add Junit library to the project by following steps mentioned in the next section.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Adding Junit to project&lt;/h3&gt;
+&lt;p&gt;Simply right click on the main project and click on Build path. Once the build path sub menu appears, select add library and select Junit. Click on next and it would add the necessary files for Junit.&lt;/p&gt;
+
+&lt;p&gt;Refer the following screenshot for doubts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;center-div alignnone size-medium wp-image-225&quot; src=&quot;\assets\images\Content\Junit.png&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;241&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we have the Junit within our project, we want to write mock values and test cases for the same.&lt;/p&gt;
+
+&lt;p&gt;Mock values are a simulation of the real object and act as input for the code you are testing. These are then tested against the real values and expected values that are written in the test file.&lt;/p&gt;
+
+&lt;p&gt;Code snippet for mock objects are shown below:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/NavneetPrakashSingh/03b277f559717542c396ade58cca177b.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Code snippet for test file is shown below:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/NavneetPrakashSingh/ef3088febfe884f64e8fdd5b9cc4b17b.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;What we are doing is creating a test file that takes in the mock objects as input and testing our values using Junit against the expected values and real values.&lt;/p&gt;
+
+&lt;p&gt;Using such type of approach is test driven development. We start of writing test cases, then write the code against it, then write test cases again and then write code against it.&lt;/p&gt;
+
+&lt;p&gt;Code is also available at github: https://github.com/NavneetPrakashSingh/Code-Quality&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;That’s all for now! Now we have a firm understating of dependency injection and test driven development, we can now focus on SOLID principles and apply these principles on examples.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
+        <link>/test-driven-development/</link>
+        <guid isPermaLink="true">/test-driven-development/</guid>
+        
+        
+        <category>Jekyll</category>
+        
+        <category>tutorial</category>
+        
+      </item>
+    
+      <item>
+        <title>Install Python On Sublime Text Editor 3</title>
+        <description>&lt;p&gt;
+Sublime text give you the power to work on almost all programming language of your choice. However, there may be some programming languages that might not be pre-installed and hence you have to explicitly add them on the fly. One of them is python. Within this tutorial we will look into
+&lt;ul&gt;
+&lt;li&gt;how to install package controller in sublime text editor&lt;/li&gt;
+&lt;li&gt;how to install and configure python in sublime text editor&lt;/li&gt;
+&lt;li&gt;writing our first hello world program&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Install package controller in sublime text editor 3&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+First open console on sublime text editor 3 using &lt;strong&gt;VIEW &amp;gt; SHOW CONSOLE&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Next paste the following code in text editor and press enter. Restart sublime text editor.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)&lt;/code&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Next, to install packages click CTRL + SHIFT + P and start typing install and select &lt;i&gt;Package Control: install package&lt;/i&gt;. Press enter and search for available package. You can remove, update package in this manner. 
+&lt;/p&gt;
+&lt;p&gt;
+Complete details about package controller can be found here https://packagecontrol.io/docs/usage
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Install and configure python in sublime text editor 3&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Now we have the package controller installed, we will use the package controller to install other packages, plugins and themes. To get python working on you system you need to install python first, you can download python via command line or installer.
+&lt;/p&gt;
+&lt;p&gt;
+To install python via command line use the following command :
+&lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;
+&lt;pre&gt;
+sudo add-apt-repository ppa:jonathonf/python-3.6
+sudo apt-get update
+sudo apt-get install python3.6 
+&lt;/pre&gt;
+&lt;/code&gt;
+&lt;/p&gt;
+&lt;p&gt;
+To download and install python via installer click on this link, which redirects you official python page and you can download python version of your choice.
+&lt;/p&gt;
+&lt;p&gt;
+Once we have the python installed we need store its path. For ubuntu we will use command line 
+First type &lt;strong&gt;python&lt;/strong&gt; and hit enter. If you are able to successfully enter python command line, it means you have successfully installed python on you system, copy the version number from there.
+&lt;/p&gt;
+&lt;p&gt;
+Next type &lt;strong&gt;whereis python 3.6&lt;/strong&gt; to get the location of python. Copy the first location from there and that is your path of python. Store it because we will need it further.
+&lt;/p&gt;
+&lt;p&gt;
+Now we have the location of python, we have previously installed package controller, now lets integrate python with sublime text editor.
+&lt;/p&gt;
+&lt;p&gt;
+Open package controller by typing &lt;strong&gt;CTRL + SHIFT + P&lt;/strong&gt; type install till it shows &lt;i&gt;Package Controller : Install Package&lt;/i&gt;. Next type &lt;strong&gt;SublimeREPL&lt;/strong&gt; and click enter, it will install sublimeREPL on you sublime text editor. Now restart sublime text editor to ensure all changes have taken place.
+&lt;/p&gt;
+&lt;p&gt;
+Next go to &lt;strong&gt;TOOLS -&amp;gt; BUILD SYSTEM -&amp;gt; NEW BUILD SYSTEM &lt;/strong&gt; and enter the following json to link python with sublime text editor 3
+&lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;
+&lt;pre&gt;
+{
+ &quot;cmd&quot;: [&quot;/usr/bin/python3&quot;, &quot;$file&quot;],
+ &quot;selector&quot;: &quot;source.python&quot;,
+ &quot;file_regex&quot;: &quot;file \&quot;(...*?)\&quot;, line([0-9]+)&quot;
+}
+&lt;/pre&gt;
+&lt;/code&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Now save the file as SublimeREPL-python.sublime-build and restart sublime text editor to ensure all the changes have taken place.
+&lt;/p&gt;
+&lt;p&gt;
+Next, go to &lt;strong&gt;TOOLS -&amp;gt; BUILD SYSTEM -&amp;gt; SublimeREPL-python&lt;/strong&gt;. Once appropriate build system has been selected, create a new file and type &lt;strong&gt;print(&quot;hello world&quot;)&lt;/strong&gt; and press &lt;strong&gt;CTRL + B&lt;/strong&gt; to build the system.
+&lt;/p&gt;
+&lt;p&gt;
+If all the above steps has been installed successfully you should be able to see hello world on the output screen ensuring that python is running successfully with sublime text.
+&lt;/p&gt;
+&lt;p&gt;
+That's all for now! We were able to install package controller on sublime text editor, understood how to install packages/plugins on sublime text editor 3. Installed python on the system and linked python with sublime text. Moreover, just to confirm we even wrote a small hello world program in python.
+&lt;/p&gt;
+&lt;p&gt;
+In case of any doubts you can reach me out at &lt;strong&gt;navneet@makemetechie.com&lt;/strong&gt;, you'll get a follow up within the next 24 hours regarding the same.
+&lt;/p&gt;
+</description>
+        <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
+        <link>/install-python-on-sublime-text-editor/</link>
+        <guid isPermaLink="true">/install-python-on-sublime-text-editor/</guid>
+        
+        
+        <category>Jekyll</category>
+        
+        <category>tutorial</category>
+        
+      </item>
+    
+      <item>
+        <title>The Graph Theory | Topological Sort</title>
+        <description>&lt;p&gt;
+Within the last blog post we understood the algorithm related to depth-first search. Within this section we use depth first search to perform topological sort of a directed acyclic graph (DAG). Within this blog post we will discuss the following topics
+&lt;/p&gt;
+&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduction to topological sort&lt;/li&gt;
+&lt;li&gt;Understand topological sort via example&lt;/li&gt;
+&lt;li&gt;Write pseudocode for the same&lt;/li&gt;
+&lt;li&gt;Analyze the complexity of topological sort&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Introduction to topological sort&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+A topological sort of a directed acyclic graph (DAG) G=(V,E) is a linear ordering of all its vertices such that if G contains an edge (u,v), then u appears before v in the ordering. Topological sort is different from usual kind of sorting studied in previous blog post.
+&lt;/p&gt;
+&lt;p&gt;
+Basically, what it means by u appears before v in the ordering is if we are inserting ‘u’ node into the stack, then until node ‘v’ is pushed into stack we won’t pop out node ‘u’ from the stack.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Let us explain it via example and write a pseudocode for the same.&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;\assets\images\Content\TopologicalSort.png&quot; alt=&quot;&quot; width=&quot;275&quot; height=&quot;3365&quot; class=&quot;alignnone size-full wp-image-181 center-div&quot; /&gt;&lt;/p&gt;
+&lt;div&gt;
+In the above example we took a basic example to explain how topological sort work. It’s not same as DFS, but its different from that. Within DFS the child nodes are printed first as compared to parent nodes whereas in topological sort, we print the parent node first as compared to child node.
+&lt;/div&gt;
+&lt;p&gt;
+&lt;strong&gt;Let us write a pseudocode for the same.&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;script src=&quot;https://gist.github.com/NavneetPrakashSingh/f6e0c70dfb9485d3c1646496953429ea.js&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;p&gt;
+The above algorithm is simple, we just modified our DFS algorithm to follow topological sort. First, we color all the nodes as white and change to ancestor as nil and time as 0 since no node has been parsed.
+Then we cover all the adjacent vertex of current node using TOPOLOGICAL-VISIT and recursively call this function and once it reaches the base case i.e when no adjacent element is white we come out of the loop and color is black and insert the element into the stack. 
+&lt;/p&gt;
+&lt;p&gt;
+Since we are recursively calling the function, it means that the adjacent element of the adjacent element of the source element will be parsed first and hence it goes deeper into the graph.
+&lt;/p&gt;
+&lt;p&gt;
+Then finally we print the stack to get our desired output sequence.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Analyzing the complexity of topological sort&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+We can perform topological sort in &amp;theta; (V+E) time, since depth-first search takes &amp;theta; (V+E) time and it takes O(1) time to insert each of the |V| vertices into the array.
+&lt;/p&gt;
+&lt;p&gt;
+That’s all folks! We have covered topological sort in this blog post. We understood what topological sort is, explained it via example, wrote a pseudocode for the same and analyzed its complexity. Within our next blog post we are going to look at other graph algorithms like Bellman-Ford algorithm and Dijkstra’s algorithm.
+&lt;/p&gt;
+</description>
+        <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
+        <link>/graph-theory-topological-sort/</link>
+        <guid isPermaLink="true">/graph-theory-topological-sort/</guid>
+        
+        
+        <category>Jekyll</category>
+        
+        <category>tutorial</category>
+        
+      </item>
+    
+      <item>
+        <title>The Graph Theory | Depth First Search</title>
+        <description>&lt;p&gt;
+Within the last blog post we discussed &lt;a href=&quot;https://makemetechie.com/2018/03/20/the-graph-theory-breadth-first-search/&quot;&gt;Breadth First Search&lt;/a&gt;, which searches the elements adjacent to the node elements first and then searched its deeper elements. Whereas in depth first search, as the name suggests we search deeper in the graph. Within this blog post we are going to 
+&lt;ul&gt;
+&lt;li&gt;Introduction to depth first search&lt;/li&gt;
+&lt;li&gt;Pseudocode related to depth first search&lt;/li&gt;
+&lt;li&gt;Explain it via example&lt;/li&gt;
+&lt;li&gt;Analyzing the complexity &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Introduction to depth first search&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Within breadth first search we know that we have a parent node and we take the adjacent elements of the parent node and add them to the queue while dequeue out the parent node from the queue. Within the depth first search algorithm, we take the parent node in the stack and then take the adjacent elements of the parent node into the stack and we keep on doing it once all nodes have been discovered. Once all the nodes in the breadth first search has been parsed we start to pop out the elements from the stack.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Pseudocode related to depth first search&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;script src=&quot;https://gist.github.com/NavneetPrakashSingh/dc3d486107b73ddb740db1137440d5e4.js&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;p&gt;
+First we call the DFS function in the pseudocode above. Initially we color all the elements of the graph as white since none of them is visited and set the ancestor as nil and time taken as 0.
+&lt;/p&gt;
+&lt;p&gt;
+Now we parse each and every white vertex of graph and if their color is white we call the DFS-VISIT function with graph as a parameter. First we increment the time and change the color of the element as gray.
+&lt;/p&gt;
+&lt;p&gt;
+Next we take the adjacent elements of the graph and if the element has color white, we take the ancestor as the root element and recursively call DFS-VISIT function to go deeper in the graph. Once all the adjacent element is parsed we change the color of the root element as black and increment the time.
+u.d and u.f are the initial and final time stamp for a vertex that is being parsed. These timestamp provide important information about the structure of the graph and are generally helpful in reasoning about the behavior of depth-first search.
+&lt;/p&gt;
+&lt;p&gt;
+For every vertex u,
+&lt;/p&gt;
+&lt;p&gt;
+u.d&amp;lt;u.f
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Let us explain the above pseudocode with the following example.&lt;/strong&gt;
+
+&lt;img src=&quot;\assets\images\Content\Dfs.png&quot; alt=&quot;&quot; width=&quot;280&quot; height=&quot;3765&quot; class=&quot;alignnone size-full wp-image-176 center-div&quot; /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+In the above image we initially create an adjacency matrix and parse the graph using dfs algorithm and adjacency matrix to parse the graph.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Analyzing complexity of dfs&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+In order to parse each every vertex of the graph we can do it into &amp;theta; (V) time. The procedure DFS-VISIT function in the algorithm is called exactly once for each vertex v. Each vertex is executed |Adj[v]| times which is equal to &amp;theta; (E) , so the total cose of executing of DFS-VISIT is &amp;theta; (E). Therefore, the running time of DFS is &amp;theta; (V + E)
+&lt;/p&gt;
+&lt;p&gt;
+That’s all folks! In this blog post we initially understood what dfs is, then wrote a pseudocode for the same. Then used that pseudocode to explain an example related to dfs and finally analyzed the complexity of the same. Within the next post we are going to look at topological sort which uses depth-first search algorithm for acyclic graphs.
+&lt;/p&gt;
+</description>
+        <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
+        <link>/graph-theory-depth-first-search/</link>
+        <guid isPermaLink="true">/graph-theory-depth-first-search/</guid>
+        
+        
+        <category>Jekyll</category>
+        
+        <category>tutorial</category>
+        
+      </item>
+    
+      <item>
+        <title>Dependency Injection | Code Quality Assurance</title>
+        <description>&lt;p&gt;Have you every wondered, what’s the difference between writing code and good quality code that scales easily even after many years, which has in fact gone through various developers throughout it’s life cycle and is still working fine and can be further scaled. You know when you come across such type of code that a good quality code. There are many factors that differentiate a simple code and a good quality code.
+&lt;br /&gt;
+One of the factors that determine the quality of the code is dependency injection. How well are two classes talking to each other within a program, how well are their objects talking to one another. According to Wikipedia, dependency injection is defined as a technique whereby one object (or static method) supplies the dependencies of another object. Now, what does it actually mean? Within this blog post we are going to answer this question and learn the following:
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+ 	&lt;li&gt;What is dependency injection&lt;/li&gt;
+ 	&lt;li&gt;How do we apply dependency injection on two classes?&lt;/li&gt;
+ 	&lt;li&gt;Advantages of dependency injection&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;What is dependency injection?&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;
+In layman terms, suppose you have to buy a car. You look at the various models of the car, their engine horsepower, facilities, seat spacing and all the basic requirements. You finally decide to buy a car and bring it home. Now, the next day you won’t change the engine because you wish to have a higher horse power or would break open the car because you want more leg space. No, right. You would state the requirements beforehand and then buy a car according to the requirements. That is what dependency injection is all about.
+You state the requirements in the constructor by making the objects talk to one another instead of passing values from one constructor to another. This is what dependency injection is all about.
+&lt;br /&gt;&lt;/p&gt;
+&lt;h1&gt;How do we apply dependency injection on two classes?&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;
+Let’s look at a simple example to add two numbers. Consider the following piece of code:
+&lt;br /&gt;
+&lt;script src=&quot;https://gist.github.com/NavneetPrakashSingh/07ecb714580e2716436909f620cf4788.js&quot;&gt;&lt;/script&gt;
+Every thing seems correct, right! But it’s not. There are a number of problems associated with this code and are going to break it down and use the dependency injection to solve the challenges. Following are the problems with this piece of code:
+&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This is just calculating the sum of first and second number. Now, what if we want to calculate the sum of three numbers we have to play with the parameter value which leads to fragile code and can be broken easily.&lt;/li&gt;
+
+&lt;li&gt;Secondly, we see that the Sum method is validating first value and second value and then returning the sum which leads to a lot of responsibility on the class.&lt;/li&gt;
+
+&lt;li&gt;Thirdly, negations are used in the if conditions which makes it difficult for the reader to read the code.&lt;/li&gt;
+&lt;ul&gt;
+&lt;br /&gt;
+We would be tacking these three challenges and write clean quality code using dependency injection.
+&lt;br /&gt;
+In order to tackle the challenge, we need to change the approach used to calculate the sum of numbers from a procedural approach to object oriented approach. For that, let’s consider the following UML diagram.
+&lt;br /&gt;
+[caption id=&quot;attachment_220&quot; align=&quot;alignnone&quot; width=&quot;583&quot;]&lt;img src=&quot;\assets\images\Content\UML-diagram-1.png&quot; alt=&quot;UML diagram&quot; width=&quot;583&quot; height=&quot;1204&quot; class=&quot;size-full wp-image-220&quot; /&gt; UML diagram related to sum of two numbers[/caption]
+&lt;br /&gt;
+Using the above UML diagram, we can now clearly see how the request would flow from main and how the objects would talk to one another. The first challenge we had was to remove the dependency from the constructor and we did that by encapsulating the firstValue and secondValue in a different class called ModelSum.java which contains the getter and setter for the firstValue and secondValue.
+&lt;br /&gt;
+Now instead of the class depending on first and second value, it’s now dependent on encapsulated class and we can now pass the object of these classes in the constructor. This is the entire process of dependency injection. We are now making the class depend on the object of the encapsulated class instead of the passed values. Thus, we have solved the problem of passing parameter values by passing the object as a parameter.
+&lt;br /&gt;
+Model sum code is shown below.
+
+&lt;script src=&quot;https://gist.github.com/NavneetPrakashSingh/5c7d95b1330bd9e8a68ae034c0203f07.js&quot;&gt;&lt;/script&gt;
+
+Corresponding calculate sum class that calls the model sum is shown below:
+
+&lt;script src=&quot;https://gist.github.com/NavneetPrakashSingh/66fbb781540e6a5aeb517d935d2102d2.js&quot;&gt;&lt;/script&gt;
+
+The next problem was that the single class was validating the values and returning the sum. We solved the problem by creating a separate validated class that validates the input values from the modelsum.
+
+Code for validateSum is shown below:
+
+&lt;script src=&quot;https://gist.github.com/NavneetPrakashSingh/4d21cbda744d4b846d4922d7d7ef5e70.js&quot;&gt;&lt;/script&gt;
+
+Next problem we saw with the code was to that negations was used in if conditions. We solved it by simple reversing the condition as shown in validateSum.java code above.
+&lt;br /&gt;
+That’s all for dependency injection. To summarize, we understood what dependency injection was. We saw various challenges with an existing code and used dependency injection on a code that used functional programming and converted the code to object oriented way and applied dependency injection it.
+&lt;br /&gt;
+Within the next tutorial we would look at test driven development. How it would fit our existing sum code and what all we can do with test driven development.
+&lt;/ul&gt;&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
+        <link>/dependency-injection/</link>
+        <guid isPermaLink="true">/dependency-injection/</guid>
+        
+        
+        <category>Jekyll</category>
+        
+        <category>tutorial</category>
+        
+      </item>
+    
+      <item>
+        <title>Check if string is a pangram or not using python | Programming Question</title>
+        <description>&lt;p&gt;
+Before we begin writing code and algorithm related to pangram, we need to understand what pangram is. Pangram are those sentences which contain all the alphabets. For example the sentence “ the quick brown fox jumps over the lazy dog” contains all the alphabets and is a pangram. Our task in this question set is to identify whether a sentence is a pangram or not. This question was taken from hackerRank and can be found &lt;a href=&quot;https://www.hackerrank.com/challenges/pangrams/problem&quot;&gt;here&lt;/a&gt;. Within the blog post we will
+&lt;/p&gt;
+&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go through a basic logic to identify a pangram&lt;/li&gt;
+&lt;li&gt;Write a pseudocode related to the same and a sample test case&lt;/li&gt;
+&lt;li&gt;Write a python program of the same&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Basic logic of the program.&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+In the input we will be given a string which may or may not be a pangram. Basic logic is as follow
+We just want to check if the string contains all the alphabets or not, we don’t need spaces, so we will initially remove all the spaces of the string. Suppose that string s is being passed the to function, we will use replace function on the string to replace spaces with blanks
+&lt;/p&gt;
+&lt;p&gt;
+Next, there might be high possibility that the string contains duplicate characters like the alphabet ‘e’ might be recurring in the pangram sentence, so we need to check that case as well. For that we will be using join function and create a set s for that, i.e  “”.join(set(s)) 
+&lt;/p&gt;
+&lt;p&gt;
+Next, we will convert the string characters to ascii values, we know that sum of all the alphabets of the string comes out to be 2847. If the sum is equal to 2847, it’s a pangram else its not.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Pseudocode for pangrams&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;script src=&quot;https://gist.github.com/NavneetPrakashSingh/97af7d334081c478ae8793b2435fe73f.js&quot;&gt;&lt;/script&gt;
+The pseudocode is shown and it’s explanation is shown above.
+&lt;/p&gt;
+&lt;p&gt;
+Python program for the same is shown &lt;a href=&quot;https://github.com/NavneetPrakashSingh/Getting-Started-With-Python/blob/master/HackerRankPython-Panagrams.py&quot;&gt;here &lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+That’s all for now! We came across a beautiful problem on string and explained it’s logic, wrote a pseudocode for the same and wrote a python program.
+&lt;/p&gt;
+</description>
+        <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
+        <link>/check-if-a-string-is-a-pangram/</link>
+        <guid isPermaLink="true">/check-if-a-string-is-a-pangram/</guid>
+        
+        
+        <category>Jekyll</category>
+        
+        <category>tutorial</category>
+        
+      </item>
+    
+      <item>
+        <title>Caesar Cipher in Python | Programming Question</title>
+        <description>&lt;p&gt;
+Suppose you want to send a message to another person and you want that only that person should be able to read the message and no one else, what would you do? One of the possible solution is to encrypt it using a key and such that only the other person knows what the key is. You would encrypt it using the key and the other person having the same key would be able to decrypt it.
+&lt;/p&gt;
+&lt;p&gt;
+One such famous and simple algorithm was developed by Julius Caesar know as Caesar cipher and in this blog post we will
+&lt;/p&gt;
+&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Discuss the algorithm used in Caesar cipher&lt;/li&gt;
+&lt;li&gt;Write a pseudocode related to the same&lt;/li&gt;
+&lt;li&gt;Write a program in python related to the same&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Before we begin, this question has been taken from hackerrank and the link is available &lt;a href=&quot;https://www.hackerrank.com/challenges/caesar-cipher-1/problem&quot;&gt;here &lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+You can learn more about Caesar cipher &lt;a href=&quot;https://en.wikipedia.org/wiki/Caesar_cipher&quot;&gt;here &lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Algorithm used in Caesar cipher&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+The basic algorithm used in Caesar cipher is you are given a string to encrypt and a key value which is integer. You must shift each value in the given string by the position in alphabetic order according to the key. Suppose you have key as 2 and you have string as ‘abc’, now you must shift every value of the string by that 2 such that a-&amp;gt;c, b-&amp;gt;d, c-&amp;gt;e. Hence, the encrypted string will become ‘cde’
+&lt;/p&gt;
+&lt;p&gt;
+Do remember only alphabets must be shifted and nothing else like special characters, or dashes must not be shifted and hence remains same.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Basic Algorithm Used &lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+We will take a list of character containing only alphabets in lower case. We will 
+&lt;/p&gt;
+&lt;p&gt;
+Initially take an array containing only alphabets in lower case, we would use the position of the array to calculate the final string further.
+&lt;/p&gt;
+&lt;p&gt;
+Parse the given string in the list. Initially check if the value is lower case, upper case or not a character. If it’s in upper case we would change it to lower case and put a flag as true that its upper case. Once we increment the position by key passed we would change the case back to upper case and add it to the new string.
+&lt;/p&gt;
+&lt;p&gt;
+If the value of the string is lower case and is in the array of alphabets, we would take the index of the alphabet. Next, we would add the key to the string and take remainder after dividing it with 26. We do this because to take care of the upper count. Suppose we have ‘z’ in the string and we need to increment it by 2, it shouldn’t give an error but rather it should give ‘b’, in that case we need to take remainder when divide by 26 (26 because there are 26 alphabets).
+&lt;/p&gt;
+&lt;p&gt;
+Finally, we return the string and pseudocode is provided as below
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Pseudocode for Caesar cipher&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;script src=&quot;https://gist.github.com/NavneetPrakashSingh/11900722307741a220f11c3ce421acf8.js&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;p&gt;
+We wrote our pseudocode above and explained it above. Now we write a program in python related to the same which can be found &lt;a href=&quot;https://github.com/NavneetPrakashSingh/Getting-Started-With-Python/blob/master/HackerRankPython-CeasarCipher.py&quot;&gt;here &lt;/a&gt; That's all for now! There are many other ways of implementing the Caesar cipher, so make sure to explore other ways as well.
+&lt;/p&gt;
+</description>
+        <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
+        <link>/caesar-cipher/</link>
+        <guid isPermaLink="true">/caesar-cipher/</guid>
+        
+        
+        <category>Jekyll</category>
+        
+        <category>tutorial</category>
+        
+      </item>
+    
+      <item>
+        <title>Basics of Object Oriented programming - Part 1</title>
+        <description>&lt;h1&gt;Basics of Object Oriented Programming&lt;/h1&gt;
+&lt;p&gt;Within this introductory tutorial, we are going to introduce you with the basics of object oriented programming. We are going to cover the following topics:&lt;/p&gt;
+&lt;ul&gt;
+ 	&lt;li&gt;What does classes consist of?&lt;/li&gt;
+ 	&lt;li&gt;What to inherit?&lt;/li&gt;
+ 	&lt;li&gt;What is main used for?&lt;/li&gt;
+ 	&lt;li&gt;Instance variable vs local variable&lt;/li&gt;
+ 	&lt;li&gt;How to decide if a class should extend another class?&lt;/li&gt;
+ 	&lt;li&gt;Uses of inheritance&lt;/li&gt;
+ 	&lt;li&gt;Other points to keep in mind&lt;/li&gt;
+ 	&lt;li&gt;Example related to object oriented programming&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What does classes consist of?&lt;/h3&gt;
+&lt;p&gt;A class is like the blueprint of the house, they contain everything necessary to create the house, to define the structure of the program. Within that blueprint, it contains fields/ instance variable and member functions. These two things shape the entire blueprint or shall we say as the class.&lt;/p&gt;
+
+&lt;p&gt;Consider another example, suppose we have vehicle, now a vehicle can be a truck, car or bicycle. Here, vehicle is an example of class and various types of vehicles are the subclasses. Now, these classes cannot be accessed without an object.&lt;/p&gt;
+
+&lt;p&gt;Hope you have a brief understanding of classes. We would discuss classes and objects later in this tutorial to uderstand better.&lt;/p&gt;
+
+&lt;h3&gt;What to inherit?&lt;/h3&gt;
+&lt;ol&gt;
+ 	&lt;li&gt;Look out for things that classes have in common&lt;/li&gt;
+ 	&lt;li&gt;Abstract out those features&lt;/li&gt;
+ 	&lt;li&gt;Override or extend methods that are useful&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Suppose you have an animal class, having function move, eat and getName. Now there are another two classes called Bird which moves and have a member function as move and dog which has a member function as dig hole.&lt;/p&gt;
+
+&lt;p&gt;Now, digHole method is not present in animal class, so it would extends the animal subclass using extends keyword. Whereas, the bird subclass contains the method present in the superclass and would override the animal class’s move method.&lt;/p&gt;
+
+&lt;p&gt;If a subclass inherits a superclass, then all of the member function and variables are defiend in the subclass.&lt;/p&gt;
+
+&lt;p&gt;In the subclass, you define only the changes related to the subclass.&lt;/p&gt;
+
+&lt;h3&gt;What is main for?&lt;/h3&gt;
+&lt;p&gt;Main are used to create objects that interact with the main class.&lt;/p&gt;
+
+&lt;p&gt;Example from github snippets&lt;/p&gt;
+
+&lt;h3&gt;Instance variable vs local variable&lt;/h3&gt;
+&lt;p&gt;Instance variable are created inside classes and local variable are created inside methods.&lt;/p&gt;
+&lt;h3&gt;How to decide if a class should extend another class?&lt;/h3&gt;
+&lt;p&gt;Use “Has A” vs “Is A” method&lt;/p&gt;
+
+&lt;p&gt;Is A helps to decide if a class should extend another class. Example: is Dog an Animal, if answer comes out to yes then it should probably inherit the superclass.&lt;/p&gt;
+
+&lt;p&gt;Has A helps decide if something is a field. For example Dog has a height&lt;/p&gt;
+
+&lt;p&gt;Don’t inherit to just to reuse code, use the “Is A” principle and check if it should inherit or not. If it doesn’t work, probably inheritence doesn’t work either.&lt;/p&gt;
+
+&lt;h3&gt;Uses of Inheritence&lt;/h3&gt;
+&lt;ul&gt;
+ 	&lt;li&gt;To avoid dublicate code&lt;/li&gt;
+ 	&lt;li&gt;Changes in the superclass are reflected everywhere in thre subclasses as well.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other points to keep in mind&lt;/h3&gt;
+&lt;ul&gt;
+ 	&lt;li&gt;Everything is passed by value in java&lt;/li&gt;
+ 	&lt;li&gt;Objects are passed by reference&lt;/li&gt;
+ 	&lt;li&gt;Use static for passing objects&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Example related to object oriented programming is found here on the github link:&lt;/h4&gt;
+&lt;p&gt;Within the next tutorial, we are going to discuss what is polymorphism, give an example related to polymorphism and abstract classes&lt;/p&gt;
+</description>
+        <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
+        <link>/basics-of-object-oriented-programming/</link>
+        <guid isPermaLink="true">/basics-of-object-oriented-programming/</guid>
+        
+        
+        <category>Jekyll</category>
+        
+        <category>tutorial</category>
+        
+      </item>
+    
+      <item>
+        <title>Adding Sleep Mode In Ubuntu</title>
+        <description>&lt;p&gt;Time to read: about 7  minutes&lt;/p&gt;
+&lt;p&gt;
+Ubuntu by default gives option to either restart or power off ubuntu, but what if we want to sleep our laptop. Sleep gives us the advantage to save electricity and upon resume allows user to resume work instead of rebooting your laptop.You can know more about sleep &lt;a href=&quot;https://en.wikipedia.org/wiki/Sleep_mode&quot;&gt;here&lt;/a&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+Within this blog post we will 
+&lt;/p&gt;
+&lt;p&gt;
+add sleep functionality to our system using gconf-editor and using terminal
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Adding sleep functionality to our system using terminal&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;
+sudo pm-suspend
+&lt;/code&gt;
+&lt;/p&gt;
+&lt;p&gt;
+However, to make the above command run, you need to add utils to your system. To do that simply run the command
+&lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;
+sudo apt-install pm-utils
+&lt;/code&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Adding sleep functionality using gconf-editor&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Run the following command in your terminal
+&lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;sudo apt-get install gconf-editor&lt;/code&gt;
+&lt;/p&gt;
+&lt;p&gt;
+create a new varible and name it sleep
+&lt;/p&gt;
+&lt;p&gt;
+This will create a sleep option and you can put your computer/laptop in sleep using this command
+&lt;/p&gt;
+&lt;p&gt;
+That's all folks! In this short tutorial you were able to put your system in sleep mode, it has it's own advantage and helps save electricity as well.
+&lt;/p&gt;
+</description>
+        <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
+        <link>/adding-sleep-mode-in-ununtu/</link>
+        <guid isPermaLink="true">/adding-sleep-mode-in-ununtu/</guid>
+        
+        
+        <category>Jekyll</category>
+        
+        <category>tutorial</category>
+        
+      </item>
+    
+  </channel>
+</rss>

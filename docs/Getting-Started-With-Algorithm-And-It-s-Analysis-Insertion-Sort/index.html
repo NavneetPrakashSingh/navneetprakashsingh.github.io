@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="icon"
+      href="/assets/images/logo/mainlogo.png"
+    />
+
+    <title>Getting Started With Algorithm And It’s Analysis | Insertion Sort  | MakeMeTechie | Tech Blog | Tech News</title>
+
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Getting Started With Algorithm And It’s Analysis Insertion Sort | Tech Blog Tech News</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Getting Started With Algorithm And It’s Analysis Insertion Sort" />
+<meta name="author" content="Navneet" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="In this blog post we’ll work on a simple logic, convert that logic into algorithm and then analyze that algorithm. This post will work as a foundation course for the further blog post in line. We’ll use the logic of insertion sort , explain the algorithm , analyze the complexity in best, worst and average case and finally convert it into a python code. Pseudocode and its terms are defined here. Now, suppose you have some cards in your hand. Let it be 3 of clubs, 7 of hearts, 5 of diamond and 4 of hearts. We are not concerned with the suits but it’s the number that excites us. 3,7,5,4. But these look so unarranged and as the cards in our hands increase, it will be difficult to manage , so we arrange them first. From the cards available to us { 3,7,5,4 }.We’ll put all these cards on left hand and all the sorted cards on the right hand. We’ll take the first number in the deck i.e. 3. Since we don’t have any other number to compare with, we’ll say it’s sorted for now and put it in right hand. Next,  let’s move on to second number i.e. 7. We’ll compare 7 with 3, is 3 greater than 7, nope so we have numbers in the sorted form as {3,7} and put it into right hand. Moving on to the next number, we’ll take next number from our left hand i.e. 5 and start comparing 5 with the numbers on the right hand i.e. {3,7}. First is 5 greater than 7, yes, swap these two numbers. Next compare it with 3, is 5 greater than 3, nope, we won’t swap numbers. Finally, we have one last number in our left hand i.e 4, compare them with 7 first, then 5 and finally 3 to receive the sorted array as {3,4,5,7}. The following is visualized as below" />
+<meta property="og:description" content="In this blog post we’ll work on a simple logic, convert that logic into algorithm and then analyze that algorithm. This post will work as a foundation course for the further blog post in line. We’ll use the logic of insertion sort , explain the algorithm , analyze the complexity in best, worst and average case and finally convert it into a python code. Pseudocode and its terms are defined here. Now, suppose you have some cards in your hand. Let it be 3 of clubs, 7 of hearts, 5 of diamond and 4 of hearts. We are not concerned with the suits but it’s the number that excites us. 3,7,5,4. But these look so unarranged and as the cards in our hands increase, it will be difficult to manage , so we arrange them first. From the cards available to us { 3,7,5,4 }.We’ll put all these cards on left hand and all the sorted cards on the right hand. We’ll take the first number in the deck i.e. 3. Since we don’t have any other number to compare with, we’ll say it’s sorted for now and put it in right hand. Next,  let’s move on to second number i.e. 7. We’ll compare 7 with 3, is 3 greater than 7, nope so we have numbers in the sorted form as {3,7} and put it into right hand. Moving on to the next number, we’ll take next number from our left hand i.e. 5 and start comparing 5 with the numbers on the right hand i.e. {3,7}. First is 5 greater than 7, yes, swap these two numbers. Next compare it with 3, is 5 greater than 3, nope, we won’t swap numbers. Finally, we have one last number in our left hand i.e 4, compare them with 7 first, then 5 and finally 3 to receive the sorted array as {3,4,5,7}. The following is visualized as below" />
+<meta property="og:site_name" content="Tech Blog Tech News" />
+<meta property="og:image" content="/assets%5Cimages%5CContent%5Cfoundation_banner.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-01-19T00:00:00+00:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","image":"/assets%5Cimages%5CContent%5Cfoundation_banner.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo/mainlogo.png"},"name":"Navneet"},"mainEntityOfPage":{"@type":"WebPage","@id":"/Getting-Started-With-Algorithm-And-It-s-Analysis-Insertion-Sort/"},"author":{"@type":"Person","name":"Navneet"},"url":"/Getting-Started-With-Algorithm-And-It-s-Analysis-Insertion-Sort/","description":"In this blog post we’ll work on a simple logic, convert that logic into algorithm and then analyze that algorithm. This post will work as a foundation course for the further blog post in line. We’ll use the logic of insertion sort , explain the algorithm , analyze the complexity in best, worst and average case and finally convert it into a python code. Pseudocode and its terms are defined here. Now, suppose you have some cards in your hand. Let it be 3 of clubs, 7 of hearts, 5 of diamond and 4 of hearts. We are not concerned with the suits but it’s the number that excites us. 3,7,5,4. But these look so unarranged and as the cards in our hands increase, it will be difficult to manage , so we arrange them first. From the cards available to us { 3,7,5,4 }.We’ll put all these cards on left hand and all the sorted cards on the right hand. We’ll take the first number in the deck i.e. 3. Since we don’t have any other number to compare with, we’ll say it’s sorted for now and put it in right hand. Next,  let’s move on to second number i.e. 7. We’ll compare 7 with 3, is 3 greater than 7, nope so we have numbers in the sorted form as {3,7} and put it into right hand. Moving on to the next number, we’ll take next number from our left hand i.e. 5 and start comparing 5 with the numbers on the right hand i.e. {3,7}. First is 5 greater than 7, yes, swap these two numbers. Next compare it with 3, is 5 greater than 3, nope, we won’t swap numbers. Finally, we have one last number in our left hand i.e 4, compare them with 7 first, then 5 and finally 3 to receive the sorted array as {3,4,5,7}. The following is visualized as below","headline":"Getting Started With Algorithm And It’s Analysis Insertion Sort","dateModified":"2020-01-19T00:00:00+00:00","datePublished":"2020-01-19T00:00:00+00:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <link href="/assets/css/screen.css" rel="stylesheet" />
+
+    <link href="/assets/css/main.css" rel="stylesheet" />
+
+    <script src="/assets/js/jquery.min.js"></script>
+  </head>
+  "development"  
+  <body class="layout-post">
+    <!-- defer loading of font and font awesome -->
+    <noscript id="deferred-styles">
+      <link
+        href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous"
+      />
+    </noscript>
+
+    <!-- Begin Menu Navigation
+================================================== -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down"
+    >
+      <div class="container pr-0">
+        <!-- Begin Logo -->
+        <a class="navbar-brand" href="/">
+          <img src="/assets/images/logo/mainlogo.png" alt="MakeMeTechie | Tech Blog | Tech News" />
+        </a>
+        <!-- End Logo -->
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarMediumish"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMediumish">
+          <!-- Begin Menu -->
+
+          <ul class="navbar-nav ml-auto">
+            
+            </li>
+
+            <li class="nav-item">
+              
+              <a class="nav-link" href="/index.html">Blog</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/author/Navneet-Singh"
+                >Author</a
+              >
+            </li>
+
+            <script src="/assets/js/lunr.js"></script>
+
+
+<style>
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+</form>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+          </ul>
+
+          <!-- End Menu -->
+        </div>
+      </div>
+    </nav>
+    <!-- End Navigation
+================================================== -->
+
+    <div class="site-content">
+      <div class="container">
+        <!-- Site Title
+================================================== -->
+        <div class="mainheading">
+          <h1 class="sitetitle">MakeMeTechie | Tech Blog | Tech News</h1>
+          <p class="lead">
+            Build, break, repeat
+          </p>
+        </div>
+
+        <!-- Content
+================================================== -->
+        <div class="main-content">
+          <!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            <div class="share sticky-top sticky-top-offset">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=Getting Started With Algorithm And It’s Analysis | Insertion Sort &url=/Getting-Started-With-Algorithm-And-It-s-Analysis-Insertion-Sort/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=/Getting-Started-With-Algorithm-And-It-s-Analysis-Insertion-Sort/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=/Getting-Started-With-Algorithm-And-It-s-Analysis-Insertion-Sort/" onclick="window.open(this.href, 'width=550,height=435');return false;">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+
+    </ul>
+    
+    <div class="sep">
+    </div>
+    <ul>
+        <li>
+        <a class="small smoothscroll" href="#disqus_thread"></a>
+        </li>
+    </ul>
+    
+</div>
+
+        </div>
+
+        <!-- Post -->
+        
+
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                <!-- Author Box -->
+                
+                <div class="row post-top-meta">
+                    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+                        <a target="_blank" href="/author/Navneet-Singh">
+                        
+                        <img class="author-thumb" src="/assets\images\logo\nav.jpg" alt="Navneet Singh">
+                        
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
+                        <a target="_blank" class="link-dark" href="/author/Navneet-Singh">Navneet Singh</a><a target="_blank" href="https://twitter.com/tweet_navneet" class="btn follow">Follow</a>
+                        <span class="author-description">Once a wise man said me, 'words are mighter than a sword'. Living up to the wise man wisdom.</span>
+                    </div>
+                </div>
+                
+
+                <!-- Post Title -->
+                <h1 class="posttitle">Getting Started With Algorithm And It’s Analysis | Insertion Sort </h1>
+
+            </div>
+
+            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+            
+            <!-- End Adsense -->
+
+            <!-- Post Featured Image -->
+            
+
+            
+            <img class="featured-image img-fluid" src="/assets\images\Content\foundation_banner.png" alt="Getting Started With Algorithm And It’s Analysis | Insertion Sort ">
+            
+
+            
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+                <!-- Toc if any -->
+                
+                <!-- End Toc -->
+                <p>
+In this blog post we’ll work on a simple logic, convert that logic into algorithm and then analyze that algorithm. This post will work as a foundation course for the further blog post in line.
+<p></p>
+We’ll use the logic of<strong> insertion sort</strong> , explain the algorithm , analyze the complexity in best, worst and average case and finally convert it into a python code.
+<p></p>
+Pseudocode and its terms are defined here.
+<p></p>
+Now, suppose you have some cards in your hand. Let it be 3 of clubs, 7 of hearts, 5 of diamond and 4 of hearts. We are not concerned with the suits but it’s the number that excites us. 3,7,5,4. But these look so unarranged and as the cards in our hands increase, it will be difficult to manage , so we arrange them first.
+<p></p>
+From the cards available to us { 3,7,5,4 }.We’ll put all these cards on left hand and all the sorted cards on the right hand. We’ll take the first number in the deck i.e. 3. Since we don’t have any other number to compare with, we’ll say it’s sorted for now and put it in right hand. Next,  let’s move on to second number i.e. 7. We’ll compare 7 with 3, is 3 greater than 7, nope so we have numbers in the sorted form as {3,7} and put it into right hand. Moving on to the next number, we’ll take next number from our left hand i.e. 5 and start comparing 5 with the numbers on the right hand i.e. {3,7}. First is 5 greater than 7, yes, swap these two numbers. Next compare it with 3, is 5 greater than 3, nope, we won’t swap numbers. Finally, we have one last number in our left hand i.e 4, compare them with 7 first, then 5 and finally 3 to receive the sorted array as {3,4,5,7}.
+<p></p>
+The following is visualized as below
+<p></p>
+<img class="aligncenter wp-image-53 center-div" src="\assets\images\Content\insertionSort2.png" alt="" width="250" height="858" />
+
+&nbsp;
+
+<p></p>
+This logic above is called insertion sort. For a given set of input numbers (which are random cards in above case) we get a sorted output arranged in ascending or descending order.
+<p></p>
+<strong>Input</strong> : A sequence of n numbers (n1, n3, n2, n5… n100)
+<p></p>
+<strong>Output</strong>: A reordering of numbers (n1 ,n2 ,n3 ,n4…,n100)
+<p></p>
+We will write a <strong>pseudocode</strong> for the above logic, and further we will write a <strong>program</strong> in python for the same and then <strong>analyze</strong> the complexity of the algorithm.
+<p></p>
+Insertion sort is efficient algorithm for sorting a small number of elements. Pseudocode for insertion sort is shown below as<strong> INSERTION-SORT</strong> taking array A as input containing sequence of numbers randomly arranged.
+<p></p>
+<script src="https://gist.github.com/NavneetPrakashSingh/c298ff361b330765d97883d8a8baee4f.js"></script>
+<p></p>
+The above pseudocode gives use a fair understanding of how insertion sort works. The outer loop parses over the entire array and the inner loop parses over the values starting from i-1 to all the way to zero index of the array. Further we check if the inner value is greater then we don’t swap but if the value is smaller we swap those values.
+<p></p>
+<strong>Getting started with analyzing an algorithm</strong>
+<p></p>
+Suppose you are given a limited set of resources and a fairly large input. Usually resources such as memory, communication bandwidth or computer hardware are of primary concern, but most often it’s the computational time that we have to measure. Now for a limited set of resources, how well your algorithm performs is the main question. Is your algorithm efficient enough to perform within the given set of input and resources, that’s why we need to analyze the algorithm.
+<p></p>
+Before we analyze an algorithm, we must have a model of implementation technology that we will use, including a model for the resources of that technology and their cost. For these post we are going to use the RAM ( random access machine) model of computation. In RAM model the instructions are executed one after another.
+<p></p>
+<strong>Analysis of insertion sort</strong>
+<p></p>
+The time taken by insertion sort depends upon the input: sorting a thousand numbers take more time than sorting ten numbers. Moreover, insertion sort can take different time to sort 2 sequences depending upon how sorted they already are.
+<p></p>
+In short, time taken by the algorithm grows with the size of the input, so we need to define the term “running time” and “size of the input” more carefully.
+<p></p>
+<strong>Analyzing insertion sort algorithm</strong>
+<p></p>
+<script src="https://gist.github.com/NavneetPrakashSingh/0d4f0674397f02c19766cbdd17fc162e.js"></script>
+<p></p>
+Here we have cost of executing the particular statement and how many times is that statement being executed. We also have tj which donates the number of times the for statement is executed for that value of j.
+<p></p>
+We need to remember that sum of first n terms is given as n*(n+1)/2
+<p></p>
+<strong>Best Case Analysis</strong>
+<p></p>
+Let us consider the above algorithm for best case scenario. For which all the elements are sorted. We know that first loop will run n times, second loop will run (n-1) times because tj will be 1 when all the elements are already arranged in order. Since the elements will not be swapped, the algorithm will not enter lines 3,4,5.
+<p></p>
+T(n) = c1*n + c2*(n-1) + c3*0 + c4*0 + c5*0
+<p></p>
+T(n) = n*c1 + n*c2 – c2
+<p></p>
+T(n) = (c1 + c2)*n – c2
+<p></p>
+Hence, we can express it linearly as an-b and is a<strong> linear function</strong> of n
+<p></p>
+<strong>Worst Case Analysis</strong>
+<p></p>
+T(n) = c1*n + c2*(n(n+1))/2 + c3*(n(n-1)/2) + c4*(n(n-1)/2) + c5*(n(n-1)/2)
+<p></p>
+T(n) = n^2 * (c2/2 + c3/2 + c4/2 + c5/2) + n(c1 + c2/2 – c3/2 – c4/2 – c5/2)
+<p></p>
+Hence can be expressed as : an^2 + bn + c. Hence worst case is a<strong> quadratic function of n</strong>.
+<p></p>
+<strong>Notes related to analyzing insertion sort:</strong>
+<p></p>
+In our analysis we considered both the best cases and the worst case of insertion sort, one where the input was already sorted and other where the input was reversed sorted. For the remaining post we will focus on the average case which is roughly same as  the worst case for two reasons.
+<p></p>
+First, the worst case scenario gives the upper bound for the algorithm to finish. Maximum time the algorithm will take to complete its execution, we usually consider that it won’t take more time than worst case scenario.
+<p></p>
+Secondly, many times we will hit the worst case scenario. For example, when we are searching something in a database, and it will occur that the information is not present in the database, hence a worst case scenario is hit again.
+<p></p>
+We usually consider an average case which is roughly as bad as worst case. In insertion sort the average case comes out to be a quadratic function making it as bad as worst case scenario.
+<p></p>
+<strong>Order Of Growth</strong>
+<p></p>
+We shall simplify the above analysis, since we are only interested in the rate of growth or the order of growth of that running time. We therefore consider the leading formula i.e a*n^2, since lower order terms are relatively insignificant for large values of n. Hence we write that insertion sort has a worst-case running time of theta(n^2).
+<p></p>
+We usually consider algorithm to be more efficient which has a lower order of growth.
+<p></p>
+Python program for the same is mentioned <a href="https://github.com/NavneetPrakashSingh/Getting-Started-With-Programming/blob/master/insertionSort.py">here </a>
+<p></p>
+That’s all for now! We just created our first logical program/ algorithm, converted that logic into pseudocode, analyzed that pseudocode and wrote a python program for the same.
+<p></p>
+This was for a basic algorithm, further we will start with divide and conquer algorithm, analyze their efficiency and take three basic examples in our divide and conquer series.
+<p></p>
+&nbsp;
+</p>
+
+            </div>
+
+            <!-- Rating -->
+            
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="2020-01-19">19 Jan 2020</time></span>           
+                
+                </small>
+            </p>
+
+            <!-- Post Categories -->
+            <div class="after-post-cats">
+                <ul class="tags mb-4">
+                    
+                    
+                    <li>
+                        <a class="smoothscroll" href="/categories#Jekyll">Jekyll</a>
+                    </li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/categories#tutorial">tutorial</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- End Categories -->
+
+            <!-- Post Tags -->
+            <div class="after-post-tags">
+                <ul class="tags">
+                    
+                    
+                </ul>
+            </div>
+            <!-- End Tags -->
+
+            <!-- Prev/Next -->
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            
+            <a class="prev d-block col-md-6" href="/Foundation-Course-On-Algorithms/"> &laquo; Foundation Course On Algorithms</a>
+            
+            
+            <a class="next d-block col-md-6 text-lg-right" href="/Getting-Started-With-Data-Science-Part-II-Installing-Tools-Required-For-Data-Science/">Getting Started With Data Science (Part II) : Installing Tools Required For Data Science &raquo; </a>
+            
+            <div class="clearfix"></div>
+            </div>
+            <!-- End Categories -->
+
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+<!-- End Article
+================================================== -->
+
+<!-- Begin Comments
+================================================== -->
+
+    <div class="container">
+        <div id="comments" class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'makemetechie'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+            </div>
+        </div>
+    </div>
+
+<!--End Comments
+================================================== -->
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+
+        </div>
+
+        
+      </div>
+
+      <!-- Categories Jumbotron
+================================================== -->
+      <div class="jumbotron fortags">
+        <div class="d-md-flex h-100">
+          <div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div
+              class="d-md-flex align-items-center justify-content-center h-100"
+            >
+              <h2 class="d-md-block align-self-center py-1 font-weight-light">
+                Explore <span class="d-none d-md-inline">→</span>
+              </h2>
+            </div>
+          </div>
+          <div class="col-md-8 p-5 align-self-center text-center">
+              
+            <a
+              class="mt-1 mb-1"
+              href="/categories#Jekyll"
+              >Jekyll (32)</a
+            >
+            
+            <a
+              class="mt-1 mb-1"
+              href="/categories#tutorial"
+              >tutorial (32)</a
+            >
+              
+          </div>
+        </div>
+      </div>
+
+      <!-- Begin Footer
+================================================== -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+              Copyright © 2020 MakeMeTechie | Tech Blog | Tech News
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right"></div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer
+================================================== -->
+    </div>
+    <!-- /.site-content -->
+
+    <!-- Scripts
+================================================== -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/assets/js/mediumish.js"></script>
+
+    
+
+    <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    
+    <script
+      id="dsq-count-scr"
+      src="//makemetechie.disqus.com/count.js"
+    ></script>
+    
+  </body>
+</html>
