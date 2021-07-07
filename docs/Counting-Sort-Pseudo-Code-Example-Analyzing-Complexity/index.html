@@ -27,8 +27,18 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-01-19T00:00:00+00:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","image":"/assets%5Cimages%5CContent%5Csort.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo/mainlogo.png"},"name":"Navneet"},"mainEntityOfPage":{"@type":"WebPage","@id":"/Counting-Sort-Pseudo-Code-Example-Analyzing-Complexity/"},"author":{"@type":"Person","name":"Navneet"},"url":"/Counting-Sort-Pseudo-Code-Example-Analyzing-Complexity/","description":"Till now we have introduced insertion sort, merge sort, heap sort and quick sort. Out of which we know that merge sort and heap sort has a worst case of O(n*lgn) and quick sort has an average case of O(n*lgn). Till now all the above algorithms mentioned use comparison as a medium to arrange elements in ascending or descending order. Now we are going to work on a very interesting algorithm which does not uses comparison as a medium to sort the numbers. It’s called counting sort. For a n sequence of numbers it runs in omega(n*lgn) time. Counting sort sorts the element in linear time. In this blog post we are going to Write a pseudocode for counting sort Explain it via example Analyze the complexity of the algorithm and write a c++ program for the same. Getting started with counting sort Counting sort assumes that each of the given n input elements is an integer in the range of 0 to k. This type of sorting works for positive values only. In this algorithm we are given an array A[1,2,3…n] we require an auxiliary array and sorted array. Auxiliary array has size equal to max value in the array A, and sorted array has the same size as that of array A. Next we are going to write a pseudo code for the same. Now we have written a pseudocode for counting sort. The explanation of the algorithm can be stated via following example. As shown in the above example we have an auxiliary array C and initially place all the value of C as 0. Next we take the elements of unsorted array A and use it as indexes for auxiliary array. Then we add the values at current position and next position of the array and use it as the index for sorted array to get our sorted array as shown in above example. Analyzing counting sort We have used 4 for loops however since they are used in parallel. At worst the loop is parsed through A.length which gives sorting time as θ (n) where n is A.length. An important property of counting sort is that it is stable. Numbers with the same value appears in the output array as it appears in the input array. Normally the property of stability is important only when data are carried around with the element being sorted. Such property proves that counting sort is stable. That’s all folks! We have seen an algorithm which sorts data in linear time only when the elements of the array are positive.","headline":"Counting Sort Pseudo Code Example Analyzing Complexity","dateModified":"2020-01-19T00:00:00+00:00","datePublished":"2020-01-19T00:00:00+00:00","@context":"https://schema.org"}</script>
+{"description":"Till now we have introduced insertion sort, merge sort, heap sort and quick sort. Out of which we know that merge sort and heap sort has a worst case of O(n*lgn) and quick sort has an average case of O(n*lgn). Till now all the above algorithms mentioned use comparison as a medium to arrange elements in ascending or descending order. Now we are going to work on a very interesting algorithm which does not uses comparison as a medium to sort the numbers. It’s called counting sort. For a n sequence of numbers it runs in omega(n*lgn) time. Counting sort sorts the element in linear time. In this blog post we are going to Write a pseudocode for counting sort Explain it via example Analyze the complexity of the algorithm and write a c++ program for the same. Getting started with counting sort Counting sort assumes that each of the given n input elements is an integer in the range of 0 to k. This type of sorting works for positive values only. In this algorithm we are given an array A[1,2,3…n] we require an auxiliary array and sorted array. Auxiliary array has size equal to max value in the array A, and sorted array has the same size as that of array A. Next we are going to write a pseudo code for the same. Now we have written a pseudocode for counting sort. The explanation of the algorithm can be stated via following example. As shown in the above example we have an auxiliary array C and initially place all the value of C as 0. Next we take the elements of unsorted array A and use it as indexes for auxiliary array. Then we add the values at current position and next position of the array and use it as the index for sorted array to get our sorted array as shown in above example. Analyzing counting sort We have used 4 for loops however since they are used in parallel. At worst the loop is parsed through A.length which gives sorting time as θ (n) where n is A.length. An important property of counting sort is that it is stable. Numbers with the same value appears in the output array as it appears in the input array. Normally the property of stability is important only when data are carried around with the element being sorted. Such property proves that counting sort is stable. That’s all folks! We have seen an algorithm which sorts data in linear time only when the elements of the array are positive.","url":"/Counting-Sort-Pseudo-Code-Example-Analyzing-Complexity/","headline":"Counting Sort Pseudo Code Example Analyzing Complexity","dateModified":"2020-01-19T00:00:00+00:00","datePublished":"2020-01-19T00:00:00+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/Counting-Sort-Pseudo-Code-Example-Analyzing-Complexity/"},"image":"/assets%5Cimages%5CContent%5Csort.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo/mainlogo.png"},"name":"Navneet"},"author":{"@type":"Person","name":"Navneet"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VYH7ZHCYSV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VYH7ZHCYSV');
+</script>
 
 
     <link
@@ -43,6 +53,12 @@
     <link href="/assets/css/main.css" rel="stylesheet" />
 
     <script src="/assets/js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <script data-ad-client="ca-pub-3687450293952510" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
   "development"  
@@ -146,6 +162,19 @@
           <p class="lead">
             Build, break, repeat
           </p>
+        </div>
+        <div>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Main-ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3687450293952510"
+     data-ad-slot="4319612011"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
         </div>
 
         <!-- Content
@@ -409,7 +438,7 @@ https://search.google.com/structured-data/testing-tool/u/0/
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-sm-6 text-center text-lg-left">
-              Copyright © 2020 MakeMeTechie | Tech Blog | Tech News
+              Copyright © 2021 MakeMeTechie | Tech Blog | Tech News
             </div>
             <div class="col-md-6 col-sm-6 text-center text-lg-right"></div>
           </div>

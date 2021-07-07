@@ -27,8 +27,18 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-01-19T00:00:00+00:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","image":"/assets%5Cimages%5CContent%5Csort.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo/mainlogo.png"},"name":"Navneet"},"mainEntityOfPage":{"@type":"WebPage","@id":"/Getting-Started-With-Sorting/"},"author":{"@type":"Person","name":"Navneet"},"url":"/Getting-Started-With-Sorting/","description":"In this series of blog post we are going to understand various approaches for sorting a set of numbers. Given an input of numbers we are going to display the output of numbers in ascending or descending order using various algorithms. In this series we will be dealing with the following algorithms: Insertion Sort Merge Sort Heap Sort Quick Sort Bucket Sort Radix Sort &lt;/ul&gt; &lt;/p&gt; Each of the above algorithm solves the following problem: Input: A sequence of n numbers arranged in random manner (n1,n2,n5,n3…..n100) Output: Reordering of numbers in ascending or descending order (n1,n2,n3…n100) For solving the above data structure we generally use arrays, but some of the algorithms will use linked list or trees to make it easier and effective to solve sorting problems. Why algorithm to use and when ? By going through the above links we have a fair understanding of sorting algorithms. The worst case of insertion sort is theta(n*n). Inner loop are being accessed frequently making it asymptotically weak when we have a large number of elements to consider. However if number of elements are small it’s a fast sorting algorithm. Next we have merge sort which has fairly better asymptotic running time of theta(n lgn), but the merge procedure it uses does not operate in every place. Next we have heap sort which sorts n random numbers in O(n lgn) time. It uses an important data structure called heap. Next we have quick sort which is also used to sort n numbers but its worst-case running time is theta(n*n), however its expected running time is theta(n lgn).Like insertion sort it has a hidden constant factor in its running time. It’s a popular algorithm for sorting large input arrays. Insertion sort, merge sort, heap sort and quick sort all of the mentioned algorithm are comparison algorithm. Further we will study bucket sort and radix sort which sorts on the basis of the index instead of comparing element with each other, such type of algorithm takes linear time to sort elements. Finally we’ll have a look at all the algorithms with their worst case and average case running time.","headline":"Getting Started With Sorting","dateModified":"2020-01-19T00:00:00+00:00","datePublished":"2020-01-19T00:00:00+00:00","@context":"https://schema.org"}</script>
+{"description":"In this series of blog post we are going to understand various approaches for sorting a set of numbers. Given an input of numbers we are going to display the output of numbers in ascending or descending order using various algorithms. In this series we will be dealing with the following algorithms: Insertion Sort Merge Sort Heap Sort Quick Sort Bucket Sort Radix Sort &lt;/ul&gt; &lt;/p&gt; Each of the above algorithm solves the following problem: Input: A sequence of n numbers arranged in random manner (n1,n2,n5,n3…..n100) Output: Reordering of numbers in ascending or descending order (n1,n2,n3…n100) For solving the above data structure we generally use arrays, but some of the algorithms will use linked list or trees to make it easier and effective to solve sorting problems. Why algorithm to use and when ? By going through the above links we have a fair understanding of sorting algorithms. The worst case of insertion sort is theta(n*n). Inner loop are being accessed frequently making it asymptotically weak when we have a large number of elements to consider. However if number of elements are small it’s a fast sorting algorithm. Next we have merge sort which has fairly better asymptotic running time of theta(n lgn), but the merge procedure it uses does not operate in every place. Next we have heap sort which sorts n random numbers in O(n lgn) time. It uses an important data structure called heap. Next we have quick sort which is also used to sort n numbers but its worst-case running time is theta(n*n), however its expected running time is theta(n lgn).Like insertion sort it has a hidden constant factor in its running time. It’s a popular algorithm for sorting large input arrays. Insertion sort, merge sort, heap sort and quick sort all of the mentioned algorithm are comparison algorithm. Further we will study bucket sort and radix sort which sorts on the basis of the index instead of comparing element with each other, such type of algorithm takes linear time to sort elements. Finally we’ll have a look at all the algorithms with their worst case and average case running time.","url":"/Getting-Started-With-Sorting/","headline":"Getting Started With Sorting","dateModified":"2020-01-19T00:00:00+00:00","datePublished":"2020-01-19T00:00:00+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/Getting-Started-With-Sorting/"},"image":"/assets%5Cimages%5CContent%5Csort.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo/mainlogo.png"},"name":"Navneet"},"author":{"@type":"Person","name":"Navneet"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VYH7ZHCYSV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VYH7ZHCYSV');
+</script>
 
 
     <link
@@ -43,6 +53,12 @@
     <link href="/assets/css/main.css" rel="stylesheet" />
 
     <script src="/assets/js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <script data-ad-client="ca-pub-3687450293952510" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
   "development"  
@@ -146,6 +162,19 @@
           <p class="lead">
             Build, break, repeat
           </p>
+        </div>
+        <div>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Main-ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3687450293952510"
+     data-ad-slot="4319612011"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
         </div>
 
         <!-- Content
@@ -474,7 +503,7 @@ https://search.google.com/structured-data/testing-tool/u/0/
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-sm-6 text-center text-lg-left">
-              Copyright © 2020 MakeMeTechie | Tech Blog | Tech News
+              Copyright © 2021 MakeMeTechie | Tech Blog | Tech News
             </div>
             <div class="col-md-6 col-sm-6 text-center text-lg-right"></div>
           </div>

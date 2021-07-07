@@ -27,8 +27,18 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-01-19T00:00:00+00:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","image":"/assets%5Cimages%5CContent%5Calgo_banner.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo/mainlogo.png"},"name":"Navneet"},"mainEntityOfPage":{"@type":"WebPage","@id":"/Algorithm-Analysis-Of-Recurrence-Recursive-Relations-Using-Substitution-Method-Part-2-of-4/"},"author":{"@type":"Person","name":"Navneet"},"url":"/Algorithm-Analysis-Of-Recurrence-Recursive-Relations-Using-Substitution-Method-Part-2-of-4/","description":"Analysis of a recurrence relation using Substitution Method Objective: in this blog post we will discuss how to analyze the complexity of a recurrence relation using substitution method. Steps and how to make a good guess related to the same. Substitution method, as the name implies we substitute different values to find the complexity of the recursive function. Two important steps related are as follow: Guess a particular solution in asymptotic form for the given recurrence relation. Verify the guess using mathematical induction and find the value of constant C. Let us understand substitution method using an example. Consider the recurrence relation: We wish to prove that T(n) = O(n2), then its sufficient to show that T(n) &lt;= Cn2 . Hence the first part of substitution method is to make an assumption. So we make an assumption that T(a) &lt;= Ca2 in order to prove T(n) = O(n2). Hence, T(a) = Ca2 where 1 &lt; a &lt; n-1 The second step is to prove our assumption correct using mathematical induction. By substituting the induction hypothesis we get, We just proved using induction a recurrence relation using substitution method. We made an assumption and then proved our assumption is right using mathematical induction. Trick for making a good guess If a recurrence relation is of the form i.e. T(n) = aT(n/b) + F(n) Case 1 :&nbsp; If a = b = 2, then &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T(n) = O(F(n)log n) is a good guess Case 2 :If a = 1 and b = any value, then &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T(n) = O(log n) is a good guess Case 3: If a != 1 and b &gt; a, then &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T(n) = O[f(n) * n] is a good guess Now we know how to make a good guess in a substitution method. That&rsquo;s all folks. Time for a wrap-up. We have studied how to find complexity of a recurrence relation using substitution method and tried to understand what a good guess is. In the next tutorial we will discuss the next method i.e. Iterative method to find the complexity of a recurrence relation.","headline":"Algorithm Analysis Of Recurrence/Recursive Relations Using Substitution Method Part 2 of 4","dateModified":"2020-01-19T00:00:00+00:00","datePublished":"2020-01-19T00:00:00+00:00","@context":"https://schema.org"}</script>
+{"description":"Analysis of a recurrence relation using Substitution Method Objective: in this blog post we will discuss how to analyze the complexity of a recurrence relation using substitution method. Steps and how to make a good guess related to the same. Substitution method, as the name implies we substitute different values to find the complexity of the recursive function. Two important steps related are as follow: Guess a particular solution in asymptotic form for the given recurrence relation. Verify the guess using mathematical induction and find the value of constant C. Let us understand substitution method using an example. Consider the recurrence relation: We wish to prove that T(n) = O(n2), then its sufficient to show that T(n) &lt;= Cn2 . Hence the first part of substitution method is to make an assumption. So we make an assumption that T(a) &lt;= Ca2 in order to prove T(n) = O(n2). Hence, T(a) = Ca2 where 1 &lt; a &lt; n-1 The second step is to prove our assumption correct using mathematical induction. By substituting the induction hypothesis we get, We just proved using induction a recurrence relation using substitution method. We made an assumption and then proved our assumption is right using mathematical induction. Trick for making a good guess If a recurrence relation is of the form i.e. T(n) = aT(n/b) + F(n) Case 1 :&nbsp; If a = b = 2, then &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T(n) = O(F(n)log n) is a good guess Case 2 :If a = 1 and b = any value, then &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T(n) = O(log n) is a good guess Case 3: If a != 1 and b &gt; a, then &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T(n) = O[f(n) * n] is a good guess Now we know how to make a good guess in a substitution method. That&rsquo;s all folks. Time for a wrap-up. We have studied how to find complexity of a recurrence relation using substitution method and tried to understand what a good guess is. In the next tutorial we will discuss the next method i.e. Iterative method to find the complexity of a recurrence relation.","url":"/Algorithm-Analysis-Of-Recurrence-Recursive-Relations-Using-Substitution-Method-Part-2-of-4/","headline":"Algorithm Analysis Of Recurrence/Recursive Relations Using Substitution Method Part 2 of 4","dateModified":"2020-01-19T00:00:00+00:00","datePublished":"2020-01-19T00:00:00+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/Algorithm-Analysis-Of-Recurrence-Recursive-Relations-Using-Substitution-Method-Part-2-of-4/"},"image":"/assets%5Cimages%5CContent%5Calgo_banner.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo/mainlogo.png"},"name":"Navneet"},"author":{"@type":"Person","name":"Navneet"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VYH7ZHCYSV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VYH7ZHCYSV');
+</script>
 
 
     <link
@@ -43,6 +53,12 @@
     <link href="/assets/css/main.css" rel="stylesheet" />
 
     <script src="/assets/js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <script data-ad-client="ca-pub-3687450293952510" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
   "development"  
@@ -146,6 +162,19 @@
           <p class="lead">
             Build, break, repeat
           </p>
+        </div>
+        <div>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Main-ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3687450293952510"
+     data-ad-slot="4319612011"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
         </div>
 
         <!-- Content
@@ -406,7 +435,7 @@ https://search.google.com/structured-data/testing-tool/u/0/
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-sm-6 text-center text-lg-left">
-              Copyright © 2020 MakeMeTechie | Tech Blog | Tech News
+              Copyright © 2021 MakeMeTechie | Tech Blog | Tech News
             </div>
             <div class="col-md-6 col-sm-6 text-center text-lg-right"></div>
           </div>
