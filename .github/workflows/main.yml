@@ -1,9 +1,8 @@
 name: jekyll-cd
 
 on:
-  push:
-    branches:
-      - na #replace with master 
+  schedule:
+  - cron: "5 6 * * *"
 
 jobs:
   build:

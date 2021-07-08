@@ -442,34 +442,6 @@ article:
 - source:
     id:
     name: Blog.google
-  author: Jonathan Richards Team Lead, Google Creative Lab
-  title: An exploration of art, nature and technology
-  description: Caroline Rothwell is a Sydney-based visual artist whose work tackles
-    important conversations about human interactions with nature throughout history
-    -- and their lasting effects. In her latest body of work, she hopes to bring attention
-    to the plants around us…
-  url: https://blog.google/around-the-globe/google-asia/infinite-herbarium/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+blogspot%2FMKuf+%28The+Keyword+%7C+Official+Google+Blog%29
-  urlToImage: https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Infinite_Herbarium_film__keyframe.max-1300x1300.png
-  publishedAt: '2021-07-01T00:30:00Z'
-  content: Caroline Rothwell is a Sydney-based visual artist whose work tackles important
-    conversations about human interactions with nature throughout history and their
-    lasting effects. In her latest body of w… [+641 chars]
-  page_url: "/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+blogspot%2FMKuf+%28The+Keyword+%7C+Official+Google+Blog%29"
-  summary: So with the help of Google Creative Lab Sydney, she began exploring how
-    machine learning could interpret archives and datasets to create new art. Then,
-    using machine learning, the application classifies the plants and uses them to
-    build a multi-dimensional artwork. She wanted to see if technology could help
-    her use botanical data from historical archives to educate people about the natural
-    world. In her latest body of work, she hopes to bring attention to the plants
-    around us we so often take for granted. The machine learning model is trained
-    on a vast database of botanical illustrations. Jul 01, 2021mins readCaroline Rothwell
-    is a Sydney-based visual artist whose work tackles important conversations about
-    human interactions with nature throughout history  and their lasting effects.
-    Its an area rich in potential, and one that we hope to continue exploring with
-    artists across multiple disciplines.Lets stay in touch.
-- source:
-    id:
-    name: Blog.google
   author: Maria GomriLegal Director, Google France
   title: Some changes to our ad technology
   description: The tools used by digital publishers and advertisers —  often called

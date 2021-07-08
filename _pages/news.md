@@ -5,6 +5,9 @@ permalink: /news
 comments: false
 ---
 
+<div>
+  {% include ads-main.html %}
+</div>
 
 <p>Date: <input type="text" id="datepicker"></p>
 

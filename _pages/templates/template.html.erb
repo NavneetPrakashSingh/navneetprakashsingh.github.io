@@ -1,9 +1,20 @@
 ---
 layout: page
-title: News
 permalink: <%= @news_page_link %>
 comments: false
 ---
+
+<meta name="description" content="<%= @news_description %>">
+
+<meta property="og:site_name" content="makemetechie">
+<meta property="og:title" content="<%= @news_page_heading %>">
+<meta property="og:type" content="article">
+<meta property="og:description" content="<%= @news_description %>"/>
+
+<meta property="og:url" content="<%= @news_page_link %>" />
+<meta property="article:tag" content="<%= @news_source %>">
+
+
 
 <div class="row">
 <div class="col-12">
@@ -27,6 +38,12 @@ comments: false
 </div>
 <div class="row">
 <div class="col-12">
+
+
+<div>
+  {% include ads-main.html %}
+</div>
+
 <div><%= @news_body %></div>
 </div>
 </div>
