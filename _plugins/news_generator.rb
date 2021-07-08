@@ -73,6 +73,7 @@ module Jekyll
                 @news_summary      = json_response["summary"]
                 @news_body      = json_response["content"]
                 @news_more      = json_response["url"]
+                @news_description=json_response["description"]
 
                 # render template
                 template = File.read('_pages/templates/template.html.erb')

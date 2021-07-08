@@ -28,6 +28,10 @@ permalink: "/index.html"
     <h2><span>All Stories</span></h2>
   </div>
 
+  <div>
+    {% include ads-main.html %}
+  </div>
+
   <div class="row listrecent">
     <!-- {% for post in paginator.posts %} {% include postbox.html %} {% endfor %} -->
     {% for post in site.posts %} {% include postbox.html %} {% endfor %}
