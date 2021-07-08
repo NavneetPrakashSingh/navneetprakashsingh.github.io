@@ -3,7 +3,7 @@ name: jekyll-cd
 on:
   push:
     branches:
-      - master #replace with master 
+      - na #replace with master 
 
 jobs:
   build:
