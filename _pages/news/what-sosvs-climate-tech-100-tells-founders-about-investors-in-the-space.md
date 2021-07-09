@@ -1,9 +1,20 @@
 ---
 layout: page
-title: News
 permalink: /what-sosvs-climate-tech-100-tells-founders-about-investors-in-the-space
 comments: false
 ---
+
+<meta name="description" content="Who's investing in technology and startups that promise better human and planetary health? Here's a definitive who's-who of top climate tech VCs, angels and more.">
+
+<meta property="og:site_name" content="makemetechie">
+<meta property="og:title" content="What SOSV’s Climate Tech 100 tells founders about investors in the space">
+<meta property="og:type" content="article">
+<meta property="og:description" content="Who's investing in technology and startups that promise better human and planetary health? Here's a definitive who's-who of top climate tech VCs, angels and more."/>
+
+<meta property="og:url" content="/what-sosvs-climate-tech-100-tells-founders-about-investors-in-the-space" />
+<meta property="article:tag" content="TechCrunch">
+
+
 
 <div class="row">
 <div class="col-12">
@@ -27,6 +38,12 @@ comments: false
 </div>
 <div class="row">
 <div class="col-12">
+
+
+<div>
+  {% include ads-main.html %}
+</div>
+
 <div>More posts by this contributor
 On Earth Day, April 22, SOSV published the SOSV Climate Tech 100, a list of the best startups that weve supported from their earliest stages to address climate change.… [+1957 chars]</div>
 </div>

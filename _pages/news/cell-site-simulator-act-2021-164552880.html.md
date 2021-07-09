@@ -1,9 +1,20 @@
 ---
 layout: page
-title: News
 permalink: /cell-site-simulator-act-2021-164552880.html
 comments: false
 ---
+
+<meta name="description" content="Law enforcement agencies in the US currently do not require a warrant to use the technology. The Cell-Site Simulator Act of 2021 seeks to change that.">
+
+<meta property="og:site_name" content="makemetechie">
+<meta property="og:title" content="US lawmakers want to restrict police use of 'Stingray' cell tower simulators">
+<meta property="og:type" content="article">
+<meta property="og:description" content="Law enforcement agencies in the US currently do not require a warrant to use the technology. The Cell-Site Simulator Act of 2021 seeks to change that."/>
+
+<meta property="og:url" content="/cell-site-simulator-act-2021-164552880.html" />
+<meta property="article:tag" content="Engadget">
+
+
 
 <div class="row">
 <div class="col-12">
@@ -27,6 +38,12 @@ comments: false
 </div>
 <div class="row">
 <div class="col-12">
+
+
+<div>
+  {% include ads-main.html %}
+</div>
+
 <div>According to BuzzFeed News, Democratic Senator Ron Wyden and Representative Ted Lieu will introduce legislation later today that seeks to restrict police use of international mobile subscriber identi… [+2589 chars]</div>
 </div>
 </div>

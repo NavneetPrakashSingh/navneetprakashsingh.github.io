@@ -1,9 +1,20 @@
 ---
 layout: page
-title: News
 permalink: /fabricnano-raises-12-5m-to-help-scale-its-cell-free-fossil-fuel-alternative-technology
 comments: false
 ---
+
+<meta name="description" content="It’s not often that you hear DNA described as a wafer – but that’s the analogy that Grant Aarons, the founder of FabricNano, a cell-free biomanufacturing company uses to describe his company’s major product. That DNA, the company hopes, will make a dent in a …">
+
+<meta property="og:site_name" content="makemetechie">
+<meta property="og:title" content="FabricNano raises $12.5M to help scale its cell-free fossil fuel alternative technology">
+<meta property="og:type" content="article">
+<meta property="og:description" content="It’s not often that you hear DNA described as a wafer – but that’s the analogy that Grant Aarons, the founder of FabricNano, a cell-free biomanufacturing company uses to describe his company’s major product. That DNA, the company hopes, will make a dent in a …"/>
+
+<meta property="og:url" content="/fabricnano-raises-12-5m-to-help-scale-its-cell-free-fossil-fuel-alternative-technology" />
+<meta property="article:tag" content="TechCrunch">
+
+
 
 <div class="row">
 <div class="col-12">
@@ -27,6 +38,12 @@ comments: false
 </div>
 <div class="row">
 <div class="col-12">
+
+
+<div>
+  {% include ads-main.html %}
+</div>
+
 <div>Its not often that you hear DNA described as a wafer but thats the analogy that Grant Aarons, the founder of FabricNano, a cell-free biomanufacturing company uses to describe his companys major produ… [+5839 chars]</div>
 </div>
 </div>

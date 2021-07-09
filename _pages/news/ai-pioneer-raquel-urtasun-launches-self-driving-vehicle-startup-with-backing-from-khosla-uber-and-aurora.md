@@ -1,9 +1,20 @@
 ---
 layout: page
-title: News
 permalink: /ai-pioneer-raquel-urtasun-launches-self-driving-vehicle-startup-with-backing-from-khosla-uber-and-aurora
 comments: false
 ---
+
+<meta name="description" content="One of the lingering mysteries from Uber’s sale of its Uber ATG self-driving unit to Aurora has been solved. Raquel Urtasun, the AI pioneer who was the chief scientist at Uber ATG, has launched a new startup called Waabi that is taking what she describes as a…">
+
+<meta property="og:site_name" content="makemetechie">
+<meta property="og:title" content="AI pioneer Raquel Urtasun launches self-driving technology startup with backing from Khosla, Uber and Aurora">
+<meta property="og:type" content="article">
+<meta property="og:description" content="One of the lingering mysteries from Uber’s sale of its Uber ATG self-driving unit to Aurora has been solved. Raquel Urtasun, the AI pioneer who was the chief scientist at Uber ATG, has launched a new startup called Waabi that is taking what she describes as a…"/>
+
+<meta property="og:url" content="/ai-pioneer-raquel-urtasun-launches-self-driving-vehicle-startup-with-backing-from-khosla-uber-and-aurora" />
+<meta property="article:tag" content="TechCrunch">
+
+
 
 <div class="row">
 <div class="col-12">
@@ -27,6 +38,12 @@ comments: false
 </div>
 <div class="row">
 <div class="col-12">
+
+
+<div>
+  {% include ads-main.html %}
+</div>
+
 <div>One of the lingering mysteries from Uber’s sale of its Uber ATG self-driving unit to Aurora has been solved.
 Raquel Urtasun, the AI pioneer who was the chief scientist at Uber ATG, has launched a ne… [+4457 chars]</div>
 </div>

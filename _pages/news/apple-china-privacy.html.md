@@ -1,9 +1,20 @@
 ---
 layout: page
-title: News
 permalink: /apple-china-privacy.html
 comments: false
 ---
+
+<meta name="description" content="When the technology giant first started doing business in China, it thought it would change the country. Decades later, the reverse is true.">
+
+<meta property="og:site_name" content="makemetechie">
+<meta property="og:title" content="Apple’s Bet on China">
+<meta property="og:type" content="article">
+<meta property="og:description" content="When the technology giant first started doing business in China, it thought it would change the country. Decades later, the reverse is true."/>
+
+<meta property="og:url" content="/apple-china-privacy.html" />
+<meta property="article:tag" content="New York Times">
+
+
 
 <div class="row">
 <div class="col-12">
@@ -27,6 +38,12 @@ comments: false
 </div>
 <div class="row">
 <div class="col-12">
+
+
+<div>
+  {% include ads-main.html %}
+</div>
+
 <div>Jack Nicas contributed reporting.
 The Daily is made by Lisa Tobin, Rachel Quester, Lynsea Garrison, Annie Brown, Clare Toeniskoetter, Paige Cowett, Michael Simon Johnson, Brad Fisher, Larissa Anders… [+677 chars]</div>
 </div>

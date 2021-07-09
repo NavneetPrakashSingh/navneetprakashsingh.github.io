@@ -1,9 +1,20 @@
 ---
 layout: page
-title: News
 permalink: /tech-tips-tools-improve-writing
 comments: false
 ---
+
+<meta name="description" content="Whether you're drafting a memo or promoting a book, technology can make the task easier than ever.">
+
+<meta property="og:site_name" content="makemetechie">
+<meta property="og:title" content="Want to Write Better? Here Are Some Tools to Help You Improve">
+<meta property="og:type" content="article">
+<meta property="og:description" content="Whether you're drafting a memo or promoting a book, technology can make the task easier than ever."/>
+
+<meta property="og:url" content="/tech-tips-tools-improve-writing" />
+<meta property="article:tag" content="Wired">
+
+
 
 <div class="row">
 <div class="col-12">
@@ -27,6 +38,12 @@ comments: false
 </div>
 <div class="row">
 <div class="col-12">
+
+
+<div>
+  {% include ads-main.html %}
+</div>
+
 <div>It doesnt matter whether youre drafting a company-wide memo, struggling through a school assignment, or working on your first novel. Writing is never effortless. It takes work. If youre here, you alr… [+3961 chars]</div>
 </div>
 </div>

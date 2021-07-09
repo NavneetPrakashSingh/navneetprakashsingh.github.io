@@ -1,9 +1,20 @@
 ---
 layout: page
-title: News
 permalink: /economy-stock-market-news
 comments: false
 ---
+
+<meta name="description" content="The bloc’s investigation, which takes aim at the heart of Google’s business model, is part of a push to regulate the world’s largest technology companies.">
+
+<meta property="og:site_name" content="makemetechie">
+<meta property="og:title" content="Business Updates: Google Draws E.U. Antitrust Inquiry">
+<meta property="og:type" content="article">
+<meta property="og:description" content="The bloc’s investigation, which takes aim at the heart of Google’s business model, is part of a push to regulate the world’s largest technology companies."/>
+
+<meta property="og:url" content="/economy-stock-market-news" />
+<meta property="article:tag" content="New York Times">
+
+
 
 <div class="row">
 <div class="col-12">
@@ -27,6 +38,12 @@ comments: false
 </div>
 <div class="row">
 <div class="col-12">
+
+
+<div>
+  {% include ads-main.html %}
+</div>
+
 <div>European Union regulators said on Tuesday that Google was the subject of a new antitrust investigation for potentially abusing its dominance in the online advertising market to box out competition.
 … [+6618 chars]</div>
 </div>

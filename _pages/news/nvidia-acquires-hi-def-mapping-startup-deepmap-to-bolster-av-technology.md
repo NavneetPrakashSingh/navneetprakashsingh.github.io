@@ -1,9 +1,20 @@
 ---
 layout: page
-title: News
 permalink: /nvidia-acquires-hi-def-mapping-startup-deepmap-to-bolster-av-technology
 comments: false
 ---
+
+<meta name="description" content="Chipmaker Nvidia is acquiring DeepMap, the high-definition mapping startup announced. The company said its mapping IP will help Nvidia’s autonomous vehicle technology sector, Nvidia Drive. “The acquisition is an endorsement of DeepMap’s unique vision, technol…">
+
+<meta property="og:site_name" content="makemetechie">
+<meta property="og:title" content="Nvidia acquires hi-def mapping startup DeepMap to bolster AV technology">
+<meta property="og:type" content="article">
+<meta property="og:description" content="Chipmaker Nvidia is acquiring DeepMap, the high-definition mapping startup announced. The company said its mapping IP will help Nvidia’s autonomous vehicle technology sector, Nvidia Drive. “The acquisition is an endorsement of DeepMap’s unique vision, technol…"/>
+
+<meta property="og:url" content="/nvidia-acquires-hi-def-mapping-startup-deepmap-to-bolster-av-technology" />
+<meta property="article:tag" content="TechCrunch">
+
+
 
 <div class="row">
 <div class="col-12">
@@ -27,6 +38,12 @@ comments: false
 </div>
 <div class="row">
 <div class="col-12">
+
+
+<div>
+  {% include ads-main.html %}
+</div>
+
 <div>Chipmaker Nvidia is acquiring DeepMap, the high-definition mapping startup announced. The company said its mapping IP will help Nvidia’s autonomous vehicle technology sector, Nvidia Drive.
 The acqui… [+1278 chars]</div>
 </div>

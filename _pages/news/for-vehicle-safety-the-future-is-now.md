@@ -1,9 +1,20 @@
 ---
 layout: page
-title: News
 permalink: /for-vehicle-safety-the-future-is-now
 comments: false
 ---
+
+<meta name="description" content="Congress has an opportunity to help build public trust in the safety of driverless technology by requiring existing innovations that will be the building blocks of driverless vehicles.">
+
+<meta property="og:site_name" content="makemetechie">
+<meta property="og:title" content="For vehicle safety, the future is now">
+<meta property="og:type" content="article">
+<meta property="og:description" content="Congress has an opportunity to help build public trust in the safety of driverless technology by requiring existing innovations that will be the building blocks of driverless vehicles."/>
+
+<meta property="og:url" content="/for-vehicle-safety-the-future-is-now" />
+<meta property="article:tag" content="TechCrunch">
+
+
 
 <div class="row">
 <div class="col-12">
@@ -27,6 +38,12 @@ comments: false
 </div>
 <div class="row">
 <div class="col-12">
+
+
+<div>
+  {% include ads-main.html %}
+</div>
+
 <div>Every day in the United States, more than 100 people die because of a car crash. Some are teenagers, like the daughter of writer Michael Lewis and Tabitha Soren, and her boyfriend, who died in a wron… [+8036 chars]</div>
 </div>
 </div>

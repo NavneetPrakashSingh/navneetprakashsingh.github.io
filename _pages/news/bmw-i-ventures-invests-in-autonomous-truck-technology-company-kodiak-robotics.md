@@ -1,9 +1,20 @@
 ---
 layout: page
-title: News
 permalink: /bmw-i-ventures-invests-in-autonomous-truck-technology-company-kodiak-robotics
 comments: false
 ---
+
+<meta name="description" content="BMW’s Silicon Valley-based venture capital arm is investing in Kodiak Robotics, a company that develops autonomous trucking technology.  Kodiak will use the funds to build out a safety case for its self-driving tech stack so it can more quickly commercialize.…">
+
+<meta property="og:site_name" content="makemetechie">
+<meta property="og:title" content="BMW i Ventures invests in autonomous truck technology company Kodiak Robotics">
+<meta property="og:type" content="article">
+<meta property="og:description" content="BMW’s Silicon Valley-based venture capital arm is investing in Kodiak Robotics, a company that develops autonomous trucking technology.  Kodiak will use the funds to build out a safety case for its self-driving tech stack so it can more quickly commercialize.…"/>
+
+<meta property="og:url" content="/bmw-i-ventures-invests-in-autonomous-truck-technology-company-kodiak-robotics" />
+<meta property="article:tag" content="TechCrunch">
+
+
 
 <div class="row">
 <div class="col-12">
@@ -27,6 +38,12 @@ comments: false
 </div>
 <div class="row">
 <div class="col-12">
+
+
+<div>
+  {% include ads-main.html %}
+</div>
+
 <div>BMWs Silicon Valley-based venture capital arm is investing in Kodiak Robotics, a company that develops autonomous trucking technology. 
 Kodiak will use the funds to build out a safety case for its s… [+5338 chars]</div>
 </div>

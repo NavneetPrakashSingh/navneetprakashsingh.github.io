@@ -1,9 +1,20 @@
 ---
 layout: page
-title: News
 permalink: /bmw-i-ventures-announces-new-300-million-fund-to-invest-in-sustainable-technology
 comments: false
 ---
+
+<meta name="description" content="BMW i Ventures, the venture capital arm of BMW Group, has announced a new $300 million fund to further its investment in technologies that make transportation, manufacturing and supply chains more sustainable.  The firm doesn’t operate as a traditional corpor…">
+
+<meta property="og:site_name" content="makemetechie">
+<meta property="og:title" content="BMW i Ventures announces new $300 million fund to invest in sustainable technology">
+<meta property="og:type" content="article">
+<meta property="og:description" content="BMW i Ventures, the venture capital arm of BMW Group, has announced a new $300 million fund to further its investment in technologies that make transportation, manufacturing and supply chains more sustainable.  The firm doesn’t operate as a traditional corpor…"/>
+
+<meta property="og:url" content="/bmw-i-ventures-announces-new-300-million-fund-to-invest-in-sustainable-technology" />
+<meta property="article:tag" content="TechCrunch">
+
+
 
 <div class="row">
 <div class="col-12">
@@ -27,6 +38,12 @@ comments: false
 </div>
 <div class="row">
 <div class="col-12">
+
+
+<div>
+  {% include ads-main.html %}
+</div>
+
 <div>BMW i Ventures, the venture capital arm of BMW Group, has announced a new $300 million fund to further its investment in technologies that make transportation, manufacturing and supply chains more su… [+4293 chars]</div>
 </div>
 </div>

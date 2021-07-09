@@ -1,9 +1,20 @@
 ---
 layout: page
-title: News
 permalink: /vividq-which-has-raised-15m-says-it-can-turn-normal-screens-into-holographic-displays
 comments: false
 ---
+
+<meta name="description" content="VividQ, a UK-based deeptech startup with technology for rendering holograms on legacy screens, has raised $15 million to develop its technology for next-generation digital displays and devices. And it’s already lining up manufacturing partners in the US, Chin…">
+
+<meta property="og:site_name" content="makemetechie">
+<meta property="og:title" content="VividQ, which has raised $15M, says it can turn normal screens into holographic displays">
+<meta property="og:type" content="article">
+<meta property="og:description" content="VividQ, a UK-based deeptech startup with technology for rendering holograms on legacy screens, has raised $15 million to develop its technology for next-generation digital displays and devices. And it’s already lining up manufacturing partners in the US, Chin…"/>
+
+<meta property="og:url" content="/vividq-which-has-raised-15m-says-it-can-turn-normal-screens-into-holographic-displays" />
+<meta property="article:tag" content="TechCrunch">
+
+
 
 <div class="row">
 <div class="col-12">
@@ -27,6 +38,12 @@ comments: false
 </div>
 <div class="row">
 <div class="col-12">
+
+
+<div>
+  {% include ads-main.html %}
+</div>
+
 <div>VividQ, a UK-based deeptech startup with technology for rendering holograms on legacy screens, has raised $15 million to develop its technology for next-generation digital displays and devices. And i… [+3076 chars]</div>
 </div>
 </div>

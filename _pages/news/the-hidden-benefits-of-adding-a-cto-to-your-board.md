@@ -1,9 +1,20 @@
 ---
 layout: page
-title: News
 permalink: /the-hidden-benefits-of-adding-a-cto-to-your-board
 comments: false
 ---
+
+<meta name="description" content="Not only do CTOs understand the ever-changing tech landscape, they also provide insights to help organizations to go beyond traditional IT conversations and leverage technology to scale businesses.">
+
+<meta property="og:site_name" content="makemetechie">
+<meta property="og:title" content="The hidden benefits of adding a CTO to your board">
+<meta property="og:type" content="article">
+<meta property="og:description" content="Not only do CTOs understand the ever-changing tech landscape, they also provide insights to help organizations to go beyond traditional IT conversations and leverage technology to scale businesses."/>
+
+<meta property="og:url" content="/the-hidden-benefits-of-adding-a-cto-to-your-board" />
+<meta property="article:tag" content="TechCrunch">
+
+
 
 <div class="row">
 <div class="col-12">
@@ -27,6 +38,12 @@ comments: false
 </div>
 <div class="row">
 <div class="col-12">
+
+
+<div>
+  {% include ads-main.html %}
+</div>
+
 <div>The pandemic forced companies around the world to adjust to a “new normal,” which caused many leaders to pivot their business strategies and adopt new technologies to continue operations. In a time o… [+2068 chars]</div>
 </div>
 </div>

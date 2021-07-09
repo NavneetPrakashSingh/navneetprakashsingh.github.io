@@ -27,7 +27,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-01-19T00:00:00+00:00" />
 <script type="application/ld+json">
-{"description":"Within the last blog post we understood the algorithm related to depth-first search. Within this section we use depth first search to perform topological sort of a directed acyclic graph (DAG). Within this blog post we will discuss the following topics Introduction to topological sort Understand topological sort via example Write pseudocode for the same Analyze the complexity of topological sort Introduction to topological sort A topological sort of a directed acyclic graph (DAG) G=(V,E) is a linear ordering of all its vertices such that if G contains an edge (u,v), then u appears before v in the ordering. Topological sort is different from usual kind of sorting studied in previous blog post. Basically, what it means by u appears before v in the ordering is if we are inserting ‘u’ node into the stack, then until node ‘v’ is pushed into stack we won’t pop out node ‘u’ from the stack. Let us explain it via example and write a pseudocode for the same. In the above example we took a basic example to explain how topological sort work. It’s not same as DFS, but its different from that. Within DFS the child nodes are printed first as compared to parent nodes whereas in topological sort, we print the parent node first as compared to child node. Let us write a pseudocode for the same. The above algorithm is simple, we just modified our DFS algorithm to follow topological sort. First, we color all the nodes as white and change to ancestor as nil and time as 0 since no node has been parsed. Then we cover all the adjacent vertex of current node using TOPOLOGICAL-VISIT and recursively call this function and once it reaches the base case i.e when no adjacent element is white we come out of the loop and color is black and insert the element into the stack. Since we are recursively calling the function, it means that the adjacent element of the adjacent element of the source element will be parsed first and hence it goes deeper into the graph. Then finally we print the stack to get our desired output sequence. Analyzing the complexity of topological sort We can perform topological sort in &theta; (V+E) time, since depth-first search takes &theta; (V+E) time and it takes O(1) time to insert each of the |V| vertices into the array. That’s all folks! We have covered topological sort in this blog post. We understood what topological sort is, explained it via example, wrote a pseudocode for the same and analyzed its complexity. Within our next blog post we are going to look at other graph algorithms like Bellman-Ford algorithm and Dijkstra’s algorithm.","url":"/graph-theory-topological-sort/","headline":"The Graph Theory Topological Sort","dateModified":"2020-01-19T00:00:00+00:00","datePublished":"2020-01-19T00:00:00+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/graph-theory-topological-sort/"},"image":"/assets%5Cimages%5CContent%5CgraphTheory.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo/mainlogo.png"},"name":"Navneet"},"author":{"@type":"Person","name":"Navneet"},"@context":"https://schema.org"}</script>
+{"description":"Within the last blog post we understood the algorithm related to depth-first search. Within this section we use depth first search to perform topological sort of a directed acyclic graph (DAG). Within this blog post we will discuss the following topics Introduction to topological sort Understand topological sort via example Write pseudocode for the same Analyze the complexity of topological sort Introduction to topological sort A topological sort of a directed acyclic graph (DAG) G=(V,E) is a linear ordering of all its vertices such that if G contains an edge (u,v), then u appears before v in the ordering. Topological sort is different from usual kind of sorting studied in previous blog post. Basically, what it means by u appears before v in the ordering is if we are inserting ‘u’ node into the stack, then until node ‘v’ is pushed into stack we won’t pop out node ‘u’ from the stack. Let us explain it via example and write a pseudocode for the same. In the above example we took a basic example to explain how topological sort work. It’s not same as DFS, but its different from that. Within DFS the child nodes are printed first as compared to parent nodes whereas in topological sort, we print the parent node first as compared to child node. Let us write a pseudocode for the same. The above algorithm is simple, we just modified our DFS algorithm to follow topological sort. First, we color all the nodes as white and change to ancestor as nil and time as 0 since no node has been parsed. Then we cover all the adjacent vertex of current node using TOPOLOGICAL-VISIT and recursively call this function and once it reaches the base case i.e when no adjacent element is white we come out of the loop and color is black and insert the element into the stack. Since we are recursively calling the function, it means that the adjacent element of the adjacent element of the source element will be parsed first and hence it goes deeper into the graph. Then finally we print the stack to get our desired output sequence. Analyzing the complexity of topological sort We can perform topological sort in &theta; (V+E) time, since depth-first search takes &theta; (V+E) time and it takes O(1) time to insert each of the |V| vertices into the array. That’s all folks! We have covered topological sort in this blog post. We understood what topological sort is, explained it via example, wrote a pseudocode for the same and analyzed its complexity. Within our next blog post we are going to look at other graph algorithms like Bellman-Ford algorithm and Dijkstra’s algorithm.","url":"/graph-theory-topological-sort/","@type":"BlogPosting","headline":"The Graph Theory Topological Sort","dateModified":"2020-01-19T00:00:00+00:00","datePublished":"2020-01-19T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/graph-theory-topological-sort/"},"image":"/assets%5Cimages%5CContent%5CgraphTheory.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo/mainlogo.png"},"name":"Navneet"},"author":{"@type":"Person","name":"Navneet"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -119,8 +119,12 @@
 
             <li class="nav-item">
               <a class="nav-link" href="/author/Navneet-Singh"
-                >Author</a
-              >
+                >Author</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/news"
+                >News</a>
             </li>
 
             <script src="/assets/js/lunr.js"></script>
@@ -162,19 +166,6 @@
           <p class="lead">
             Build, break, repeat
           </p>
-        </div>
-        <div>
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Main-ad -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3687450293952510"
-     data-ad-slot="4319612011"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
         </div>
 
         <!-- Content
@@ -253,7 +244,7 @@
             </div>
 
             <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
-            
+            <!--  -->
             <!-- End Adsense -->
 
             <!-- Post Featured Image -->

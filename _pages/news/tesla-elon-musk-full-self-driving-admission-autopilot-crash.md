@@ -1,9 +1,20 @@
 ---
 layout: page
-title: News
 permalink: /tesla-elon-musk-full-self-driving-admission-autopilot-crash
 comments: false
 ---
+
+<meta name="description" content="Elon Musk admitted that self-driving cars were a harder problem than he originally thought. It’s an obvious admission, but one worth noting given the Tesla CEO’s habit for overpromising and underdelivering when it comes to autonomous vehicle technology.">
+
+<meta property="og:site_name" content="makemetechie">
+<meta property="og:title" content="Elon Musk just now realizing that self-driving cars are a ‘hard problem’">
+<meta property="og:type" content="article">
+<meta property="og:description" content="Elon Musk admitted that self-driving cars were a harder problem than he originally thought. It’s an obvious admission, but one worth noting given the Tesla CEO’s habit for overpromising and underdelivering when it comes to autonomous vehicle technology."/>
+
+<meta property="og:url" content="/tesla-elon-musk-full-self-driving-admission-autopilot-crash" />
+<meta property="article:tag" content="The Verge">
+
+
 
 <div class="row">
 <div class="col-12">
@@ -27,6 +38,12 @@ comments: false
 </div>
 <div class="row">
 <div class="col-12">
+
+
+<div>
+  {% include ads-main.html %}
+</div>
+
 <div>Tesla CEO Elon Musk is finally admitting that he underestimated how difficult it is to develop a safe and reliable self-driving car. To which the entire engineering community rose up as one to say, “… [+4466 chars]</div>
 </div>
 </div>

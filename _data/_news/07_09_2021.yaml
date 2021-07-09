@@ -1,0 +1,520 @@
+---
+article:
+- source:
+    id: techcrunch
+    name: TechCrunch
+  author: Annie Siebert
+  title: Widespread electrification requires us to rethink battery technology
+  description: The global transition to electrification has increased demand for longer-lasting
+    and faster-charging batteries. But battery innovation hasn’t kept pace with society’s
+    ambitions.
+  url: http://techcrunch.com/2021/06/10/widespread-electrification-requires-us-to-rethink-battery-technology/
+  urlToImage: https://techcrunch.com/wp-content/uploads/2021/06/GettyImages-954558336.jpg?w=599
+  publishedAt: '2021-06-10T15:52:10Z'
+  content: The global economys transition to widespread electrification has increased
+    the demand for longer-lasting and faster-charging batteries across industries
+    including transportation, consumer electronics… [+8099 chars]
+  page_url: "/widespread-electrification-requires-us-to-rethink-battery-technology"
+  summary: However, until recently, the technology has fallen short in practice.Solid-state
+    batteries have significantly higher energy density and are potentially safer because
+    they do not use flammable liquid electrolytes. The global economys transition
+    to widespread electrification has increased the demand for longer-lasting and
+    faster-charging batteries across industries including transportation, consumer
+    electronics, medical devices and residential energy storage. The batteries made
+    by Sila Nanotechnologies are an illustrative example of using a silicon mix to
+    increase energy density. That instability leads to delamination (a mode of failure
+    where a material fractures into layers), cracks and separation  all of which cause
+    premature battery failure. However, a thicker cathode would reduce the mechanical
+    and thermal stability of the battery. The obvious solution to this dilemma would
+    be to have batteries with thicker cathodes. However, the technology is still nascent
+    and has a long way to go to achieve commercialization.
+- source:
+    id: wired
+    name: Wired
+  author: Tyler Hayes
+  title: Want to Write Better? Here Are Some Tools to Help You Improve
+  description: Whether you're drafting a memo or promoting a book, technology can
+    make the task easier than ever.
+  url: https://www.wired.com/story/tech-tips-tools-improve-writing/
+  urlToImage: https://media.wired.com/photos/60c00597e90f148723cbc78b/191:100/w_1280,c_limit/Gear-Writing-Tools-1307393936.jpg
+  publishedAt: '2021-06-09T11:00:00Z'
+  content: It doesnt matter whether youre drafting a company-wide memo, struggling
+    through a school assignment, or working on your first novel. Writing is never
+    effortless. It takes work. If youre here, you alr… [+3961 chars]
+  page_url: "/tech-tips-tools-improve-writing"
+  summary: You poured effort into a story you want to convince people to read, so
+    get creative.If you track your work, you should also document it. You can also
+    use a service like CrowdTangle to see how your work is being shared on social
+    media. Writing may not be easy, but it doesnt need to be impossible either.Did
+    you know spellcheck was once a benchmark used to measure how speedy a computer
+    could run? This can also help freelancers find new publications they might be
+    able to work with in the future. This includes things like learning how to better
+    edit myself to finding who has shared my published work later on. Its grammar
+    and spell checking can also burn you.To avoid missing mistakes, dont rely on a
+    single writing tool. Chances are good that people are talking about your work
+    but not mentioning you directly.Search Google for links and article titles too.
+- source:
+    id: engadget
+    name: Engadget
+  author: https://www.engadget.com/about/editors/igor-bonifacic
+  title: US lawmakers want to restrict police use of 'Stingray' cell tower simulators
+  description: Law enforcement agencies in the US currently do not require a warrant
+    to use the technology. The Cell-Site Simulator Act of 2021 seeks to change that.
+  url: https://www.engadget.com/cell-site-simulator-act-2021-164552880.html
+  urlToImage: https://s.yimg.com/os/creatr-uploaded-images/2021-06/355bf420-cf89-11eb-9fbf-098a0b0e1b29
+  publishedAt: '2021-06-17T16:45:52Z'
+  content: According to BuzzFeed News, Democratic Senator Ron Wyden and Representative
+    Ted Lieu will introduce legislation later today that seeks to restrict police
+    use of international mobile subscriber identi… [+2589 chars]
+  page_url: "/cell-site-simulator-act-2021-164552880.html"
+  summary: For instance, it would leave the door open for law enforcement to use the
+    devices in contexts like bomb threats where an IMSI catcher can prevent a remote
+    detonation. More commonly known as Stingrays, police frequently use IMSI catchers
+    and cell-site simulators to collect information on suspects and intercept calls,
+    SMS messages and other forms of communication. Law enforcement agencies in the
+    US currently do not require a warrant to use the technology. It also details exceptions
+    where police could use the technology without a warrant. The reason for this is
+    that while IMSI catchers act like a cell tower, they don't function as one, and
+    they can't transfer calls to a public wireless network. The Cell-Site Simulator
+    Act of 2021 seeks to change that.IMSI catchers mimic cell towers to trick mobile
+    phones into connecting with them. They would also need to explain why other surveillance
+    methods wouldn't be as effective.
+- source:
+    id: techcrunch
+    name: TechCrunch
+  author: Rebecca Bellan
+  title: Nvidia acquires hi-def mapping startup DeepMap to bolster AV technology
+  description: Chipmaker Nvidia is acquiring DeepMap, the high-definition mapping
+    startup announced. The company said its mapping IP will help Nvidia’s autonomous
+    vehicle technology sector, Nvidia Drive. “The acquisition is an endorsement of
+    DeepMap’s unique vision, technol…
+  url: http://techcrunch.com/2021/06/10/nvidia-acquires-hi-def-mapping-startup-deepmap-to-bolster-av-technology/
+  urlToImage: https://techcrunch.com/wp-content/uploads/2021/06/Screen-Shot-2021-06-10-at-2.54.41-PM.png?w=731
+  publishedAt: '2021-06-10T23:52:23Z'
+  content: "Chipmaker Nvidia is acquiring DeepMap, the high-definition mapping startup
+    announced. The company said its mapping IP will help Nvidia’s autonomous vehicle
+    technology sector, Nvidia Drive.\r\nThe acqui… [+1278 chars]"
+  page_url: "/nvidia-acquires-hi-def-mapping-startup-deepmap-to-bolster-av-technology"
+  summary: Nvidia will also invest into new capabilities for DeepMap as part of the
+    partnership.Nvidia is expected to finalize the acquisition in Q3 2021. Chipmaker
+    Nvidia is acquiring DeepMap, the high-definition mapping startup announced.
+- source:
+    id: techcrunch
+    name: TechCrunch
+  author: Kirsten Korosec
+  title: AI pioneer Raquel Urtasun launches self-driving technology startup with backing
+    from Khosla, Uber and Aurora
+  description: One of the lingering mysteries from Uber’s sale of its Uber ATG self-driving
+    unit to Aurora has been solved. Raquel Urtasun, the AI pioneer who was the chief
+    scientist at Uber ATG, has launched a new startup called Waabi that is taking
+    what she describes as a…
+  url: http://techcrunch.com/2021/06/08/ai-pioneer-raquel-urtasun-launches-self-driving-vehicle-startup-with-backing-from-khosla-uber-and-aurora/
+  urlToImage: https://techcrunch.com/wp-content/uploads/2021/06/Raquel_Urtasun_Portrait_horizontal-copy.jpg?w=600
+  publishedAt: '2021-06-08T10:00:13Z'
+  content: "One of the lingering mysteries from Uber’s sale of its Uber ATG self-driving
+    unit to Aurora has been solved.\r\nRaquel Urtasun, the AI pioneer who was the
+    chief scientist at Uber ATG, has launched a ne… [+4457 chars]"
+  page_url: "/ai-pioneer-raquel-urtasun-launches-self-driving-vehicle-startup-with-backing-from-khosla-uber-and-aurora"
+  summary: However, the traditional approach limits the power of AI, Urtasun said,
+    adding that developers must manually tune the software stack, a complex and time-consuming
+    task. It is also difficult to incorporate any prior knowledge about the task that
+    the developer is trying to solve, like, oh, driving for instance. Beyond those
+    basics are a variety of approaches, including within AI.Most self-driving vehicle
+    developers use a traditional form of AI. Urtasun, who is the sole founder and
+    CEO, already has a long list of high-profile backers, including separate investments
+    from Uber and Aurora. That is a problem for any self-driving startup that wants
+    to be able verify and validate its system. However, the simulator will allow the
+    company to rely less on this form of testing. We can even prepare for new geographies
+    before we drive there, Urtasun said.
+- source:
+    id: techcrunch
+    name: TechCrunch
+  author: Mike Butcher
+  title: VividQ, which has raised $15M, says it can turn normal screens into holographic
+    displays
+  description: VividQ, a UK-based deeptech startup with technology for rendering holograms
+    on legacy screens, has raised $15 million to develop its technology for next-generation
+    digital displays and devices. And it’s already lining up manufacturing partners
+    in the US, Chin…
+  url: http://techcrunch.com/2021/06/30/vividq-which-has-raised-15m-says-it-can-turn-normal-screens-into-holographic-displays/
+  urlToImage: https://techcrunch.com/wp-content/uploads/2021/06/VividQ-C-Suite-1.jpg?w=600
+  publishedAt: '2021-06-30T23:00:11Z'
+  content: VividQ, a UK-based deeptech startup with technology for rendering holograms
+    on legacy screens, has raised $15 million to develop its technology for next-generation
+    digital displays and devices. And i… [+3076 chars]
+  page_url: "/vividq-which-has-raised-15m-says-it-can-turn-normal-screens-into-holographic-displays"
+  summary: VividQ, a UK-based deeptech startup with technology for rendering holograms
+    on legacy screens, has raised $15 million to develop its technology for next-generation
+    digital displays and devices. At VividQ, we are on a mission to bring holographic
+    displays to the world for the first time. We dont use any optical trickery.When
+    we say holograms, what we mean is a hologram is essentially an instruction set
+    that tells light how to behave. The demand for improved 3D images in real-world
+    settings is growing across the whole display industry. We compute that effect
+    algorithmically and then present that to the eye, so its indistinguishable from
+    a real object. So you know the image is actually extending out of the screen.
+    Its entirely natural as well.
+- source:
+    id: techcrunch
+    name: TechCrunch
+  author: Zack Whittaker
+  title: Indian tech startup exposed Byju’s student data
+  description: India-based technology startup Salesken.ai has secured an exposed server
+    that was spilling private and sensitive data on one of its customers, Byju’s,
+    an education technology giant and India’s most valuable startup. The server was
+    left unprotected since at le…
+  url: http://techcrunch.com/2021/06/29/india-startup-byju-student-data/
+  urlToImage: https://techcrunch.com/wp-content/uploads/2021/06/GettyImages-1133907439.jpg?w=599
+  publishedAt: '2021-06-30T04:30:24Z'
+  content: India-based technology startup Salesken.ai has secured an exposed server
+    that was spilling private and sensitive data on one of its customers, Byju’s,
+    an education technology giant and India’s most v… [+2617 chars]
+  page_url: "/india-startup-byju-student-data"
+  summary: Because the server was without a password, anyone could access the data
+    inside. Salesken.ai follows stringent data security norms and is certified under
+    the highest standards of global security and safety.
+- source:
+    id: techcrunch
+    name: TechCrunch
+  author: Rebecca Bellan
+  title: BMW i Ventures invests in autonomous truck technology company Kodiak Robotics
+  description: BMW’s Silicon Valley-based venture capital arm is investing in Kodiak
+    Robotics, a company that develops autonomous trucking technology.  Kodiak will
+    use the funds to build out a safety case for its self-driving tech stack so it
+    can more quickly commercialize.…
+  url: http://techcrunch.com/2021/06/24/bmw-i-ventures-invests-in-autonomous-truck-technology-company-kodiak-robotics/
+  urlToImage: https://techcrunch.com/wp-content/uploads/2021/06/Kodiak-Final-10-small.jpg?w=599
+  publishedAt: '2021-06-24T12:58:14Z'
+  content: "BMWs Silicon Valley-based venture capital arm is investing in Kodiak Robotics,
+    a company that develops autonomous trucking technology. \r\nKodiak will use the
+    funds to build out a safety case for its s… [+5338 chars]"
+  page_url: "/bmw-i-ventures-invests-in-autonomous-truck-technology-company-kodiak-robotics"
+  summary: We are building toward a Level 4 autonomy system, but we still have a driver
+    in the seat thats actually monitoring our system at all times, said Burnette.
+    To date, Kodiak has publicly announced $40 million in funding from its Series
+    A, and Burnette says the startup has had several additional investments since
+    then. Level 4 means the vehicle can handle all aspects of driving in certain conditions
+    without human intervention. Teslas head of AI Andrej Karpathy recently revealed
+    the companys new supercomputer that takes a vision-only approach, but Burnette
+    fundamentally disagrees with that method. It will also work on hiring fresh talent
+    and expanding its truck fleet, with a stated goal of at least doubling the number
+    of vehicles it operates each year. Our system can automatically identify that
+    and then slow down as required by law, or nudge away from that object to give
+    it more space. BMWs Silicon Valley-based venture capital arm is investing in Kodiak
+    Robotics, a company that develops autonomous trucking technology.
+- source:
+    id: techcrunch
+    name: TechCrunch
+  author: Rebecca Bellan
+  title: BMW i Ventures announces new $300 million fund to invest in sustainable technology
+  description: BMW i Ventures, the venture capital arm of BMW Group, has announced
+    a new $300 million fund to further its investment in technologies that make transportation,
+    manufacturing and supply chains more sustainable.  The firm doesn’t operate as
+    a traditional corpor…
+  url: http://techcrunch.com/2021/06/30/bmw-i-ventures-announces-new-300-million-fund-to-invest-in-sustainable-technology/
+  urlToImage: https://techcrunch.com/wp-content/uploads/2021/06/i-Ventures-Fund-II.jpg?w=613
+  publishedAt: '2021-06-30T19:38:56Z'
+  content: BMW i Ventures, the venture capital arm of BMW Group, has announced a new
+    $300 million fund to further its investment in technologies that make transportation,
+    manufacturing and supply chains more su… [+4293 chars]
+  page_url: "/bmw-i-ventures-announces-new-300-million-fund-to-invest-in-sustainable-technology"
+  summary: For example, autonomous truck company Kodiak Robotics, which last week
+    announced an investment from BMW i Ventures, was a part of this fund. The firm
+    has already made its first investment out of the new fund with U.K.-based Motorway,
+    a used car marketplace. The firm doesnt operate as a traditional corporate venture
+    capital fund, but rather acts independently from BMW while being fully backed
+    by the German automaker. In some cases its just making them aware that this new
+    technology exists and might be coming your way, said Sage. Fund I focused more
+    on autonomous and digital vehicle technology, customer experience and advanced
+    production. We have two goals right now, so the first is the financial goal and
+    thats our most important driver, Kasper Sage, managing partner at BMW i Ventures,
+    told TechCrunch. We are introducing them and will bring them into the company,
+    they will be talking to the right engineers.
+- source:
+    id: techcrunch
+    name: TechCrunch
+  author: Emma Betuel
+  title: FabricNano raises $12.5M to help scale its cell-free fossil fuel alternative
+    technology
+  description: It’s not often that you hear DNA described as a wafer – but that’s
+    the analogy that Grant Aarons, the founder of FabricNano, a cell-free biomanufacturing
+    company uses to describe his company’s major product. That DNA, the company hopes,
+    will make a dent in a …
+  url: http://techcrunch.com/2021/07/06/fabricnano-raises-12-5m-to-help-scale-its-cell-free-fossil-fuel-alternative-technology/
+  urlToImage: https://techcrunch.com/wp-content/uploads/2021/07/GettyImages-1022278676.jpg?w=600
+  publishedAt: '2021-07-06T11:45:10Z'
+  content: Its not often that you hear DNA described as a wafer but thats the analogy
+    that Grant Aarons, the founder of FabricNano, a cell-free biomanufacturing company
+    uses to describe his companys major produ… [+5839 chars]
+  page_url: "/fabricnano-raises-12-5m-to-help-scale-its-cell-free-fossil-fuel-alternative-technology"
+  summary: That DNA, the company hopes, will make a dent in a growing global petrochemical
+    industry that currently relies on fossil fuels and their byproducts. It is a scalable
+    and sustainable way to make low-value molecules, like bioplastics.Part of FabricNanos
+    identity hinges on creating a bio-based alternative within the growing petrochemical
+    sector. At the moment, FabricNano can already create chemicals like 1,3 propanediol,
+    an ingredient that can be used to replace polyethylene glycol in toothpaste or
+    shampoo. If the enzymes that stick to that DNA wafer and help produce chemicals
+    are software, the DNA scaffold is FabricNanos hardware. Were looking to provide
+    [manufacturers] with the technology that they can then use to manufacture at scale
+    and at a low enough cost. Still, FabricNanos distinguishing approach probably
+    isnt the commodity chemicals it has made so far, but the actual DNA scaffold.
+    Biomanufacturing, simply, uses the enzymes within a cell or microbe to produce
+    an end-product.
+- source:
+    id: techcrunch
+    name: TechCrunch
+  author: Annie Siebert
+  title: For vehicle safety, the future is now
+  description: Congress has an opportunity to help build public trust in the safety
+    of driverless technology by requiring existing innovations that will be the building
+    blocks of driverless vehicles.
+  url: http://techcrunch.com/2021/06/14/for-vehicle-safety-the-future-is-now/
+  urlToImage: https://techcrunch.com/wp-content/uploads/2021/06/GettyImages-1300574373.jpg?w=600
+  publishedAt: '2021-06-14T20:00:22Z'
+  content: Every day in the United States, more than 100 people die because of a car
+    crash. Some are teenagers, like the daughter of writer Michael Lewis and Tabitha
+    Soren, and her boyfriend, who died in a wron… [+8036 chars]
+  page_url: "/for-vehicle-safety-the-future-is-now"
+  summary: Even if a green light for mass driverless vehicle production were given
+    today, it would be decades before they could make a significant impact on improving
+    overall safety. Today these systems, when working correctly, can help limit crashes
+    by assisting human drivers, just as someday these features may assist computer
+    drivers. Congress must push the industry to move quickly to protect lives before
+    profits and stand behind their products when things inevitably go wrong. No one
+    should forget that the Ford Pinto met all the minimum standards when it was recalled
+    for exploding upon impact when hit from behind. Some are well known, like Kevin
+    Clark, who played the drummer in School of Rock, who was hit and killed by a driver
+    while biking. Every day in the United States, more than 100 people die because
+    of a car crash. Some are teenagers, like the daughter of writer Michael Lewis
+    and Tabitha Soren, and her boyfriend, who died in a wrong-way crash.
+- source:
+    id: techcrunch
+    name: TechCrunch
+  author: Ram Iyer
+  title: What SOSV’s Climate Tech 100 tells founders about investors in the space
+  description: Who's investing in technology and startups that promise better human
+    and planetary health? Here's a definitive who's-who of top climate tech VCs, angels
+    and more.
+  url: http://techcrunch.com/2021/06/10/what-sosvs-climate-tech-100-tells-founders-about-investors-in-the-space/
+  urlToImage: https://techcrunch.com/wp-content/uploads/2021/06/GettyImages-1159835038.jpg?w=711
+  publishedAt: '2021-06-10T16:51:17Z'
+  content: "More posts by this contributor\r\nOn Earth Day, April 22, SOSV published
+    the SOSV Climate Tech 100, a list of the best startups that weve supported from
+    their earliest stages to address climate change.… [+1957 chars]"
+  page_url: "/what-sosvs-climate-tech-100-tells-founders-about-investors-in-the-space"
+  summary: On Earth Day, April 22, SOSV published the SOSV Climate Tech 100, a list
+    of the best startups that weve supported from their earliest stages to address
+    climate change. The report found that only 10 firms out of 2,700 made four or
+    more climate tech deals per year, on average, over the 2013-2019 period. There
+    are clearly a lot of investors interested in climate tech, and most are generalists
+    just testing the waters. In other words, who invested in the Climate Tech 100?
+    There are always valuable insights embedded in a list like the 100.
+- source:
+    id: the-verge
+    name: The Verge
+  author: Andrew J. Hawkins
+  title: Elon Musk just now realizing that self-driving cars are a ‘hard problem’
+  description: Elon Musk admitted that self-driving cars were a harder problem than
+    he originally thought. It’s an obvious admission, but one worth noting given the
+    Tesla CEO’s habit for overpromising and underdelivering when it comes to autonomous
+    vehicle technology.
+  url: https://www.theverge.com/2021/7/5/22563751/tesla-elon-musk-full-self-driving-admission-autopilot-crash
+  urlToImage: https://cdn.vox-cdn.com/thumbor/9-NDUisqcB0j2xi2cGnhfBDc8T4=/0x373:4000x2467/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22386618/1229901940.jpg
+  publishedAt: '2021-07-05T14:53:58Z'
+  content: Tesla CEO Elon Musk is finally admitting that he underestimated how difficult
+    it is to develop a safe and reliable self-driving car. To which the entire engineering
+    community rose up as one to say, “… [+4466 chars]
+  page_url: "/tesla-elon-musk-full-self-driving-admission-autopilot-crash"
+  summary: Waymo, like practically every AV company, uses a combination of different
+    sensors, like radar, lidar, and cameras, to ensure there are redundancies in case
+    any system failures. Musk has a long history of over promising and under delivering
+    when it comes to his companys so-called Full Self-Driving software. Meanwhile,
+    AV companies like Waymo have real driverless vehicles on public roads giving rides
+    to passengers. Haha, FSD 9 beta is shipping soon, I swear!Generalized self-driving
+    is a hard problem, as it requires solving a large part of real-world AI. He did
+    it in 2018, when he promised that the long awaited V9 (Version 9) would begin
+    rolling out in August. To which the entire engineering community rose up as one
+    to say, No duh.Or at least thats how it should have happened in a just world.
+    Filed under:Overpromising and underdelivering Tesla CEO Elon Musk is finally admitting
+    that he underestimated how difficult it is to develop a safe and reliable self-driving
+    car.
+- source:
+    id: techcrunch
+    name: TechCrunch
+  author: Ram Iyer
+  title: The hidden benefits of adding a CTO to your board
+  description: Not only do CTOs understand the ever-changing tech landscape, they
+    also provide insights to help organizations to go beyond traditional IT conversations
+    and leverage technology to scale businesses.
+  url: http://techcrunch.com/2021/06/07/the-hidden-benefits-of-adding-a-cto-to-your-board/
+  urlToImage: https://techcrunch.com/wp-content/uploads/2021/06/GettyImages-607969437.jpg?w=711
+  publishedAt: '2021-06-07T19:35:53Z'
+  content: The pandemic forced companies around the world to adjust to a “new normal,”
+    which caused many leaders to pivot their business strategies and adopt new technologies
+    to continue operations. In a time o… [+2068 chars]
+  page_url: "/the-hidden-benefits-of-adding-a-cto-to-your-board"
+  summary: The pandemic forced companies around the world to adjust to a new normal,
+    which caused many leaders to pivot their business strategies and adopt new technologies
+    to continue operations. While such executives bring vast experience, they have
+    very specific expertise, and that frequently does not include technical proficiency.
+    As a CTO myself, I know how important and impactful it can be to have technical-minded
+    leaders on a companys board of directors. There are now more reasons than ever
+    to consider adding a CTO to your board.
+- source:
+    id:
+    name: New York Times
+  author:
+  title: Apple’s Bet on China
+  description: When the technology giant first started doing business in China, it
+    thought it would change the country. Decades later, the reverse is true.
+  url: https://www.nytimes.com/2021/06/14/podcasts/the-daily/apple-china-privacy.html
+  urlToImage: https://static01.nyt.com/images/2021/06/14/podcasts/14DAILY-apple-china/14DAILY-apple-china-facebookJumbo.jpg
+  publishedAt: '2021-06-14T10:00:06Z'
+  content: "Jack Nicas contributed reporting.\r\nThe Daily is made by Lisa Tobin,
+    Rachel Quester, Lynsea Garrison, Annie Brown, Clare Toeniskoetter, Paige Cowett,
+    Michael Simon Johnson, Brad Fisher, Larissa Anders… [+677 chars]"
+  page_url: "/apple-china-privacy.html"
+  summary: Under the new law, China wants Apple to bring that data to China and store
+    that data on Chinese government servers. Apple is the most valuable company in
+    the world, and it is the richest company in the world and the most profitable
+    company in the world. Now, we dont know exactly what Apple was doing and saying
+    to make its case to the Chinese government, and we dont know exactly how the Chinese
+    government responded. Prior to this law, Apple stored this data largely outside
+    of China.And this data was encrypted, which meant it could only be accessed with
+    certain digital encryption keys. It is agreeing to import one of democracys most
+    cherished values  economic freedom.In previous years, China and the communist
+    government had this state-run, tightly controlled economy. How should we think
+    about that bet now?So from an economic standpoint, Apples bet on China has been
+    one of the biggest successes in modern business history. They are getting more
+    access to the data of Chinas biggest internet companies like Tencent.
+- source:
+    id:
+    name: New York Times
+  author: The New York Times
+  title: 'Business Updates: Google Draws E.U. Antitrust Inquiry'
+  description: The bloc’s investigation, which takes aim at the heart of Google’s
+    business model, is part of a push to regulate the world’s largest technology companies.
+  url: https://www.nytimes.com/live/2021/06/22/business/economy-stock-market-news
+  urlToImage: https://static01.nyt.com/images/2021/06/22/business/22economy-briefing-eu-googleantitrust/merlin_189696045_cbcae2d1-3d8f-4f7a-a7fb-22fef52c9027-facebookJumbo.jpg
+  publishedAt: '2021-06-22T11:09:56Z'
+  content: "European Union regulators said on Tuesday that Google was the subject
+    of a new antitrust investigation for potentially abusing its dominance in the
+    online advertising market to box out competition.\r\n… [+6618 chars]"
+  page_url: "/economy-stock-market-news"
+  summary: Theres sort of a perfect storm of very strong demand and weak supply due
+    to the reopening of the economy and various factors. Still, some senior executives
+    have worried about pushback from employees.This month, Goldman Sachs said its
+    employees in the United States would have to report their vaccination status.
+    (The retail workers union is challenging the results of the election at the Bessemer
+    warehouse, accusing Amazon of intimidating workers. Powell added that price jumps
+    have been bigger than expected and that the Fed was monitoring them closely, but
+    he said they were still expected to wane over time. These things hold us back
+    as an economy and as a country.The Fed cannot solve issues of economic inequality
+    itself, he said. Lumber prices in the futures market, for example, are down more
+    than 45 percent from their peak, slipping below $1,000 for the first time in months.
+    They dont speak to a broadly tight economy into the kind of thing that has led
+    to high inflation over time.
+- source:
+    id:
+    name: Blog.google
+  author: Jonathan Richards Team Lead, Google Creative Lab
+  title: An exploration of art, nature and technology
+  description: Caroline Rothwell is a Sydney-based visual artist whose work tackles
+    important conversations about human interactions with nature throughout history
+    -- and their lasting effects. In her latest body of work, she hopes to bring attention
+    to the plants around us…
+  url: https://blog.google/around-the-globe/google-asia/infinite-herbarium/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+blogspot%2FMKuf+%28The+Keyword+%7C+Official+Google+Blog%29
+  urlToImage: https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Infinite_Herbarium_film__keyframe.max-1300x1300.png
+  publishedAt: '2021-07-01T00:30:00Z'
+  content: Caroline Rothwell is a Sydney-based visual artist whose work tackles important
+    conversations about human interactions with nature throughout history and their
+    lasting effects. In her latest body of w… [+641 chars]
+  page_url: "/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+blogspot%2FMKuf+%28The+Keyword+%7C+Official+Google+Blog%29"
+  summary: So with the help of Google Creative Lab Sydney, she began exploring how
+    machine learning could interpret archives and datasets to create new art. Then,
+    using machine learning, the application classifies the plants and uses them to
+    build a multi-dimensional artwork. She wanted to see if technology could help
+    her use botanical data from historical archives to educate people about the natural
+    world. In her latest body of work, she hopes to bring attention to the plants
+    around us we so often take for granted. The machine learning model is trained
+    on a vast database of botanical illustrations. Jul 01, 2021mins readCaroline Rothwell
+    is a Sydney-based visual artist whose work tackles important conversations about
+    human interactions with nature throughout history  and their lasting effects.
+    Its an area rich in potential, and one that we hope to continue exploring with
+    artists across multiple disciplines.Lets stay in touch.
+- source:
+    id:
+    name: New York Times
+  author: Nina Siegal
+  title: Rembrandt’s Damaged Masterpiece Is Whole Again, With A.I.’s Help
+  description: Sections of “The Night Watch” were cut off in the 18th century and
+    lost. Now, new technology lets viewers imagine how the original work might have
+    looked.
+  url: https://www.nytimes.com/2021/06/23/arts/design/rembrandt-night-watch-artificial-intelligence.html
+  urlToImage: https://static01.nyt.com/images/2021/06/22/arts/23night-watch1/23night-watch1-facebookJumbo.jpg
+  publishedAt: '2021-06-23T06:46:36Z'
+  content: The cutdown painting is about 15 feet wide by 13 feet high. About two feet
+    from the left of the canvas was shaved off, and another nine inches from the top.
+    Lesser damage was done to the bottom, whic… [+881 chars]
+  page_url: "/rembrandt-night-watch-artificial-intelligence.html"
+  summary: 'Rembrandt painted them this way to create a sense of movement through
+    the canvas.Once the new pieces were restored, so was the balance, Dibbits said.
+    The original was asymmetrical: The large arch that stands behind the crowd was
+    in the middle, and the groups leaders were on the right. About two feet from the
+    left of the canvas was shaved off, and another nine inches from the top. It was
+    useful as a model for the missing pieces, even if Lundenss style was nowhere near
+    as detailed as Rembrandts. The figure looks suspiciously like the artist.Thats
+    so like Rembrandt, Dibbits said. The snipped pieces were lost. AdvertisementSupported
+    bySections of The Night Watch were cut off in the 18th century and lost.'
+- source:
+    id: techcrunch
+    name: TechCrunch
+  author: Rebecca Bellan
+  title: Motional CEO hints at an autonomous future in logistics
+  description: Motional, the $4 billion joint venture between Aptiv and Hyundai, is
+    exploring the company’s potential involvement in autonomous trucking or logistics,
+    its CEO said today during a live session at TechCrunch’s 2021 Mobility Event.
+    “The beauty of what’s on the …
+  url: http://techcrunch.com/2021/06/09/motional-ceo-hints-at-an-autonomous-future-in-logistics/
+  urlToImage: https://techcrunch.com/wp-content/uploads/2020/10/Screen-Shot-2020-10-27-at-4.26.43-PM.jpg?w=761
+  publishedAt: '2021-06-09T23:51:45Z'
+  content: Motional, the $4 billion joint venture between Aptiv and Hyundai, is exploring
+    the company’s potential involvement in autonomous trucking or logistics, its CEO
+    said today during a live session at Tec… [+3122 chars]
+  page_url: "/motional-ceo-hints-at-an-autonomous-future-in-logistics"
+  summary: These different use cases have, in some cases, quite dramatically different
+    business cases around them, the opportunity looks quite different. And then again,
+    we tried to align that toward our current technology development path to say,
+    hey, this would be the least incremental effort for the biggest incremental opportunity.
+    And that looks more like kind of a conventional business. And so we are actively
+    exploring other use cases. And so that helps us score rank order internally. What
+    presents an interesting opportunity? We dont have anything to announce today.
+- source:
+    id: techcrunch
+    name: TechCrunch
+  author: Carly Page
+  title: Industrial cybersecurity startup Claroty raises $140M in pre-IPO funding
+    round
+  description: Claroty, an industrial cybersecurity company that helps customers protect
+    and manage their Internet of Things (IoT) and operational technology (OT) assets,
+    has raised $140 million in its latest, and potentially last round of funding. 
+    With the new round of Se…
+  url: http://techcrunch.com/2021/06/17/industrial-cybersecurity-startup-claroty-raises-140m-in-pre-ipo-funding-round/
+  urlToImage: https://techcrunch.com/wp-content/uploads/2021/06/GettyImages-1222958278.jpg?w=600
+  publishedAt: '2021-06-17T12:20:08Z'
+  content: Claroty, an industrial cybersecurity company that helps customers protect
+    and manage their Internet of Things (IoT) and operational technology (OT) assets,
+    has raised $140 million in its latest, and … [+3247 chars]
+  page_url: "/industrial-cybersecurity-startup-claroty-raises-140m-in-pre-ipo-funding-round"
+  summary: According to a recent survey carried out by Claroty, the majority (53%)
+    of U.S. industrial enterprises have seen an increase in cybersecurity threats
+    since the start of 2020. With the new round of Series D funding, co-led by Bessemer
+    and 40 North, the company has now amassed a total of $235 million. Founded in
+    2015, the late-stage startup focuses on the industrial side of cybersecurity.
+    The end goal here is to be the market leader for industrial cybersecurity. The
+    number of attacks, and impact of these attacks, is increasing significantly, especially
+    in verticals like food, automotive, and critical infrastructure. Its customers
+    include General Motors, Coca-Cola EuroPacific Partners and Pfizer, with Claroty
+    helping the pharmaceutical firm to secure its COVID-19 vaccine supply chain. Additional
+    strategic investors include LG and I Squared Capitals ISQ Global InfraTech Fund,
+    with all previous investors  Team8, Rockwell Automation, Siemens and Schneider
+    Electric  also participating.

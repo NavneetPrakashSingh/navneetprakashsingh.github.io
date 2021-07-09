@@ -1,9 +1,20 @@
 ---
 layout: page
-title: News
 permalink: /rembrandt-night-watch-artificial-intelligence.html
 comments: false
 ---
+
+<meta name="description" content="Sections of “The Night Watch” were cut off in the 18th century and lost. Now, new technology lets viewers imagine how the original work might have looked.">
+
+<meta property="og:site_name" content="makemetechie">
+<meta property="og:title" content="Rembrandt’s Damaged Masterpiece Is Whole Again, With A.I.’s Help">
+<meta property="og:type" content="article">
+<meta property="og:description" content="Sections of “The Night Watch” were cut off in the 18th century and lost. Now, new technology lets viewers imagine how the original work might have looked."/>
+
+<meta property="og:url" content="/rembrandt-night-watch-artificial-intelligence.html" />
+<meta property="article:tag" content="New York Times">
+
+
 
 <div class="row">
 <div class="col-12">
@@ -27,6 +38,12 @@ comments: false
 </div>
 <div class="row">
 <div class="col-12">
+
+
+<div>
+  {% include ads-main.html %}
+</div>
+
 <div>The cutdown painting is about 15 feet wide by 13 feet high. About two feet from the left of the canvas was shaved off, and another nine inches from the top. Lesser damage was done to the bottom, whic… [+881 chars]</div>
 </div>
 </div>

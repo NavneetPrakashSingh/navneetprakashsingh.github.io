@@ -1,9 +1,20 @@
 ---
 layout: page
-title: News
 permalink: /widespread-electrification-requires-us-to-rethink-battery-technology
 comments: false
 ---
+
+<meta name="description" content="The global transition to electrification has increased demand for longer-lasting and faster-charging batteries. But battery innovation hasn’t kept pace with society’s ambitions.">
+
+<meta property="og:site_name" content="makemetechie">
+<meta property="og:title" content="Widespread electrification requires us to rethink battery technology">
+<meta property="og:type" content="article">
+<meta property="og:description" content="The global transition to electrification has increased demand for longer-lasting and faster-charging batteries. But battery innovation hasn’t kept pace with society’s ambitions."/>
+
+<meta property="og:url" content="/widespread-electrification-requires-us-to-rethink-battery-technology" />
+<meta property="article:tag" content="TechCrunch">
+
+
 
 <div class="row">
 <div class="col-12">
@@ -27,6 +38,12 @@ comments: false
 </div>
 <div class="row">
 <div class="col-12">
+
+
+<div>
+  {% include ads-main.html %}
+</div>
+
 <div>The global economys transition to widespread electrification has increased the demand for longer-lasting and faster-charging batteries across industries including transportation, consumer electronics… [+8099 chars]</div>
 </div>
 </div>
