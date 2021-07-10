@@ -69,7 +69,7 @@ comments: false
                     " src=\""+selected_date_data.article[i].urlToImage+"\"> "+
                   "</a> "+
                 "</div> "+
-                "<a class=\"text-dark\" href=\"{{ items.page_url }}\"> "+
+                "<a class=\"text-dark\" href=\""+selected_date_data.article[i].urlToImage+"\"> "+
                 "<div class=\"card-body\"> "+
                 " <h2 class=\"card-title\"> "+
                   selected_date_data.article[i].title+
