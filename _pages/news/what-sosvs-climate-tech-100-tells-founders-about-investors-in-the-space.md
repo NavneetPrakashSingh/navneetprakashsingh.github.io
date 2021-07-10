@@ -1,26 +1,13 @@
 ---
 layout: page
 permalink: /what-sosvs-climate-tech-100-tells-founders-about-investors-in-the-space
+canonical_url: /what-sosvs-climate-tech-100-tells-founders-about-investors-in-the-space
+title: What SOSV’s Climate Tech 100 tells founders about investors in the space
+description: Who's investing in technology and startups that promise better human and planetary health? Here's a definitive who's-who of top climate tech VCs, angels and more.
+url: /what-sosvs-climate-tech-100-tells-founders-about-investors-in-the-space
 comments: false
 ---
 
-<meta name="description" content="Who's investing in technology and startups that promise better human and planetary health? Here's a definitive who's-who of top climate tech VCs, angels and more.">
-
-<meta property="og:site_name" content="makemetechie">
-<meta property="og:title" content="What SOSV’s Climate Tech 100 tells founders about investors in the space">
-<meta property="og:type" content="article">
-<meta property="og:description" content="Who's investing in technology and startups that promise better human and planetary health? Here's a definitive who's-who of top climate tech VCs, angels and more."/>
-
-<meta property="og:url" content="/what-sosvs-climate-tech-100-tells-founders-about-investors-in-the-space" />
-<meta property="article:tag" content="TechCrunch">
-
-
-
-<div class="row">
-<div class="col-12">
-<h2>What SOSV’s Climate Tech 100 tells founders about investors in the space</h2>
-</div>
-</div>
 <div class="row">
 <div class="col-12">
 <img src="https://techcrunch.com/wp-content/uploads/2021/06/GettyImages-1159835038.jpg?w=711">
@@ -40,7 +27,7 @@ comments: false
 <div class="col-12">
 
 
-<div>
+<div class="row">
   {% include ads-main.html %}
 </div>
 

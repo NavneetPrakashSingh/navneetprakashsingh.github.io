@@ -1,26 +1,13 @@
 ---
 layout: page
 permalink: /india-startup-byju-student-data
+canonical_url: /india-startup-byju-student-data
+title: Indian tech startup exposed Byju’s student data
+description: India-based technology startup Salesken.ai has secured an exposed server that was spilling private and sensitive data on one of its customers, Byju’s, an education technology giant and India’s most valuable startup. The server was left unprotected since at le…
+url: /india-startup-byju-student-data
 comments: false
 ---
 
-<meta name="description" content="India-based technology startup Salesken.ai has secured an exposed server that was spilling private and sensitive data on one of its customers, Byju’s, an education technology giant and India’s most valuable startup. The server was left unprotected since at le…">
-
-<meta property="og:site_name" content="makemetechie">
-<meta property="og:title" content="Indian tech startup exposed Byju’s student data">
-<meta property="og:type" content="article">
-<meta property="og:description" content="India-based technology startup Salesken.ai has secured an exposed server that was spilling private and sensitive data on one of its customers, Byju’s, an education technology giant and India’s most valuable startup. The server was left unprotected since at le…"/>
-
-<meta property="og:url" content="/india-startup-byju-student-data" />
-<meta property="article:tag" content="TechCrunch">
-
-
-
-<div class="row">
-<div class="col-12">
-<h2>Indian tech startup exposed Byju’s student data</h2>
-</div>
-</div>
 <div class="row">
 <div class="col-12">
 <img src="https://techcrunch.com/wp-content/uploads/2021/06/GettyImages-1133907439.jpg?w=599">
@@ -40,7 +27,7 @@ comments: false
 <div class="col-12">
 
 
-<div>
+<div class="row">
   {% include ads-main.html %}
 </div>
 
