@@ -50,8 +50,8 @@ module Jekyll
 
             # store the json by hitting newsAPI url endpoint
             #Test URL: https://jsonkeeper.com/b/OYMM
-            #PROD: http://newsapi.org/v2/everything?q=technology&apiKey=2091bf4714d3486d9f9ef80346ad60f8
-            url = URI.parse('http://newsapi.org/v2/everything?q=technology&apiKey=2091bf4714d3486d9f9ef80346ad60f8')
+            #PROD: http://newsapi.org/v2/everything?q=tech&apiKey=2091bf4714d3486d9f9ef80346ad60f8
+            url = URI.parse('http://newsapi.org/v2/everything?q=tech&apiKey=2091bf4714d3486d9f9ef80346ad60f8')
             req = Net::HTTP::Get.new(url.request_uri)
             http = Net::HTTP.new(url.host, url.port)
             http.use_ssl = (url.scheme == "https")
@@ -67,13 +67,13 @@ module Jekyll
 
                 # Dynamically generating static pages here
                 @news_page_link = json_response["page_url"]
-                @news_page_heading  = json_response["title"]
+                @news_page_heading  = json_response["title"].delete(":")
                 @news_image       = json_response["urlToImage"]
                 @news_source      = json_response["source"]["name"]
                 @news_summary      = json_response["summary"]
                 @news_body      = json_response["content"]
                 @news_more      = json_response["url"]
-                @news_description=json_response["description"]
+                @news_description=json_response["description"].delete(":")
 
                 # render template
                 template = File.read('_pages/templates/template.html.erb')

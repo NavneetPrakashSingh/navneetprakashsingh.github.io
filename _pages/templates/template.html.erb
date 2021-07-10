@@ -1,26 +1,13 @@
 ---
 layout: page
 permalink: <%= @news_page_link %>
+canonical_url: <%= @news_page_link %>
+title: <%= @news_page_heading %>
+description: <%= @news_description %>
+url: <%= @news_page_link %>
 comments: false
 ---
 
-<meta name="description" content="<%= @news_description %>">
-
-<meta property="og:site_name" content="makemetechie">
-<meta property="og:title" content="<%= @news_page_heading %>">
-<meta property="og:type" content="article">
-<meta property="og:description" content="<%= @news_description %>"/>
-
-<meta property="og:url" content="<%= @news_page_link %>" />
-<meta property="article:tag" content="<%= @news_source %>">
-
-
-
-<div class="row">
-<div class="col-12">
-<h2><%= @news_page_heading %></h2>
-</div>
-</div>
 <div class="row">
 <div class="col-12">
 <img src="<%= @news_image %>">
@@ -40,7 +27,7 @@ comments: false
 <div class="col-12">
 
 
-<div>
+<div class="row">
   {% include ads-main.html %}
 </div>
 
