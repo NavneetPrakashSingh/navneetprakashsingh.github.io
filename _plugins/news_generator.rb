@@ -51,7 +51,7 @@ module Jekyll
             # store the json by hitting newsAPI url endpoint
             #Test URL: https://jsonkeeper.com/b/OYMM
             #PROD: http://newsapi.org/v2/everything?q=tech&apiKey=2091bf4714d3486d9f9ef80346ad60f8
-            url = URI.parse('http://newsapi.org/v2/everything?q=tech&apiKey=2091bf4714d3486d9f9ef80346ad60f8')
+            url = URI.parse('https://newsapi.org/v2/top-headlines?sources=engadget,thenextweb&sortBy=popularity&apiKey=2091bf4714d3486d9f9ef80346ad60f8')
             req = Net::HTTP::Get.new(url.request_uri)
             http = Net::HTTP.new(url.host, url.port)
             http.use_ssl = (url.scheme == "https")
