@@ -1,0 +1,1532 @@
+---
+article:
+- source:
+    id: engadget
+    name: Engadget
+  author: https://www.engadget.com/about/editors/cherlynn-low
+  title: Tag Heuer made a Super Mario-themed smartwatch because why not | Engadget
+  description: Tag Heuer is collaborating with Nintendo to make a limited Super Mario
+    edition of its Connected smartwatch..
+  url: https://www.engadget.com/its-a-me-mario-smartwatch-by-tag-heuer-connected-060037257.html
+  urlToImage: https://s.yimg.com/os/creatr-uploaded-images/2021-07/cbe68f00-e347-11eb-9df7-ce48ead0ab76
+  publishedAt: '2021-07-13T06:07:21.1345679Z'
+  content: Your favorite video game plumber will soon be available on a Wear OS watch.
+    Tag Heuer announced today that it's collaborating with Nintendo to make a Super
+    Mario edition of its Connected smartwatch, … [+3697 chars]
+  page_url: "/its-a-me-mario-smartwatch-by-tag-heuer-connected-060037257.html"
+  summary: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\"
+    content=\"text/html; charset=utf-8\">\n  <meta name=\"robots\" content=\"NONE,NOARCHIVE\">\n
+    \ <title>LookupError\n          at /api/</title>\n  <style type=\"text/css\">\n
+    \   html * { padding:0; margin:0; }\n    body * { padding:10px 20px; }\n    body
+    * * { padding:0; }\n    body { font:small sans-serif; background-color:#fff; color:#000;
+    }\n    body>div { border-bottom:1px solid #ddd; }\n    h1 { font-weight:normal;
+    }\n    h2 { margin-bottom:.8em; }\n    h3 { margin:1em 0 .5em 0; }\n    h4 { margin:0
+    0 .5em 0; font-weight: normal; }\n    code, pre { font-size: 100%; white-space:
+    pre-wrap; }\n    table { border:1px solid #ccc; border-collapse: collapse; width:100%;
+    background:white; }\n    tbody td, tbody th { vertical-align:top; padding:2px
+    3px; }\n    thead th {\n      padding:1px 6px 1px 3px; background:#fefefe; text-align:left;\n
+    \     font-weight:normal; font-size:11px; border:1px solid #ddd;\n    }\n    tbody
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }\n    table.vars
+    { margin:5px 0 2px 40px; }\n    table.vars td, table.req td { font-family:monospace;
+    }\n    table td.code { width:100%; }\n    table td.code pre { overflow:hidden;
+    }\n    table.source th { color:#666; }\n    table.source td { font-family:monospace;
+    white-space:pre; border-bottom:1px solid #eee; }\n    ul.traceback { list-style-type:none;
+    color: #222; }\n    ul.traceback li.frame { padding-bottom:1em; color:#4f4f4f;
+    }\n    ul.traceback li.user { background-color:#e0e0e0; color:#000 }\n    div.context
+    { padding:10px 0; overflow:hidden; }\n    div.context ol { padding-left:30px;
+    margin:0 10px; list-style-position: inside; }\n    div.context ol li { font-family:monospace;
+    white-space:pre; color:#777; cursor:pointer; padding-left: 2px; }\n    div.context
+    ol li pre { display:inline; }\n    div.context ol.context-line li { color:#464646;
+    background-color:#dfdfdf; padding: 3px 2px; }\n    div.context ol.context-line
+    li span { position:absolute; right:32px; }\n    .user div.context ol.context-line
+    li { background-color:#bbb; color:#000; }\n    .user div.context ol li { color:#666;
+    }\n    div.commands { margin-left: 40px; }\n    div.commands a { color:#555; text-decoration:none;
+    }\n    .user div.commands a { color: black; }\n    #summary { background: #ffc;
+    }\n    #summary h2 { font-weight: normal; color: #666; }\n    #explanation { background:#eee;
+    }\n    #template, #template-not-exist { background:#f6f6f6; }\n    #template-not-exist
+    ul { margin: 0 0 10px 20px; }\n    #template-not-exist .postmortem-section { margin-bottom:
+    3px; }\n    #unicode-hint { background:#eee; }\n    #traceback { background:#eee;
+    }\n    #requestinfo { background:#f6f6f6; padding-left:120px; }\n    #summary
+    table { border:none; background:transparent; }\n    #requestinfo h2, #requestinfo
+    h3 { position:relative; margin-left:-100px; }\n    #requestinfo h3 { margin-bottom:-1em;
+    }\n    .error { background: #ffc; }\n    .specific { color:#cc3300; font-weight:bold;
+    }\n    h2 span.commands { font-size:.7em; font-weight:normal; }\n    span.commands
+    a:link {color:#5E5694;}\n    pre.exception_value { font-family: sans-serif; color:
+    #575757; font-size: 1.5em; margin: 10px 0 10px 0; }\n    .append-bottom { margin-bottom:
+    10px; }\n    .fname { user-select: all; }\n  </style>\n  \n  <script>\n    function
+    hideAll(elems) {\n      for (var e = 0; e < elems.length; e++) {\n        elems[e].style.display
+    = 'none';\n      }\n    }\n    window.onload = function() {\n      hideAll(document.querySelectorAll('table.vars'));\n
+    \     hideAll(document.querySelectorAll('ol.pre-context'));\n      hideAll(document.querySelectorAll('ol.post-context'));\n
+    \     hideAll(document.querySelectorAll('div.pastebin'));\n    }\n    function
+    toggle() {\n      for (var i = 0; i < arguments.length; i++) {\n        var e
+    = document.getElementById(arguments[i]);\n        if (e) {\n          e.style.display
+    = e.style.display == 'none' ? 'block': 'none';\n        }\n      }\n      return
+    false;\n    }\n    function varToggle(link, id) {\n      toggle('v' + id);\n      var
+    s = link.getElementsByTagName('span')[0];\n      var uarr = String.fromCharCode(0x25b6);\n
+    \     var darr = String.fromCharCode(0x25bc);\n      s.textContent = s.textContent
+    == uarr ? darr : uarr;\n      return false;\n    }\n    function switchPastebinFriendly(link)
+    {\n      s1 = \"Switch to copy-and-paste view\";\n      s2 = \"Switch back to
+    interactive view\";\n      link.textContent = link.textContent.trim() == s1 ?
+    s2: s1;\n      toggle('browserTraceback', 'pastebinTraceback');\n      return
+    false;\n    }\n  </script>\n  \n</head>\n<body>\n<div id=\"summary\">\n  <h1>LookupError\n
+    \      at /api/</h1>\n  <pre class=\"exception_value\">\n**********************************************************************\n
+    \ Resource \e[93mpunkt\e[0m not found.\n  Please use the NLTK Downloader to obtain
+    the resource:\n\n  \e[31m&gt;&gt;&gt; import nltk\n  &gt;&gt;&gt; nltk.download(&#x27;punkt&#x27;)\n
+    \ \e[0m\n  For more information see: https://www.nltk.org/data.html\n\n  Attempted
+    to load \e[93mtokenizers/punkt/PY3/english.pickle\e[0m\n\n  Searched in:\n    -
+    &#x27;/app/nltk_data&#x27;\n    - &#x27;/app/.heroku/python/nltk_data&#x27;\n
+    \   - &#x27;/app/.heroku/python/share/nltk_data&#x27;\n    - &#x27;/app/.heroku/python/lib/nltk_data&#x27;\n
+    \   - &#x27;/usr/share/nltk_data&#x27;\n    - &#x27;/usr/local/share/nltk_data&#x27;\n
+    \   - &#x27;/usr/lib/nltk_data&#x27;\n    - &#x27;/usr/local/lib/nltk_data&#x27;\n
+    \   - &#x27;&#x27;\n**********************************************************************\n</pre>\n
+    \ <table class=\"meta\">\n\n    <tr>\n      <th>Request Method:</th>\n      <td>POST</td>\n
+    \   </tr>\n    <tr>\n      <th>Request URL:</th>\n      <td>https://api-makemetechie.herokuapp.com/api/</td>\n
+    \   </tr>\n\n    <tr>\n      <th>Django Version:</th>\n      <td>3.2.5</td>\n
+    \   </tr>\n\n    <tr>\n      <th>Exception Type:</th>\n      <td>LookupError</td>\n
+    \   </tr>\n\n\n    <tr>\n      <th>Exception Value:</th>\n      <td><pre>\n**********************************************************************\n
+    \ Resource \e[93mpunkt\e[0m not found.\n  Please use the NLTK Downloader to obtain
+    the resource:\n\n  \e[31m&gt;&gt;&gt; import nltk\n  &gt;&gt;&gt; nltk.download(&#x27;punkt&#x27;)\n
+    \ \e[0m\n  For more information see: https://www.nltk.org/data.html\n\n  Attempted
+    to load \e[93mtokenizers/punkt/PY3/english.pickle\e[0m\n\n  Searched in:\n    -
+    &#x27;/app/nltk_data&#x27;\n    - &#x27;/app/.heroku/python/nltk_data&#x27;\n
+    \   - &#x27;/app/.heroku/python/share/nltk_data&#x27;\n    - &#x27;/app/.heroku/python/lib/nltk_data&#x27;\n
+    \   - &#x27;/usr/share/nltk_data&#x27;\n    - &#x27;/usr/local/share/nltk_data&#x27;\n
+    \   - &#x27;/usr/lib/nltk_data&#x27;\n    - &#x27;/usr/local/lib/nltk_data&#x27;\n
+    \   - &#x27;&#x27;\n**********************************************************************\n</pre></td>\n
+    \   </tr>\n\n\n    <tr>\n      <th>Exception Location:</th>\n      <td><span class=\"fname\">/app/.heroku/python/lib/python3.9/site-packages/nltk/data.py</span>,
+    line 583, in find</td>\n    </tr>\n\n    <tr>\n      <th>Python Executable:</th>\n
+    \     <td>/app/.heroku/python/bin/python</td>\n    </tr>\n    <tr>\n      <th>Python
+    Version:</th>\n      <td>3.9.6</td>\n    </tr>\n    <tr>\n      <th>Python Path:</th>\n
+    \     <td><pre>[&#x27;/app/.heroku/python/bin&#x27;,\n &#x27;/app&#x27;,\n &#x27;/app/.heroku/python/lib/python39.zip&#x27;,\n
+    &#x27;/app/.heroku/python/lib/python3.9&#x27;,\n &#x27;/app/.heroku/python/lib/python3.9/lib-dynload&#x27;,\n
+    &#x27;/app/.heroku/python/lib/python3.9/site-packages&#x27;]</pre></td>\n    </tr>\n
+    \   <tr>\n      <th>Server time:</th>\n      <td>Tue, 13 Jul 2021 06:37:21 +0000</td>\n
+    \   </tr>\n  </table>\n</div>\n\n\n\n\n<div id=\"traceback\">\n  <h2>Traceback
+    <span class=\"commands\"><a href=\"#\" onclick=\"return switchPastebinFriendly(this);\">\n
+    \   Switch to copy-and-paste view</a></span>\n  </h2>\n  <div id=\"browserTraceback\">\n
+    \   <ul class=\"traceback\">\n      \n        \n        <li class=\"frame django\">\n
+    \         \n            <code class=\"fname\">/app/.heroku/python/lib/python3.9/site-packages/django/core/handlers/exception.py</code>,
+    line 47, in inner\n          \n\n          \n            <div class=\"context\"
+    id=\"c139761955152320\">\n              \n                <ol start=\"40\" class=\"pre-context\"
+    id=\"pre139761955152320\">\n                \n                  <li onclick=\"toggle('pre139761955152320',
+    'post139761955152320')\"><pre>                response = await sync_to_async(response_for_exception,
+    thread_sensitive=False)(request, exc)</pre></li>\n                \n                  <li
+    onclick=\"toggle('pre139761955152320', 'post139761955152320')\"><pre>            return
+    response</pre></li>\n                \n                  <li onclick=\"toggle('pre139761955152320',
+    'post139761955152320')\"><pre>        return inner</pre></li>\n                \n
+    \                 <li onclick=\"toggle('pre139761955152320', 'post139761955152320')\"><pre>
+    \   else:</pre></li>\n                \n                  <li onclick=\"toggle('pre139761955152320',
+    'post139761955152320')\"><pre>        @wraps(get_response)</pre></li>\n                \n
+    \                 <li onclick=\"toggle('pre139761955152320', 'post139761955152320')\"><pre>
+    \       def inner(request):</pre></li>\n                \n                  <li
+    onclick=\"toggle('pre139761955152320', 'post139761955152320')\"><pre>            try:</pre></li>\n
+    \               \n                </ol>\n              \n              <ol start=\"47\"
+    class=\"context-line\">\n                <li onclick=\"toggle('pre139761955152320',
+    'post139761955152320')\"><pre>                response = get_response(request)</pre>
+    <span></span></li>\n              </ol>\n              \n                <ol start='48'
+    class=\"post-context\" id=\"post139761955152320\">\n                  \n                  <li
+    onclick=\"toggle('pre139761955152320', 'post139761955152320')\"><pre>            except
+    Exception as exc:</pre></li>\n                  \n                  <li onclick=\"toggle('pre139761955152320',
+    'post139761955152320')\"><pre>                response = response_for_exception(request,
+    exc)</pre></li>\n                  \n                  <li onclick=\"toggle('pre139761955152320',
+    'post139761955152320')\"><pre>            return response</pre></li>\n                  \n
+    \                 <li onclick=\"toggle('pre139761955152320', 'post139761955152320')\"><pre>
+    \       return inner</pre></li>\n                  \n                  <li onclick=\"toggle('pre139761955152320',
+    'post139761955152320')\"><pre></pre></li>\n                  \n                  <li
+    onclick=\"toggle('pre139761955152320', 'post139761955152320')\"><pre></pre></li>\n
+    \                 \n              </ol>\n              \n            </div>\n
+    \         \n\n          \n            <div class=\"commands\">\n                \n
+    \                   <a href=\"#\" onclick=\"return varToggle(this, '139761955152320')\"><span>&#x25b6;</span>
+    Local vars</a>\n                \n            </div>\n            <table class=\"vars\"
+    id=\"v139761955152320\">\n              <thead>\n                <tr>\n                  <th>Variable</th>\n
+    \                 <th>Value</th>\n                </tr>\n              </thead>\n
+    \             <tbody>\n                \n                  <tr>\n                    <td>exc</td>\n
+    \                   <td class=\"code\"><pre>LookupError(&quot;\\n**********************************************************************\\n
+    \ Resource \\x1b[93mpunkt\\x1b[0m not found.\\n  Please use the NLTK Downloader
+    to obtain the resource:\\n\\n  \\x1b[31m&gt;&gt;&gt; import nltk\\n  &gt;&gt;&gt;
+    nltk.download(&#x27;punkt&#x27;)\\n  \\x1b[0m\\n  For more information see: https://www.nltk.org/data.html\\n\\n
+    \ Attempted to load \\x1b[93mtokenizers/punkt/PY3/english.pickle\\x1b[0m\\n\\n
+    \ Searched in:\\n    - &#x27;/app/nltk_data&#x27;\\n    - &#x27;/app/.heroku/python/nltk_data&#x27;\\n
+    \   - &#x27;/app/.heroku/python/share/nltk_data&#x27;\\n    - &#x27;/app/.heroku/python/lib/nltk_data&#x27;\\n
+    \   - &#x27;/usr/share/nltk_data&#x27;\\n    - &#x27;/usr/local/share/nltk_data&#x27;\\n
+    \   - &#x27;/usr/lib/nltk_data&#x27;\\n    - &#x27;/usr/local/lib/nltk_data&#x27;\\n
+    \   - &#x27;&#x27;\\n**********************************************************************\\n&quot;)</pre></td>\n
+    \                 </tr>\n                \n                  <tr>\n                    <td>get_response</td>\n
+    \                   <td class=\"code\"><pre>&lt;bound method BaseHandler._get_response
+    of &lt;django.core.handlers.wsgi.WSGIHandler object at 0x7f1cf9f0c460&gt;&gt;</pre></td>\n
+    \                 </tr>\n                \n                  <tr>\n                    <td>request</td>\n
+    \                   <td class=\"code\"><pre>&lt;WSGIRequest: POST &#x27;/api/&#x27;&gt;</pre></td>\n
+    \                 </tr>\n                \n              </tbody>\n            </table>\n
+    \         \n        </li>\n      \n        \n        <li class=\"frame django\">\n
+    \         \n            <code class=\"fname\">/app/.heroku/python/lib/python3.9/site-packages/django/core/handlers/base.py</code>,
+    line 181, in _get_response\n          \n\n          \n            <div class=\"context\"
+    id=\"c139761955152256\">\n              \n                <ol start=\"174\" class=\"pre-context\"
+    id=\"pre139761955152256\">\n                \n                  <li onclick=\"toggle('pre139761955152256',
+    'post139761955152256')\"><pre></pre></li>\n                \n                  <li
+    onclick=\"toggle('pre139761955152256', 'post139761955152256')\"><pre>        if
+    response is None:</pre></li>\n                \n                  <li onclick=\"toggle('pre139761955152256',
+    'post139761955152256')\"><pre>            wrapped_callback = self.make_view_atomic(callback)</pre></li>\n
+    \               \n                  <li onclick=\"toggle('pre139761955152256',
+    'post139761955152256')\"><pre>            # If it is an asynchronous view, run
+    it in a subthread.</pre></li>\n                \n                  <li onclick=\"toggle('pre139761955152256',
+    'post139761955152256')\"><pre>            if asyncio.iscoroutinefunction(wrapped_callback):</pre></li>\n
+    \               \n                  <li onclick=\"toggle('pre139761955152256',
+    'post139761955152256')\"><pre>                wrapped_callback = async_to_sync(wrapped_callback)</pre></li>\n
+    \               \n                  <li onclick=\"toggle('pre139761955152256',
+    'post139761955152256')\"><pre>            try:</pre></li>\n                \n
+    \               </ol>\n              \n              <ol start=\"181\" class=\"context-line\">\n
+    \               <li onclick=\"toggle('pre139761955152256', 'post139761955152256')\"><pre>
+    \               response = wrapped_callback(request, *callback_args, **callback_kwargs)</pre>
+    <span></span></li>\n              </ol>\n              \n                <ol start='182'
+    class=\"post-context\" id=\"post139761955152256\">\n                  \n                  <li
+    onclick=\"toggle('pre139761955152256', 'post139761955152256')\"><pre>            except
+    Exception as e:</pre></li>\n                  \n                  <li onclick=\"toggle('pre139761955152256',
+    'post139761955152256')\"><pre>                response = self.process_exception_by_middleware(e,
+    request)</pre></li>\n                  \n                  <li onclick=\"toggle('pre139761955152256',
+    'post139761955152256')\"><pre>                if response is None:</pre></li>\n
+    \                 \n                  <li onclick=\"toggle('pre139761955152256',
+    'post139761955152256')\"><pre>                    raise</pre></li>\n                  \n
+    \                 <li onclick=\"toggle('pre139761955152256', 'post139761955152256')\"><pre></pre></li>\n
+    \                 \n                  <li onclick=\"toggle('pre139761955152256',
+    'post139761955152256')\"><pre>        # Complain if the view returned None (a
+    common error).</pre></li>\n                  \n              </ol>\n              \n
+    \           </div>\n          \n\n          \n            <div class=\"commands\">\n
+    \               \n                    <a href=\"#\" onclick=\"return varToggle(this,
+    '139761955152256')\"><span>&#x25b6;</span> Local vars</a>\n                \n
+    \           </div>\n            <table class=\"vars\" id=\"v139761955152256\">\n
+    \             <thead>\n                <tr>\n                  <th>Variable</th>\n
+    \                 <th>Value</th>\n                </tr>\n              </thead>\n
+    \             <tbody>\n                \n                  <tr>\n                    <td>callback</td>\n
+    \                   <td class=\"code\"><pre>&lt;function index at 0x7f1cddc510d0&gt;</pre></td>\n
+    \                 </tr>\n                \n                  <tr>\n                    <td>callback_args</td>\n
+    \                   <td class=\"code\"><pre>()</pre></td>\n                  </tr>\n
+    \               \n                  <tr>\n                    <td>callback_kwargs</td>\n
+    \                   <td class=\"code\"><pre>{}</pre></td>\n                  </tr>\n
+    \               \n                  <tr>\n                    <td>request</td>\n
+    \                   <td class=\"code\"><pre>&lt;WSGIRequest: POST &#x27;/api/&#x27;&gt;</pre></td>\n
+    \                 </tr>\n                \n                  <tr>\n                    <td>response</td>\n
+    \                   <td class=\"code\"><pre>None</pre></td>\n                  </tr>\n
+    \               \n                  <tr>\n                    <td>self</td>\n
+    \                   <td class=\"code\"><pre>&lt;django.core.handlers.wsgi.WSGIHandler
+    object at 0x7f1cf9f0c460&gt;</pre></td>\n                  </tr>\n                \n
+    \                 <tr>\n                    <td>wrapped_callback</td>\n                    <td
+    class=\"code\"><pre>&lt;function index at 0x7f1cddc510d0&gt;</pre></td>\n                  </tr>\n
+    \               \n              </tbody>\n            </table>\n          \n        </li>\n
+    \     \n        \n        <li class=\"frame user\">\n          \n            <code
+    class=\"fname\">/app/webBackend/views.py</code>, line 11, in index\n          \n\n
+    \         \n            <div class=\"context\" id=\"c139761955152064\">\n              \n
+    \               <ol start=\"4\" class=\"pre-context\" id=\"pre139761955152064\">\n
+    \               \n                  <li onclick=\"toggle('pre139761955152064',
+    'post139761955152064')\"><pre>from webBackend.nltkOperations import NltkOperations</pre></li>\n
+    \               \n                  <li onclick=\"toggle('pre139761955152064',
+    'post139761955152064')\"><pre></pre></li>\n                \n                  <li
+    onclick=\"toggle('pre139761955152064', 'post139761955152064')\"><pre></pre></li>\n
+    \               \n                  <li onclick=\"toggle('pre139761955152064',
+    'post139761955152064')\"><pre>def index(request):</pre></li>\n                \n
+    \                 <li onclick=\"toggle('pre139761955152064', 'post139761955152064')\"><pre>
+    \   if request.method == &#x27;POST&#x27;:</pre></li>\n                \n                  <li
+    onclick=\"toggle('pre139761955152064', 'post139761955152064')\"><pre>        json_data
+    = json.loads(request.body)</pre></li>\n                \n                  <li
+    onclick=\"toggle('pre139761955152064', 'post139761955152064')\"><pre>        print(json_data[&#x27;url&#x27;])</pre></li>\n
+    \               \n                </ol>\n              \n              <ol start=\"11\"
+    class=\"context-line\">\n                <li onclick=\"toggle('pre139761955152064',
+    'post139761955152064')\"><pre>        return HttpResponse(NltkOperations.get_summary(json_data[&#x27;url&#x27;]))</pre>
+    <span></span></li>\n              </ol>\n              \n                <ol start='12'
+    class=\"post-context\" id=\"post139761955152064\">\n                  \n                  <li
+    onclick=\"toggle('pre139761955152064', 'post139761955152064')\"><pre></pre></li>\n
+    \                 \n                  <li onclick=\"toggle('pre139761955152064',
+    'post139761955152064')\"><pre></pre></li>\n                  \n                  <li
+    onclick=\"toggle('pre139761955152064', 'post139761955152064')\"><pre>def hello(request):</pre></li>\n
+    \                 \n                  <li onclick=\"toggle('pre139761955152064',
+    'post139761955152064')\"><pre>    if request.method == &#x27;POST&#x27;:</pre></li>\n
+    \                 \n                  <li onclick=\"toggle('pre139761955152064',
+    'post139761955152064')\"><pre>        return HttpResponse(request.POST.get(&quot;url&quot;))</pre></li>\n
+    \                 \n                  <li onclick=\"toggle('pre139761955152064',
+    'post139761955152064')\"><pre>    s1 = NltkOperations</pre></li>\n                  \n
+    \             </ol>\n              \n            </div>\n          \n\n          \n
+    \           <div class=\"commands\">\n                \n                    <a
+    href=\"#\" onclick=\"return varToggle(this, '139761955152064')\"><span>&#x25b6;</span>
+    Local vars</a>\n                \n            </div>\n            <table class=\"vars\"
+    id=\"v139761955152064\">\n              <thead>\n                <tr>\n                  <th>Variable</th>\n
+    \                 <th>Value</th>\n                </tr>\n              </thead>\n
+    \             <tbody>\n                \n                  <tr>\n                    <td>json_data</td>\n
+    \                   <td class=\"code\"><pre>{&#x27;url&#x27;: &#x27;https://www.engadget.com/its-a-me-mario-smartwatch-by-tag-heuer-connected-060037257.html&#x27;}</pre></td>\n
+    \                 </tr>\n                \n                  <tr>\n                    <td>request</td>\n
+    \                   <td class=\"code\"><pre>&lt;WSGIRequest: POST &#x27;/api/&#x27;&gt;</pre></td>\n
+    \                 </tr>\n                \n              </tbody>\n            </table>\n
+    \         \n        </li>\n      \n        \n        <li class=\"frame user\">\n
+    \         \n            <code class=\"fname\">/app/webBackend/nltkOperations.py</code>,
+    line 42, in get_summary\n          \n\n          \n            <div class=\"context\"
+    id=\"c139761955152000\">\n              \n                <ol start=\"35\" class=\"pre-context\"
+    id=\"pre139761955152000\">\n                \n                  <li onclick=\"toggle('pre139761955152000',
+    'post139761955152000')\"><pre>            article_text += p.text</pre></li>\n
+    \               \n                  <li onclick=\"toggle('pre139761955152000',
+    'post139761955152000')\"><pre>        # Removing Square Brackets and Extra Spaces</pre></li>\n
+    \               \n                  <li onclick=\"toggle('pre139761955152000',
+    'post139761955152000')\"><pre>        article_text = re.sub(r&#x27;\\[[0-9]*\\]&#x27;,
+    &#x27; &#x27;, article_text)</pre></li>\n                \n                  <li
+    onclick=\"toggle('pre139761955152000', 'post139761955152000')\"><pre>        article_text
+    = re.sub(r&#x27;\\s+&#x27;, &#x27; &#x27;, article_text)</pre></li>\n                \n
+    \                 <li onclick=\"toggle('pre139761955152000', 'post139761955152000')\"><pre>
+    \       # Removing special characters and digits</pre></li>\n                \n
+    \                 <li onclick=\"toggle('pre139761955152000', 'post139761955152000')\"><pre>
+    \       formatted_article_text = re.sub(&#x27;[^a-zA-Z]&#x27;, &#x27; &#x27;,
+    article_text)</pre></li>\n                \n                  <li onclick=\"toggle('pre139761955152000',
+    'post139761955152000')\"><pre>        formatted_article_text = re.sub(r&#x27;\\s+&#x27;,
+    &#x27; &#x27;, formatted_article_text)</pre></li>\n                \n                </ol>\n
+    \             \n              <ol start=\"42\" class=\"context-line\">\n                <li
+    onclick=\"toggle('pre139761955152000', 'post139761955152000')\"><pre>        sentence_list
+    = nltk.sent_tokenize(article_text)</pre> <span></span></li>\n              </ol>\n
+    \             \n                <ol start='43' class=\"post-context\" id=\"post139761955152000\">\n
+    \                 \n                  <li onclick=\"toggle('pre139761955152000',
+    'post139761955152000')\"><pre>        stopwords = nltk.corpus.stopwords.words(&#x27;english&#x27;)</pre></li>\n
+    \                 \n                  <li onclick=\"toggle('pre139761955152000',
+    'post139761955152000')\"><pre></pre></li>\n                  \n                  <li
+    onclick=\"toggle('pre139761955152000', 'post139761955152000')\"><pre>        word_frequencies
+    = {}</pre></li>\n                  \n                  <li onclick=\"toggle('pre139761955152000',
+    'post139761955152000')\"><pre>        for word in nltk.word_tokenize(formatted_article_text):</pre></li>\n
+    \                 \n                  <li onclick=\"toggle('pre139761955152000',
+    'post139761955152000')\"><pre>            if word not in stopwords:</pre></li>\n
+    \                 \n                  <li onclick=\"toggle('pre139761955152000',
+    'post139761955152000')\"><pre>                if word not in word_frequencies.keys():</pre></li>\n
+    \                 \n              </ol>\n              \n            </div>\n
+    \         \n\n          \n            <div class=\"commands\">\n                \n
+    \                   <a href=\"#\" onclick=\"return varToggle(this, '139761955152000')\"><span>&#x25b6;</span>
+    Local vars</a>\n                \n            </div>\n            <table class=\"vars\"
+    id=\"v139761955152000\">\n              <thead>\n                <tr>\n                  <th>Variable</th>\n
+    \                 <th>Value</th>\n                </tr>\n              </thead>\n
+    \             <tbody>\n                \n                  <tr>\n                    <td>article</td>\n
+    \                   <td class=\"code\"><pre>(b&#x27;&lt;!doctype html&gt;&lt;html
+    id=&quot;atomic&quot; class=&quot;desktop bkt ua-undefined ua-undefine&#x27;\n
+    b&#x27;d&quot; lang=&quot;en-US&quot;&gt;&lt;head&gt;&lt;script&gt;\\n        window.performance.mark(\\&#x27;PageStar&#x27;\n
+    b&quot;t&#x27;);\\n        document.documentElement.className += &#x27; JsEnabled
+    jsenabled&quot;\n b&quot;&#x27;;\\n        &lt;/script&gt;&lt;title&gt;Tag Heuer
+    made a Super Mario-themed smartwatc&quot;\n b&#x27;h because why not | Engadget&lt;/title&gt;&lt;meta
+    http-equiv=&quot;content-type&quot; content=&#x27;\n b&#x27;&quot;text/html; charset=utf-8&quot;&gt;&lt;meta
+    http-equiv=&quot;content-type&quot; content=&quot;text/htm&#x27;\n b&#x27;l, charset=utf-8&quot;&gt;&lt;meta
+    http-equiv=&quot;x-dns-prefetch-control&quot; content=&quot;on&quot;&gt;&lt;me&#x27;\n
+    b&#x27;ta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;chrome=1&quot;&gt;&lt;meta
+    name=&quot;description&quot; &#x27;\n b&#x27;content=&quot;Tag Heuer is collaborating
+    with Nintendo to make a limited Super Ma&#x27;\n b&#x27;rio edition of its Connected
+    smartwatch..&quot;&gt;&lt;meta property=&quot;og:description&quot; c&#x27;\n b&#x27;ontent=&quot;Tag
+    Heuer is collaborating with Nintendo to make a limited Super Mar&#x27;\n b&#x27;io
+    edition of its Connected smartwatch..&quot;&gt;&lt;meta property=&quot;og:image&quot;
+    content=&#x27;\n b&#x27;&quot;https://s.yimg.com/os/creatr-uploaded-images/2021-07/cbe68f00-e347-11eb-9df&#x27;\n
+    b&#x27;7-ce48ead0ab76&quot;&gt;&lt;meta property=&quot;og:url&quot; content=&quot;https://www.engadget.com/it&#x27;\n
+    b&#x27;s-a-me-mario-smartwatch-by-tag-heuer-connected-060037257.html&quot;&gt;&lt;meta
+    name=&quot;t&#x27;\n b&#x27;witter:image&quot; content=&quot;https://s.yimg.com/os/creatr-uploaded-images/2021-07/&#x27;\n
+    b&#x27;cbe68f00-e347-11eb-9df7-ce48ead0ab76&quot;&gt;&lt;meta name=&quot;twitter:title&quot;
+    content=&quot;Ta&#x27;\n b&#x27;g Heuer made a Super Mario-themed smartwatch because
+    why not | Engadget&quot;&gt;&lt;me&#x27;\n b&#x27;ta property=&quot;og:title&quot;
+    content=&quot;Tag Heuer made a Super Mario-themed smartwat&#x27;\n b&#x27;ch because
+    why not | Engadget&quot;&gt;&lt;meta name=&quot;oath:guce:consent-host&quot; content=&quot;&#x27;\n
+    b&#x27;guce.engadget.com&quot;&gt;&lt;meta property=&quot;og:type&quot; content=&quot;website&quot;&gt;&lt;script
+    type=&quot;&#x27;\n b&#x27;text/javascript&quot; &gt;var AdsServicePosition =
+    {}; var AdsClientPosition = {}; v&#x27;\n b&#x27;ar JacCallbacks = {};&lt;/script&gt;&lt;script
+    type=&quot;text/javascript&quot; &gt;var uacCallbac&#x27;\n b&#x27;ks = {};&lt;/script&gt;&lt;meta
+    name=&quot;viewport&quot; content=&quot;width=device-width,initial-s&#x27;\n b&#x27;cale=1,minimum-scale=1&quot;&gt;&lt;meta
+    http-equiv=&quot;content-type&quot; content=&quot;text/html; &#x27;\n b&#x27;charset=utf-8&quot;
+    /&gt;&lt;meta name=&quot;google-site-verification&quot; content=&quot;wLXjbTY6pixu&#x27;\n
+    b&#x27;bu5bTDip5LFbmV3y14B-1FuGRBA608U&quot; /&gt;&lt;meta name=&quot;google-site-verification&quot;
+    con&#x27;\n b&#x27;tent=&quot;tWejEOjeALosEomCYTYn5Ps9e_bfdSDFep3l5tdwP30&quot;
+    /&gt;&lt;meta name=&quot;google-site&#x27;\n b&#x27;-verification&quot; content=&quot;1GwTnKM_I1dlzvY6ZgkdMD7npjzC-zbHHs9BXlA8BrI&quot;
+    /&gt;&lt;meta&#x27;\n b&#x27; name=&quot;google-site-verification&quot; content=&quot;2AxZaoCWIVXn4j_PSZpxB_gj8X9Y2rfzSy&#x27;\n
+    b&#x27;OtPXO_wEI&quot; /&gt;&lt;meta name=&quot;google-site-verification&quot;
+    content=&quot;WHAdu9KkehGzlorx&#x27;\n b&#x27;bvJ2y_5amqxc3cg7tkZPOq5kfHE&quot;
+    /&gt;&lt;meta name=&quot;google-site-verification&quot; content&#x27;\n b&#x27;=&quot;xX3g98CIOMeGJbk03PNHNS-NQMGfB0LonZXXvhFfBlc&quot;
+    /&gt;&lt;meta name=&quot;google-site-ver&#x27;\n b&#x27;ification&quot; content=&quot;xd57-NQw8NoYtNTyi0qomvWufyqOYmCYgM2K2Y8hNrE&quot;
+    /&gt;&lt;meta nam&#x27;\n b&#x27;e=&quot;bitly-verification&quot; content=&quot;f57da7265213&quot;
+    /&gt;&lt;meta name=&quot;p:domain_verify&quot;&#x27;\n b&#x27; content=&quot;fb69533f2acad78bdd89abf093c35a28&quot;
+    /&gt;&lt;meta name=&quot;msvalidate.01&quot; con&#x27;\n b&#x27;tent=&quot;5ABD8A078F3356F3A6A8C8643C31FB8F&quot;
+    /&gt;&lt;meta name=&quot;apple-mobile-web-app-s&#x27;\n b&#x27;tatus-bar-style&quot;
+    content=&quot;black&quot; /&gt;&lt;meta name=&quot;application-name&quot; content=&quot;En&#x27;\n
+    b&#x27;gadget&quot; /&gt;&lt;meta property=&quot;fb:pages&quot; content=&quot;5738237369&quot;
+    /&gt;&lt;meta property=&quot;f&#x27;\n b&#x27;b:admins&quot; content=&quot;11710688&quot;
+    /&gt;&lt;meta property=&quot;fb:app_id&quot; content=&quot;464864107&#x27;\n b&#x27;046584&quot;
+    /&gt;&lt;meta property=&quot;og:locale&quot; content=&quot;en_US&quot; /&gt;&lt;meta
+    property=&quot;og:si&#x27;\n b&#x27;te_name&quot; content=&quot;Engadget&quot;
+    /&gt;&lt;meta name=&quot;twitter:site&quot; content=`Engadget`&gt;&lt;&#x27;\n
+    b&#x27;meta name=&quot;msapplication-TileColor&quot; content=&quot;#2B2D32&quot;/&gt;&lt;meta
+    name=&quot;msapplica&#x27;\n b&#x27;tion-TileImage&quot; content=&quot;https://s.yimg.com/kw/assets/eng-e-558.png&quot;/&gt;&lt;meta
+    &#x27;\n b&#x27;name=&quot;msapplication-square70x70logo&quot; content=&quot;https://s.yimg.com/kw/assets/e&#x27;\n
+    b&#x27;ng-e-128.png&quot;/&gt;&lt;meta name=&quot;msapplication-square150x150logo&quot;
+    content=&quot;https:/&#x27;\n b&#x27;/s.yimg.com/kw/assets/eng-e-270.png&quot;/&gt;&lt;meta
+    name=&quot;msapplication-wide310x150l&#x27;\n b&#x27;ogo&quot; content=&quot;https://s.yimg.com/kw/assets/eng-e-558x270.png&quot;/&gt;&lt;meta
+    name=&quot;m&#x27;\n b&#x27;sapplication-square310x310logo&quot; content=&quot;https://s.yimg.com/kw/assets/images&#x27;\n
+    b&#x27;/eng-e-558.png&quot;/&gt;&lt;meta name=&quot;msapplication-notification&quot;
+    content=&quot;frequency=&#x27;\n b&#x27;30;polling-uri=https://notifications.buildmypinneds
+    &lt;trimmed 153182 bytes string&gt;</pre></td>\n                  </tr>\n                \n
+    \                 <tr>\n                    <td>article_text</td>\n                    <td
+    class=\"code\"><pre>(&#x27;Your favorite video game plumber will soon be available
+    on a Wear OS watch. &#x27;\n &quot;Tag Heuer announced today that it&#x27;s collaborating
+    with Nintendo to make a &quot;\n &#x27;Super Mario edition of its Connected smartwatch,
+    featuring &quot;the intrepid, &#x27;\n &#x27;iconic hero&quot; in various watch
+    faces and animations. It\\&#x27;ll be available July &#x27;\n &#x27;15th for $2,150,
+    which is in line with how much the Connected series has &#x27;\n &quot;cost in
+    the past. One of the highlights here, though, is the company&#x27;s use &quot;\n
+    &quot;of Mario&#x27;s appearances to encourage wearers to get active and reward
+    them &quot;\n &#x27;when they move. According to Tag Heuer, Mario\\&#x27;s &quot;upbeat
+    and active &#x27;\n &#x27;personality will encourage wearers of this smartwatch
+    to enjoy moving too.&quot; &#x27;\n &quot;But it&#x27;s not just about being inspired
+    by simply seeing his face on your &quot;\n &#x27;wrist. The watch\\&#x27;s dial
+    will become &quot;livelier and more animated the more &#x27;\n &#x27;the wearer
+    is active.&quot; There\\&#x27;s also a &quot;gamification rewards system&quot;
+    at &#x27;\n &#x27;play. Mario will greet you with a salute each morning, and as
+    you move &#x27;\n &quot;about, you&#x27;ll get different animations as you hit
+    25, 50, 75 and 100 percent &quot;\n &#x27;of your steps target. These animations
+    feature familiar items from the Mario &#x27;\n &#x27;universe, like the Super
+    Mushroom, Pipe, Super Star and Goal Pole. The &#x27;\n &#x27;company says this
+    idea was inspired by the notion of &quot;easter eggs,&quot; so I &#x27;\n &quot;suppose
+    you&#x27;re supposed to treat these animations as such. Even when you&#x27;re
+    &quot;\n &quot;not being active, the Tag Heuer Connected Super Mario edition&#x27;s
+    interface &quot;\n &#x27;will remind you of the character. You can choose from
+    a selection of four &#x27;\n &quot;new watch faces, and they don&#x27;t just offer
+    red-and-blue themes. The &quot;\n &#x27;Timekeeping dial, for example, uses &quot;retro
+    elements from the 1985 version of &#x27;\n &#x27;Super Mario Bros. with Mario,
+    all in pixels.&quot; One of the designs features &#x27;\n &quot;Mario&#x27;s cap,
+    while another takes elements of the game and puts them in a &quot;\n &#x27;rotating
+    animation. In addition to onscreen graphics, the watch itself has &#x27;\n &#x27;Super
+    Mario touches. Push buttons, crown logo and bezel graduation now come &#x27;\n
+    &quot;in Super Mario red, and you&#x27;ll find symbols etched into the bezel that
+    &quot;\n &quot;reflect the in-game objects you&#x27;ll see when you hit your steps
+    goals, too. A &quot;\n &#x27;letter M is engraved on strap buckles and the crown,
+    while the words &quot;TAG &#x27;\n &#x27;Heuer x Super Mario Limited Edition&quot;
+    are also carved into the back of the &#x27;\n &#x27;watch. The company is also
+    offering two interchangeable straps for the new &#x27;\n &#x27;watch: a black
+    leather band on red rubber and a &quot;sporty alternative in &#x27;\n &#x27;matching
+    red perforated rubber,&quot; as well as a travel case in  what else  &#x27;\n
+    &#x27;Super Mario red.Those hardware touches are pretty important since even &#x27;\n
+    &#x27;though the Mario faces and skins will be available first on this limited
+    &#x27;\n &#x27;edition of the Connected watch, Tag Heuer said it &quot;is also
+    considering &#x27;\n &#x27;making it available on other editions of TAG Heuer
+    Connected at a later &#x27;\n &#x27;stage.&quot;Since this is a Wear OS device
+    (Tag Heuer hasn\\&#x27;t responded to &#x27;\n &quot;Engadget&#x27;s query on
+    whether this is the existing OS or if it will update to &quot;\n &quot;the version
+    co-engineered by Samsung and Google), the rest of the watch&#x27;s &quot;\n &#x27;functions
+    will feel familiar. You can access Google Assistant, get your &#x27;\n &#x27;calendar
+    and weather updates, along with Fit progress tracking on the watch. &#x27;\n &quot;It&#x27;ll
+    also offer the company&#x27;s own Sport, Golf and Wellness apps for better &quot;\n
+    &#x27;fitness tools. The Super Mario version of Connected has a 45mm face and
+    &#x27;\n &quot;weighs 86 grams (0.18 pounds) with a rubber strap. It&#x27;s water
+    resistant up &quot;\n &#x27;to 5ATM, and Tag Heuer promises its 430mAh battery
+    can last a full day. Tag &#x27;\n &#x27;Heuer is only making 2,000 of these watches,
+    which will be available in &#x27;\n &#x27;selected boutiques and at its website
+    in some regions, from 15th July 2021. &#x27;\n &#x27;At $2,150, the special edition
+    costs more than its non-Mario counterparts, &#x27;\n &quot;which start at $1,800,
+    but if you&#x27;re that hardcore of a fan, you might be &quot;\n &#x27;convinced
+    to fork over the cash.Please enter a valid email address&#x27;)</pre></td>\n                  </tr>\n
+    \               \n                  <tr>\n                    <td>formatted_article_text</td>\n
+    \                   <td class=\"code\"><pre>(&#x27;Your favorite video game plumber
+    will soon be available on a Wear OS watch &#x27;\n &#x27;Tag Heuer announced today
+    that it s collaborating with Nintendo to make a &#x27;\n &#x27;Super Mario edition
+    of its Connected smartwatch featuring the intrepid &#x27;\n &#x27;iconic hero
+    in various watch faces and animations It ll be available July th &#x27;\n &#x27;for
+    which is in line with how much the Connected series has cost in the past &#x27;\n
+    &#x27;One of the highlights here though is the company s use of Mario s &#x27;\n
+    &#x27;appearances to encourage wearers to get active and reward them when they
+    &#x27;\n &#x27;move According to Tag Heuer Mario s upbeat and active personality
+    will &#x27;\n &#x27;encourage wearers of this smartwatch to enjoy moving too But
+    it s not just &#x27;\n &#x27;about being inspired by simply seeing his face on
+    your wrist The watch s &#x27;\n &#x27;dial will become livelier and more animated
+    the more the wearer is active &#x27;\n &#x27;There s also a gamification rewards
+    system at play Mario will greet you with &#x27;\n &#x27;a salute each morning
+    and as you move about you ll get different animations &#x27;\n &#x27;as you hit
+    and percent of your steps target These animations feature &#x27;\n &#x27;familiar
+    items from the Mario universe like the Super Mushroom Pipe Super &#x27;\n &#x27;Star
+    and Goal Pole The company says this idea was inspired by the notion of &#x27;\n
+    &#x27;easter eggs so I suppose you re supposed to treat these animations as such
+    &#x27;\n &#x27;Even when you re not being active the Tag Heuer Connected Super
+    Mario &#x27;\n &#x27;edition s interface will remind you of the character You
+    can choose from a &#x27;\n &#x27;selection of four new watch faces and they don
+    t just offer red and blue &#x27;\n &#x27;themes The Timekeeping dial for example
+    uses retro elements from the version &#x27;\n &#x27;of Super Mario Bros with Mario
+    all in pixels One of the designs features &#x27;\n &#x27;Mario s cap while another
+    takes elements of the game and puts them in a &#x27;\n &#x27;rotating animation
+    In addition to onscreen graphics the watch itself has &#x27;\n &#x27;Super Mario
+    touches Push buttons crown logo and bezel graduation now come in &#x27;\n &#x27;Super
+    Mario red and you ll find symbols etched into the bezel that reflect &#x27;\n
+    &#x27;the in game objects you ll see when you hit your steps goals too A letter
+    M &#x27;\n &#x27;is engraved on strap buckles and the crown while the words TAG
+    Heuer x Super &#x27;\n &#x27;Mario Limited Edition are also carved into the back
+    of the watch The company &#x27;\n &#x27;is also offering two interchangeable straps
+    for the new watch a black &#x27;\n &#x27;leather band on red rubber and a sporty
+    alternative in matching red &#x27;\n &#x27;perforated rubber as well as a travel
+    case in what else Super Mario red &#x27;\n &#x27;Those hardware touches are pretty
+    important since even though the Mario &#x27;\n &#x27;faces and skins will be available
+    first on this limited edition of the &#x27;\n &#x27;Connected watch Tag Heuer
+    said it is also considering making it available on &#x27;\n &#x27;other editions
+    of TAG Heuer Connected at a later stage Since this is a Wear &#x27;\n &#x27;OS
+    device Tag Heuer hasn t responded to Engadget s query on whether this is &#x27;\n
+    &#x27;the existing OS or if it will update to the version co engineered by Samsung
+    &#x27;\n &#x27;and Google the rest of the watch s functions will feel familiar
+    You can &#x27;\n &#x27;access Google Assistant get your calendar and weather updates
+    along with Fit &#x27;\n &#x27;progress tracking on the watch It ll also offer
+    the company s own Sport Golf &#x27;\n &#x27;and Wellness apps for better fitness
+    tools The Super Mario version of &#x27;\n &#x27;Connected has a mm face and weighs
+    grams pounds with a rubber strap It s &#x27;\n &#x27;water resistant up to ATM
+    and Tag Heuer promises its mAh battery can last a &#x27;\n &#x27;full day Tag
+    Heuer is only making of these watches which will be available &#x27;\n &#x27;in
+    selected boutiques and at its website in some regions from th July At the &#x27;\n
+    &#x27;special edition costs more than its non Mario counterparts which start at
+    &#x27;\n &#x27;but if you re that hardcore of a fan you might be convinced to
+    fork over the &#x27;\n &#x27;cash Please enter a valid email address&#x27;)</pre></td>\n
+    \                 </tr>\n                \n                  <tr>\n                    <td>p</td>\n
+    \                   <td class=\"code\"><pre>&lt;p class=&quot;Pos(a) M(0) T(60px)
+    Start(6px) D(n) C(errorColor)&quot; role=&quot;alert&quot;&gt;Please enter a valid
+    email address&lt;/p&gt;</pre></td>\n                  </tr>\n                \n
+    \                 <tr>\n                    <td>paragraphs</td>\n                    <td
+    class=\"code\"><pre>[&lt;p&gt;Your favorite video game plumber will soon be available
+    on a &lt;a data-ylk=&quot;elm:context_link;itc:0&quot; href=&quot;https://www.engadget.com/google-samsung-new-wear-os-rip-tizen-183031381.html&quot;&gt;Wear
+    OS watch&lt;/a&gt;. Tag Heuer announced today that it&#x27;s collaborating with
+    Nintendo to make a &lt;em&gt;Super Mario&lt;/em&gt; edition of its Connected smartwatch,
+    featuring &quot;the intrepid, iconic hero&quot; in various watch faces and animations.
+    It&#x27;ll be available July 15th for $2,150, which is in line with how much the
+    Connected series has cost in the past. One of the highlights here, though, is
+    the company&#x27;s use of Mario&#x27;s appearances to encourage wearers to get
+    active and reward them when they move.&lt;/p&gt;,\n &lt;p&gt;According to Tag
+    Heuer, Mario&#x27;s &quot;upbeat and active personality will encourage wearers
+    of this smartwatch to enjoy moving too.&quot; But it&#x27;s not just about being
+    inspired by simply seeing his face on your wrist. The watch&#x27;s dial will become
+    &quot;livelier and more animated the more the wearer is active.&quot; There&#x27;s
+    also a &quot;gamification rewards system&quot; at play. Mario will greet you with
+    a salute each morning, and as you move about, you&#x27;ll get different animations
+    as you hit 25, 50, 75 and 100 percent of your steps target. These animations feature
+    familiar items from the Mario universe, like the Super Mushroom, Pipe, Super Star
+    and Goal Pole. The company says this idea was inspired by the notion of &quot;easter
+    eggs,&quot; so I suppose you&#x27;re supposed to treat these animations as such.&lt;/p&gt;,\n
+    &lt;p&gt;Even when you&#x27;re not being active, the Tag Heuer Connected Super
+    Mario edition&#x27;s interface will remind you of the character. You can choose
+    from a selection of four new watch faces, and they don&#x27;t just offer red-and-blue
+    themes. The Timekeeping dial, for example, uses &quot;retro elements from the
+    1985 version of Super Mario Bros. with Mario, all in pixels.&quot; One of the
+    designs features Mario&#x27;s cap, while another takes elements of the game and
+    puts them in a rotating animation.&lt;/p&gt;,\n &lt;p&gt;In addition to onscreen
+    graphics, the watch itself has Super Mario touches. Push buttons, crown logo and
+    bezel graduation now come in Super Mario red, and you&#x27;ll find symbols etched
+    into the bezel that reflect the in-game objects you&#x27;ll see when you hit your
+    steps goals, too. A letter M is engraved on strap buckles and the crown, while
+    the words &quot;TAG Heuer x Super Mario Limited Edition&quot; are also carved
+    into the back of the watch. The company is also offering two interchangeable straps
+    for the new watch: a black leather band on red rubber and a &quot;sporty alternative
+    in matching red perforated rubber,&quot; as well as a travel case in  what else
+    \ Super Mario red.&lt;/p&gt;,\n &lt;p&gt;Those hardware touches are pretty important
+    since even though the Mario faces and skins will be available first on this limited
+    edition of the Connected watch, Tag Heuer said it &quot;is also considering making
+    it available on other editions of TAG Heuer Connected at a later stage.&quot;&lt;/p&gt;,\n
+    &lt;p&gt;Since this is a Wear OS device (Tag Heuer hasn&#x27;t responded to Engadget&#x27;s
+    query on whether this is the existing OS or if it will update to the version co-engineered
+    by Samsung and Google), the rest of the watch&#x27;s functions will feel familiar.
+    You can access Google Assistant, get your calendar and weather updates, along
+    with Fit progress tracking on the watch. It&#x27;ll also offer the company&#x27;s
+    own Sport, Golf and &lt;a data-ylk=&quot;elm:context_link;itc:0&quot; href=&quot;https://www.engadget.com/tag-heuer-unveils-a-wellness-app-for-its-connected-watch-102205216.html&quot;&gt;Wellness&lt;/a&gt;
+    apps for better fitness tools.&lt;/p&gt;,\n &lt;p&gt;The Super Mario version of
+    Connected has a 45mm face and weighs 86 grams (0.18 pounds) with a rubber strap.
+    It&#x27;s water resistant up to 5ATM, and Tag Heuer promises its 430mAh battery
+    can last a full day.&lt;/p&gt;,\n &lt;p&gt;Tag Heuer is only making 2,000 of these
+    watches, which will be available in selected boutiques and &lt;a data-i13n=&quot;elm:affiliate_link;sellerN:;elmt:skimlinks;pdid:at
+    its website&quot; data-ylk=&quot;elm:context_link;itc:0&quot; href=&quot;https://fave.co/2T5JdkF&quot;
+    target=&quot;_blank&quot;&gt;at its website&lt;/a&gt;&lt;a data-ylk=&quot;elm:context_link;itc:0&quot;
+    href=&quot;http://www.tagheuer.com/&quot; target=&quot;_blan &lt;trimmed 4561
+    bytes string&gt;</pre></td>\n                  </tr>\n                \n                  <tr>\n
+    \                   <td>parsed_article</td>\n                    <td class=\"code\"><pre>&lt;!DOCTYPE
+    html&gt;\n&lt;html class=&quot;desktop bkt ua-undefined ua-undefined&quot; id=&quot;atomic&quot;
+    lang=&quot;en-US&quot;&gt;&lt;head&gt;&lt;script&gt;\n        window.performance.mark(&#x27;PageStart&#x27;);\n
+    \       document.documentElement.className += &#x27; JsEnabled jsenabled&#x27;;\n
+    \       &lt;/script&gt;&lt;title&gt;Tag Heuer made a Super Mario-themed smartwatch
+    because why not | Engadget&lt;/title&gt;&lt;meta content=&quot;text/html; charset=utf-8&quot;
+    http-equiv=&quot;content-type&quot;/&gt;&lt;meta content=&quot;text/html, charset=utf-8&quot;
+    http-equiv=&quot;content-type&quot;/&gt;&lt;meta content=&quot;on&quot; http-equiv=&quot;x-dns-prefetch-control&quot;/&gt;&lt;meta
+    content=&quot;chrome=1&quot; http-equiv=&quot;X-UA-Compatible&quot;/&gt;&lt;meta
+    content=&quot;Tag Heuer is collaborating with Nintendo to make a limited Super
+    Mario edition of its Connected smartwatch..&quot; name=&quot;description&quot;/&gt;&lt;meta
+    content=&quot;Tag Heuer is collaborating with Nintendo to make a limited Super
+    Mario edition of its Connected smartwatch..&quot; property=&quot;og:description&quot;/&gt;&lt;meta
+    content=&quot;https://s.yimg.com/os/creatr-uploaded-images/2021-07/cbe68f00-e347-11eb-9df7-ce48ead0ab76&quot;
+    property=&quot;og:image&quot;/&gt;&lt;meta content=&quot;https://www.engadget.com/its-a-me-mario-smartwatch-by-tag-heuer-connected-060037257.html&quot;
+    property=&quot;og:url&quot;/&gt;&lt;meta content=&quot;https://s.yimg.com/os/creatr-uploaded-images/2021-07/cbe68f00-e347-11eb-9df7-ce48ead0ab76&quot;
+    name=&quot;twitter:image&quot;/&gt;&lt;meta content=&quot;Tag Heuer made a Super
+    Mario-themed smartwatch because why not | Engadget&quot; name=&quot;twitter:title&quot;/&gt;&lt;meta
+    content=&quot;Tag Heuer made a Super Mario-themed smartwatch because why not |
+    Engadget&quot; property=&quot;og:title&quot;/&gt;&lt;meta content=&quot;guce.engadget.com&quot;
+    name=&quot;oath:guce:consent-host&quot;/&gt;&lt;meta content=&quot;website&quot;
+    property=&quot;og:type&quot;/&gt;&lt;script type=&quot;text/javascript&quot;&gt;var
+    AdsServicePosition = {}; var AdsClientPosition = {}; var JacCallbacks = {};&lt;/script&gt;&lt;script
+    type=&quot;text/javascript&quot;&gt;var uacCallbacks = {};&lt;/script&gt;&lt;meta
+    content=&quot;width=device-width,initial-scale=1,minimum-scale=1&quot; name=&quot;viewport&quot;/&gt;&lt;meta
+    content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;content-type&quot;/&gt;&lt;meta
+    content=&quot;wLXjbTY6pixubu5bTDip5LFbmV3y14B-1FuGRBA608U&quot; name=&quot;google-site-verification&quot;/&gt;&lt;meta
+    content=&quot;tWejEOjeALosEomCYTYn5Ps9e_bfdSDFep3l5tdwP30&quot; name=&quot;google-site-verification&quot;/&gt;&lt;meta
+    content=&quot;1GwTnKM_I1dlzvY6ZgkdMD7npjzC-zbHHs9BXlA8BrI&quot; name=&quot;google-site-verification&quot;/&gt;&lt;meta
+    content=&quot;2AxZaoCWIVXn4j_PSZpxB_gj8X9Y2rfzSyOtPXO_wEI&quot; name=&quot;google-site-verification&quot;/&gt;&lt;meta
+    content=&quot;WHAdu9KkehGzlorxbvJ2y_5amqxc3cg7tkZPOq5kfHE&quot; name=&quot;google-site-verification&quot;/&gt;&lt;meta
+    content=&quot;xX3g98CIOMeGJbk03PNHNS-NQMGfB0LonZXXvhFfBlc&quot; name=&quot;google-site-verification&quot;/&gt;&lt;meta
+    content=&quot;xd57-NQw8NoYtNTyi0qomvWufyqOYmCYgM2K2Y8hNrE&quot; name=&quot;google-site-verification&quot;/&gt;&lt;meta
+    content=&quot;f57da7265213&quot; name=&quot;bitly-verification&quot;/&gt;&lt;meta
+    content=&quot;fb69533f2acad78bdd89abf093c35a28&quot; name=&quot;p:domain_verify&quot;/&gt;&lt;meta
+    content=&quot;5ABD8A078F3356F3A6A8C8643C31FB8F&quot; name=&quot;msvalidate.01&quot;/&gt;&lt;meta
+    content=&quot;black&quot; name=&quot;apple-mobile-web-app-status-bar-style&quot;/&gt;&lt;meta
+    content=&quot;Engadget&quot; name=&quot;application-name&quot;/&gt;&lt;meta content=&quot;5738237369&quot;
+    property=&quot;fb:pages&quot;/&gt;&lt;meta content=&quot;11710688&quot; property=&quot;fb:admins&quot;/&gt;&lt;meta
+    content=&quot;464864107046584&quot; property=&quot;fb:app_id&quot;/&gt;&lt;meta
+    content=&quot;en_US&quot; property=&quot;og:locale&quot;/&gt;&lt;meta content=&quot;Engadget&quot;
+    property=&quot;og:site_name&quot;/&gt;&lt;meta content=&quot;`Engadget`&quot;
+    name=&quot;twitter:site&quot;/&gt;&lt;meta content=&quot;#2B2D32&quot; name=&quot;msapplication-TileColor&quot;/&gt;&lt;meta
+    content=&quot;https://s.yimg.com/kw/assets/eng-e-558.png&quot; name=&quot;msapplication-TileImage&quot;/&gt;&lt;meta
+    content=&quot;https://s.yimg.com/kw/assets/eng-e-128.png&quot; name=&quot;msapplication-square70x70logo&quot;/&gt;&lt;meta
+    content=&quot;https://s.yimg.com/kw/assets/eng-e-270.png&quot; name=&quot;msapplication-square150x150logo&quot;/&gt;&lt;meta
+    content=&quot;https://s.yimg.com/kw/assets/eng-e-558x270.png&quot; name=&quot;msapplication-wide310x150logo&quot;/&gt;&lt;meta
+    content=&quot;https://s.yimg.com/kw/assets/images/eng-e-558.png&quot; name=&quot;msapplication-square310x310logo&quot;/&gt;&lt;meta
+    content=&quot;frequency=30;polling-uri=https://notifications.buildmypinnedsite.com/?feed=https://www.engadget.com/rss.xml&amp;amp;id=1;polling-uri2=https://notifications.buildmypinnedsite.com/?feed=https://www.engadget.com/rss.xml&amp;amp;id=2;polling-uri3=https://notifications.buildmypinnedsite.com/?feed=https://www.engadget.com/rss.xml&amp;amp;id=3;polling-uri4=https://notifi
+    &lt;trimmed 133723 bytes string&gt;</pre></td>\n                  </tr>\n                \n
+    \                 <tr>\n                    <td>scraped_data</td>\n                    <td
+    class=\"code\"><pre>&lt;http.client.HTTPResponse object at 0x7f1cddc5ab20&gt;</pre></td>\n
+    \                 </tr>\n                \n                  <tr>\n                    <td>self</td>\n
+    \                   <td class=\"code\"><pre>&lt;webBackend.nltkOperations.NltkOperations
+    object at 0x7f1cf9e5d040&gt;</pre></td>\n                  </tr>\n                \n
+    \                 <tr>\n                    <td>url</td>\n                    <td
+    class=\"code\"><pre>&#x27;https://www.engadget.com/its-a-me-mario-smartwatch-by-tag-heuer-connected-060037257.html&#x27;</pre></td>\n
+    \                 </tr>\n                \n              </tbody>\n            </table>\n
+    \         \n        </li>\n      \n        \n        <li class=\"frame user\">\n
+    \         \n            <code class=\"fname\">/app/.heroku/python/lib/python3.9/site-packages/nltk/tokenize/__init__.py</code>,
+    line 107, in sent_tokenize\n          \n\n          \n            <div class=\"context\"
+    id=\"c139761955152128\">\n              \n                <ol start=\"100\" class=\"pre-context\"
+    id=\"pre139761955152128\">\n                \n                  <li onclick=\"toggle('pre139761955152128',
+    'post139761955152128')\"><pre>    using NLTK&#x27;s recommended sentence tokenizer</pre></li>\n
+    \               \n                  <li onclick=\"toggle('pre139761955152128',
+    'post139761955152128')\"><pre>    (currently :class:`.PunktSentenceTokenizer`</pre></li>\n
+    \               \n                  <li onclick=\"toggle('pre139761955152128',
+    'post139761955152128')\"><pre>    for the specified language).</pre></li>\n                \n
+    \                 <li onclick=\"toggle('pre139761955152128', 'post139761955152128')\"><pre></pre></li>\n
+    \               \n                  <li onclick=\"toggle('pre139761955152128',
+    'post139761955152128')\"><pre>    :param text: text to split into sentences</pre></li>\n
+    \               \n                  <li onclick=\"toggle('pre139761955152128',
+    'post139761955152128')\"><pre>    :param language: the model name in the Punkt
+    corpus</pre></li>\n                \n                  <li onclick=\"toggle('pre139761955152128',
+    'post139761955152128')\"><pre>    &quot;&quot;&quot;</pre></li>\n                \n
+    \               </ol>\n              \n              <ol start=\"107\" class=\"context-line\">\n
+    \               <li onclick=\"toggle('pre139761955152128', 'post139761955152128')\"><pre>
+    \   tokenizer = load(&quot;tokenizers/punkt/{0}.pickle&quot;.format(language))</pre>
+    <span></span></li>\n              </ol>\n              \n                <ol start='108'
+    class=\"post-context\" id=\"post139761955152128\">\n                  \n                  <li
+    onclick=\"toggle('pre139761955152128', 'post139761955152128')\"><pre>    return
+    tokenizer.tokenize(text)</pre></li>\n                  \n                  <li
+    onclick=\"toggle('pre139761955152128', 'post139761955152128')\"><pre></pre></li>\n
+    \                 \n                  <li onclick=\"toggle('pre139761955152128',
+    'post139761955152128')\"><pre></pre></li>\n                  \n                  <li
+    onclick=\"toggle('pre139761955152128', 'post139761955152128')\"><pre># Standard
+    word tokenizer.</pre></li>\n                  \n                  <li onclick=\"toggle('pre139761955152128',
+    'post139761955152128')\"><pre>_treebank_word_tokenizer = NLTKWordTokenizer()</pre></li>\n
+    \                 \n                  <li onclick=\"toggle('pre139761955152128',
+    'post139761955152128')\"><pre></pre></li>\n                  \n              </ol>\n
+    \             \n            </div>\n          \n\n          \n            <div
+    class=\"commands\">\n                \n                    <a href=\"#\" onclick=\"return
+    varToggle(this, '139761955152128')\"><span>&#x25b6;</span> Local vars</a>\n                \n
+    \           </div>\n            <table class=\"vars\" id=\"v139761955152128\">\n
+    \             <thead>\n                <tr>\n                  <th>Variable</th>\n
+    \                 <th>Value</th>\n                </tr>\n              </thead>\n
+    \             <tbody>\n                \n                  <tr>\n                    <td>language</td>\n
+    \                   <td class=\"code\"><pre>&#x27;english&#x27;</pre></td>\n                  </tr>\n
+    \               \n                  <tr>\n                    <td>text</td>\n
+    \                   <td class=\"code\"><pre>(&#x27;Your favorite video game plumber
+    will soon be available on a Wear OS watch. &#x27;\n &quot;Tag Heuer announced
+    today that it&#x27;s collaborating with Nintendo to make a &quot;\n &#x27;Super
+    Mario edition of its Connected smartwatch, featuring &quot;the intrepid, &#x27;\n
+    &#x27;iconic hero&quot; in various watch faces and animations. It\\&#x27;ll be
+    available July &#x27;\n &#x27;15th for $2,150, which is in line with how much
+    the Connected series has &#x27;\n &quot;cost in the past. One of the highlights
+    here, though, is the company&#x27;s use &quot;\n &quot;of Mario&#x27;s appearances
+    to encourage wearers to get active and reward them &quot;\n &#x27;when they move.
+    According to Tag Heuer, Mario\\&#x27;s &quot;upbeat and active &#x27;\n &#x27;personality
+    will encourage wearers of this smartwatch to enjoy moving too.&quot; &#x27;\n
+    &quot;But it&#x27;s not just about being inspired by simply seeing his face on
+    your &quot;\n &#x27;wrist. The watch\\&#x27;s dial will become &quot;livelier
+    and more animated the more &#x27;\n &#x27;the wearer is active.&quot; There\\&#x27;s
+    also a &quot;gamification rewards system&quot; at &#x27;\n &#x27;play. Mario will
+    greet you with a salute each morning, and as you move &#x27;\n &quot;about, you&#x27;ll
+    get different animations as you hit 25, 50, 75 and 100 percent &quot;\n &#x27;of
+    your steps target. These animations feature familiar items from the Mario &#x27;\n
+    &#x27;universe, like the Super Mushroom, Pipe, Super Star and Goal Pole. The &#x27;\n
+    &#x27;company says this idea was inspired by the notion of &quot;easter eggs,&quot;
+    so I &#x27;\n &quot;suppose you&#x27;re supposed to treat these animations as
+    such. Even when you&#x27;re &quot;\n &quot;not being active, the Tag Heuer Connected
+    Super Mario edition&#x27;s interface &quot;\n &#x27;will remind you of the character.
+    You can choose from a selection of four &#x27;\n &quot;new watch faces, and they
+    don&#x27;t just offer red-and-blue themes. The &quot;\n &#x27;Timekeeping dial,
+    for example, uses &quot;retro elements from the 1985 version of &#x27;\n &#x27;Super
+    Mario Bros. with Mario, all in pixels.&quot; One of the designs features &#x27;\n
+    &quot;Mario&#x27;s cap, while another takes elements of the game and puts them
+    in a &quot;\n &#x27;rotating animation. In addition to onscreen graphics, the
+    watch itself has &#x27;\n &#x27;Super Mario touches. Push buttons, crown logo
+    and bezel graduation now come &#x27;\n &quot;in Super Mario red, and you&#x27;ll
+    find symbols etched into the bezel that &quot;\n &quot;reflect the in-game objects
+    you&#x27;ll see when you hit your steps goals, too. A &quot;\n &#x27;letter M
+    is engraved on strap buckles and the crown, while the words &quot;TAG &#x27;\n
+    &#x27;Heuer x Super Mario Limited Edition&quot; are also carved into the back
+    of the &#x27;\n &#x27;watch. The company is also offering two interchangeable
+    straps for the new &#x27;\n &#x27;watch: a black leather band on red rubber and
+    a &quot;sporty alternative in &#x27;\n &#x27;matching red perforated rubber,&quot;
+    as well as a travel case in  what else  &#x27;\n &#x27;Super Mario red.Those hardware
+    touches are pretty important since even &#x27;\n &#x27;though the Mario faces
+    and skins will be available first on this limited &#x27;\n &#x27;edition of the
+    Connected watch, Tag Heuer said it &quot;is also considering &#x27;\n &#x27;making
+    it available on other editions of TAG Heuer Connected at a later &#x27;\n &#x27;stage.&quot;Since
+    this is a Wear OS device (Tag Heuer hasn\\&#x27;t responded to &#x27;\n &quot;Engadget&#x27;s
+    query on whether this is the existing OS or if it will update to &quot;\n &quot;the
+    version co-engineered by Samsung and Google), the rest of the watch&#x27;s &quot;\n
+    &#x27;functions will feel familiar. You can access Google Assistant, get your
+    &#x27;\n &#x27;calendar and weather updates, along with Fit progress tracking
+    on the watch. &#x27;\n &quot;It&#x27;ll also offer the company&#x27;s own Sport,
+    Golf and Wellness apps for better &quot;\n &#x27;fitness tools. The Super Mario
+    version of Connected has a 45mm face and &#x27;\n &quot;weighs 86 grams (0.18
+    pounds) with a rubber strap. It&#x27;s water resistant up &quot;\n &#x27;to 5ATM,
+    and Tag Heuer promises its 430mAh battery can last a full day. Tag &#x27;\n &#x27;Heuer
+    is only making 2,000 of these watches, which will be available in &#x27;\n &#x27;selected
+    boutiques and at its website in some regions, from 15th July 2021. &#x27;\n &#x27;At
+    $2,150, the special edition costs more than its non-Mario counterparts, &#x27;\n
+    &quot;which start at $1,800, but if you&#x27;re that hardcore of a fan, you might
+    be &quot;\n &#x27;convinced to fork over the cash.Please enter a valid email address&#x27;)</pre></td>\n
+    \                 </tr>\n                \n              </tbody>\n            </table>\n
+    \         \n        </li>\n      \n        \n        <li class=\"frame user\">\n
+    \         \n            <code class=\"fname\">/app/.heroku/python/lib/python3.9/site-packages/nltk/data.py</code>,
+    line 750, in load\n          \n\n          \n            <div class=\"context\"
+    id=\"c139761955152192\">\n              \n                <ol start=\"743\" class=\"pre-context\"
+    id=\"pre139761955152192\">\n                \n                  <li onclick=\"toggle('pre139761955152192',
+    'post139761955152192')\"><pre>            return resource_val</pre></li>\n                \n
+    \                 <li onclick=\"toggle('pre139761955152192', 'post139761955152192')\"><pre></pre></li>\n
+    \               \n                  <li onclick=\"toggle('pre139761955152192',
+    'post139761955152192')\"><pre>    # Let the user know what&#x27;s going on.</pre></li>\n
+    \               \n                  <li onclick=\"toggle('pre139761955152192',
+    'post139761955152192')\"><pre>    if verbose:</pre></li>\n                \n                  <li
+    onclick=\"toggle('pre139761955152192', 'post139761955152192')\"><pre>        print(&quot;&lt;&lt;Loading
+    %s&gt;&gt;&quot; % (resource_url,))</pre></li>\n                \n                  <li
+    onclick=\"toggle('pre139761955152192', 'post139761955152192')\"><pre></pre></li>\n
+    \               \n                  <li onclick=\"toggle('pre139761955152192',
+    'post139761955152192')\"><pre>    # Load the resource.</pre></li>\n                \n
+    \               </ol>\n              \n              <ol start=\"750\" class=\"context-line\">\n
+    \               <li onclick=\"toggle('pre139761955152192', 'post139761955152192')\"><pre>
+    \   opened_resource = _open(resource_url)</pre> <span></span></li>\n              </ol>\n
+    \             \n                <ol start='751' class=\"post-context\" id=\"post139761955152192\">\n
+    \                 \n                  <li onclick=\"toggle('pre139761955152192',
+    'post139761955152192')\"><pre></pre></li>\n                  \n                  <li
+    onclick=\"toggle('pre139761955152192', 'post139761955152192')\"><pre>    if format
+    == &quot;raw&quot;:</pre></li>\n                  \n                  <li onclick=\"toggle('pre139761955152192',
+    'post139761955152192')\"><pre>        resource_val = opened_resource.read()</pre></li>\n
+    \                 \n                  <li onclick=\"toggle('pre139761955152192',
+    'post139761955152192')\"><pre>    elif format == &quot;pickle&quot;:</pre></li>\n
+    \                 \n                  <li onclick=\"toggle('pre139761955152192',
+    'post139761955152192')\"><pre>        resource_val = pickle.load(opened_resource)</pre></li>\n
+    \                 \n                  <li onclick=\"toggle('pre139761955152192',
+    'post139761955152192')\"><pre>    elif format == &quot;json&quot;:</pre></li>\n
+    \                 \n              </ol>\n              \n            </div>\n
+    \         \n\n          \n            <div class=\"commands\">\n                \n
+    \                   <a href=\"#\" onclick=\"return varToggle(this, '139761955152192')\"><span>&#x25b6;</span>
+    Local vars</a>\n                \n            </div>\n            <table class=\"vars\"
+    id=\"v139761955152192\">\n              <thead>\n                <tr>\n                  <th>Variable</th>\n
+    \                 <th>Value</th>\n                </tr>\n              </thead>\n
+    \             <tbody>\n                \n                  <tr>\n                    <td>cache</td>\n
+    \                   <td class=\"code\"><pre>True</pre></td>\n                  </tr>\n
+    \               \n                  <tr>\n                    <td>encoding</td>\n
+    \                   <td class=\"code\"><pre>None</pre></td>\n                  </tr>\n
+    \               \n                  <tr>\n                    <td>ext</td>\n                    <td
+    class=\"code\"><pre>&#x27;pickle&#x27;</pre></td>\n                  </tr>\n                \n
+    \                 <tr>\n                    <td>format</td>\n                    <td
+    class=\"code\"><pre>&#x27;pickle&#x27;</pre></td>\n                  </tr>\n                \n
+    \                 <tr>\n                    <td>fstruct_reader</td>\n                    <td
+    class=\"code\"><pre>None</pre></td>\n                  </tr>\n                \n
+    \                 <tr>\n                    <td>logic_parser</td>\n                    <td
+    class=\"code\"><pre>None</pre></td>\n                  </tr>\n                \n
+    \                 <tr>\n                    <td>resource_url</td>\n                    <td
+    class=\"code\"><pre>&#x27;nltk:tokenizers/punkt/PY3/english.pickle&#x27;</pre></td>\n
+    \                 </tr>\n                \n                  <tr>\n                    <td>resource_url_parts</td>\n
+    \                   <td class=\"code\"><pre>[&#x27;nltk:tokenizers/punkt/PY3/english&#x27;,
+    &#x27;pickle&#x27;]</pre></td>\n                  </tr>\n                \n                  <tr>\n
+    \                   <td>resource_val</td>\n                    <td class=\"code\"><pre>None</pre></td>\n
+    \                 </tr>\n                \n                  <tr>\n                    <td>verbose</td>\n
+    \                   <td class=\"code\"><pre>False</pre></td>\n                  </tr>\n
+    \               \n              </tbody>\n            </table>\n          \n        </li>\n
+    \     \n        \n        <li class=\"frame user\">\n          \n            <code
+    class=\"fname\">/app/.heroku/python/lib/python3.9/site-packages/nltk/data.py</code>,
+    line 875, in _open\n          \n\n          \n            <div class=\"context\"
+    id=\"c139761955139456\">\n              \n                <ol start=\"868\" class=\"pre-context\"
+    id=\"pre139761955139456\">\n                \n                  <li onclick=\"toggle('pre139761955139456',
+    'post139761955139456')\"><pre>        loaded from.  The default protocol is &quot;nltk:&quot;,
+    which searches</pre></li>\n                \n                  <li onclick=\"toggle('pre139761955139456',
+    'post139761955139456')\"><pre>        for the file in the the NLTK data package.</pre></li>\n
+    \               \n                  <li onclick=\"toggle('pre139761955139456',
+    'post139761955139456')\"><pre>    &quot;&quot;&quot;</pre></li>\n                \n
+    \                 <li onclick=\"toggle('pre139761955139456', 'post139761955139456')\"><pre>
+    \   resource_url = normalize_resource_url(resource_url)</pre></li>\n                \n
+    \                 <li onclick=\"toggle('pre139761955139456', 'post139761955139456')\"><pre>
+    \   protocol, path_ = split_resource_url(resource_url)</pre></li>\n                \n
+    \                 <li onclick=\"toggle('pre139761955139456', 'post139761955139456')\"><pre></pre></li>\n
+    \               \n                  <li onclick=\"toggle('pre139761955139456',
+    'post139761955139456')\"><pre>    if protocol is None or protocol.lower() == &quot;nltk&quot;:</pre></li>\n
+    \               \n                </ol>\n              \n              <ol start=\"875\"
+    class=\"context-line\">\n                <li onclick=\"toggle('pre139761955139456',
+    'post139761955139456')\"><pre>        return find(path_, path + [&quot;&quot;]).open()</pre>
+    <span></span></li>\n              </ol>\n              \n                <ol start='876'
+    class=\"post-context\" id=\"post139761955139456\">\n                  \n                  <li
+    onclick=\"toggle('pre139761955139456', 'post139761955139456')\"><pre>    elif
+    protocol.lower() == &quot;file&quot;:</pre></li>\n                  \n                  <li
+    onclick=\"toggle('pre139761955139456', 'post139761955139456')\"><pre>        #
+    urllib might not use mode=&#x27;rb&#x27;, so handle this one ourselves:</pre></li>\n
+    \                 \n                  <li onclick=\"toggle('pre139761955139456',
+    'post139761955139456')\"><pre>        return find(path_, [&quot;&quot;]).open()</pre></li>\n
+    \                 \n                  <li onclick=\"toggle('pre139761955139456',
+    'post139761955139456')\"><pre>    else:</pre></li>\n                  \n                  <li
+    onclick=\"toggle('pre139761955139456', 'post139761955139456')\"><pre>        return
+    urlopen(resource_url)</pre></li>\n                  \n                  <li onclick=\"toggle('pre139761955139456',
+    'post139761955139456')\"><pre></pre></li>\n                  \n              </ol>\n
+    \             \n            </div>\n          \n\n          \n            <div
+    class=\"commands\">\n                \n                    <a href=\"#\" onclick=\"return
+    varToggle(this, '139761955139456')\"><span>&#x25b6;</span> Local vars</a>\n                \n
+    \           </div>\n            <table class=\"vars\" id=\"v139761955139456\">\n
+    \             <thead>\n                <tr>\n                  <th>Variable</th>\n
+    \                 <th>Value</th>\n                </tr>\n              </thead>\n
+    \             <tbody>\n                \n                  <tr>\n                    <td>path_</td>\n
+    \                   <td class=\"code\"><pre>&#x27;tokenizers/punkt/PY3/english.pickle&#x27;</pre></td>\n
+    \                 </tr>\n                \n                  <tr>\n                    <td>protocol</td>\n
+    \                   <td class=\"code\"><pre>&#x27;nltk&#x27;</pre></td>\n                  </tr>\n
+    \               \n                  <tr>\n                    <td>resource_url</td>\n
+    \                   <td class=\"code\"><pre>&#x27;nltk:tokenizers/punkt/PY3/english.pickle&#x27;</pre></td>\n
+    \                 </tr>\n                \n              </tbody>\n            </table>\n
+    \         \n        </li>\n      \n        \n        <li class=\"frame user\">\n
+    \         \n            <code class=\"fname\">/app/.heroku/python/lib/python3.9/site-packages/nltk/data.py</code>,
+    line 583, in find\n          \n\n          \n            <div class=\"context\"
+    id=\"c139761955139200\">\n              \n                <ol start=\"576\" class=\"pre-context\"
+    id=\"pre139761955139200\">\n                \n                  <li onclick=\"toggle('pre139761955139200',
+    'post139761955139200')\"><pre>    msg += &quot;\\n  Attempted to load \\33[93m{resource_name}\\033[0m\\n&quot;.format(</pre></li>\n
+    \               \n                  <li onclick=\"toggle('pre139761955139200',
+    'post139761955139200')\"><pre>        resource_name=resource_name</pre></li>\n
+    \               \n                  <li onclick=\"toggle('pre139761955139200',
+    'post139761955139200')\"><pre>    )</pre></li>\n                \n                  <li
+    onclick=\"toggle('pre139761955139200', 'post139761955139200')\"><pre></pre></li>\n
+    \               \n                  <li onclick=\"toggle('pre139761955139200',
+    'post139761955139200')\"><pre>    msg += &quot;\\n  Searched in:&quot; + &quot;&quot;.join(&quot;\\n
+    \   - %r&quot; % d for d in paths)</pre></li>\n                \n                  <li
+    onclick=\"toggle('pre139761955139200', 'post139761955139200')\"><pre>    sep =
+    &quot;*&quot; * 70</pre></li>\n                \n                  <li onclick=\"toggle('pre139761955139200',
+    'post139761955139200')\"><pre>    resource_not_found = &quot;\\n%s\\n%s\\n%s\\n&quot;
+    % (sep, msg, sep)</pre></li>\n                \n                </ol>\n              \n
+    \             <ol start=\"583\" class=\"context-line\">\n                <li onclick=\"toggle('pre139761955139200',
+    'post139761955139200')\"><pre>    raise LookupError(resource_not_found)</pre>
+    <span></span></li>\n              </ol>\n              \n                <ol start='584'
+    class=\"post-context\" id=\"post139761955139200\">\n                  \n                  <li
+    onclick=\"toggle('pre139761955139200', 'post139761955139200')\"><pre></pre></li>\n
+    \                 \n                  <li onclick=\"toggle('pre139761955139200',
+    'post139761955139200')\"><pre></pre></li>\n                  \n                  <li
+    onclick=\"toggle('pre139761955139200', 'post139761955139200')\"><pre>def retrieve(resource_url,
+    filename=None, verbose=True):</pre></li>\n                  \n                  <li
+    onclick=\"toggle('pre139761955139200', 'post139761955139200')\"><pre>    &quot;&quot;&quot;</pre></li>\n
+    \                 \n                  <li onclick=\"toggle('pre139761955139200',
+    'post139761955139200')\"><pre>    Copy the given resource to a local file.  If
+    no filename is</pre></li>\n                  \n                  <li onclick=\"toggle('pre139761955139200',
+    'post139761955139200')\"><pre>    specified, then use the URL&#x27;s filename.
+    \ If there is already a</pre></li>\n                  \n              </ol>\n
+    \             \n            </div>\n          \n\n          \n            <div
+    class=\"commands\">\n                \n                    <a href=\"#\" onclick=\"return
+    varToggle(this, '139761955139200')\"><span>&#x25b6;</span> Local vars</a>\n                \n
+    \           </div>\n            <table class=\"vars\" id=\"v139761955139200\">\n
+    \             <thead>\n                <tr>\n                  <th>Variable</th>\n
+    \                 <th>Value</th>\n                </tr>\n              </thead>\n
+    \             <tbody>\n                \n                  <tr>\n                    <td>i</td>\n
+    \                   <td class=\"code\"><pre>3</pre></td>\n                  </tr>\n
+    \               \n                  <tr>\n                    <td>m</td>\n                    <td
+    class=\"code\"><pre>&lt;re.Match object; span=(0, 0), match=&#x27;&#x27;&gt;</pre></td>\n
+    \                 </tr>\n                \n                  <tr>\n                    <td>modified_name</td>\n
+    \                   <td class=\"code\"><pre>&#x27;tokenizers/punkt/PY3/english.pickle.zip/english.pickle&#x27;</pre></td>\n
+    \                 </tr>\n                \n                  <tr>\n                    <td>msg</td>\n
+    \                   <td class=\"code\"><pre>(&#x27;  Resource \\x1b[93mpunkt\\x1b[0m
+    not found.\\n&#x27;\n &#x27;  Please use the NLTK Downloader to obtain the resource:\\n&#x27;\n
+    &#x27;\\n&#x27;\n &#x27;  \\x1b[31m&gt;&gt;&gt; import nltk\\n&#x27;\n &quot;
+    \ &gt;&gt;&gt; nltk.download(&#x27;punkt&#x27;)\\n&quot;\n &#x27;  \\x1b[0m\\n&#x27;\n
+    &#x27;  For more information see: https://www.nltk.org/data.html\\n&#x27;\n &#x27;\\n&#x27;\n
+    &#x27;  Attempted to load \\x1b[93mtokenizers/punkt/PY3/english.pickle\\x1b[0m\\n&#x27;\n
+    &#x27;\\n&#x27;\n &#x27;  Searched in:\\n&#x27;\n &quot;    - &#x27;/app/nltk_data&#x27;\\n&quot;\n
+    &quot;    - &#x27;/app/.heroku/python/nltk_data&#x27;\\n&quot;\n &quot;    - &#x27;/app/.heroku/python/share/nltk_data&#x27;\\n&quot;\n
+    &quot;    - &#x27;/app/.heroku/python/lib/nltk_data&#x27;\\n&quot;\n &quot;    -
+    &#x27;/usr/share/nltk_data&#x27;\\n&quot;\n &quot;    - &#x27;/usr/local/share/nltk_data&#x27;\\n&quot;\n
+    &quot;    - &#x27;/usr/lib/nltk_data&#x27;\\n&quot;\n &quot;    - &#x27;/usr/local/lib/nltk_data&#x27;\\n&quot;\n
+    &quot;    - &#x27;&#x27;&quot;)</pre></td>\n                  </tr>\n                \n
+    \                 <tr>\n                    <td>p</td>\n                    <td
+    class=\"code\"><pre>&#x27;tokenizers/punkt/PY3/english.pickle&#x27;</pre></td>\n
+    \                 </tr>\n                \n                  <tr>\n                    <td>path_</td>\n
+    \                   <td class=\"code\"><pre>&#x27;&#x27;</pre></td>\n                  </tr>\n
+    \               \n                  <tr>\n                    <td>paths</td>\n
+    \                   <td class=\"code\"><pre>[&#x27;/app/nltk_data&#x27;,\n &#x27;/app/.heroku/python/nltk_data&#x27;,\n
+    &#x27;/app/.heroku/python/share/nltk_data&#x27;,\n &#x27;/app/.heroku/python/lib/nltk_data&#x27;,\n
+    &#x27;/usr/share/nltk_data&#x27;,\n &#x27;/usr/local/share/nltk_data&#x27;,\n
+    &#x27;/usr/lib/nltk_data&#x27;,\n &#x27;/usr/local/lib/nltk_data&#x27;,\n &#x27;&#x27;]</pre></td>\n
+    \                 </tr>\n                \n                  <tr>\n                    <td>pieces</td>\n
+    \                   <td class=\"code\"><pre>[&#x27;tokenizers&#x27;, &#x27;punkt&#x27;,
+    &#x27;PY3&#x27;, &#x27;english.pickle&#x27;]</pre></td>\n                  </tr>\n
+    \               \n                  <tr>\n                    <td>resource_name</td>\n
+    \                   <td class=\"code\"><pre>&#x27;tokenizers/punkt/PY3/english.pickle&#x27;</pre></td>\n
+    \                 </tr>\n                \n                  <tr>\n                    <td>resource_not_found</td>\n
+    \                   <td class=\"code\"><pre>(&#x27;\\n&#x27;\n &#x27;**********************************************************************\\n&#x27;\n
+    &#x27;  Resource \\x1b[93mpunkt\\x1b[0m not found.\\n&#x27;\n &#x27;  Please use
+    the NLTK Downloader to obtain the resource:\\n&#x27;\n &#x27;\\n&#x27;\n &#x27;
+    \ \\x1b[31m&gt;&gt;&gt; import nltk\\n&#x27;\n &quot;  &gt;&gt;&gt; nltk.download(&#x27;punkt&#x27;)\\n&quot;\n
+    &#x27;  \\x1b[0m\\n&#x27;\n &#x27;  For more information see: https://www.nltk.org/data.html\\n&#x27;\n
+    &#x27;\\n&#x27;\n &#x27;  Attempted to load \\x1b[93mtokenizers/punkt/PY3/english.pickle\\x1b[0m\\n&#x27;\n
+    &#x27;\\n&#x27;\n &#x27;  Searched in:\\n&#x27;\n &quot;    - &#x27;/app/nltk_data&#x27;\\n&quot;\n
+    &quot;    - &#x27;/app/.heroku/python/nltk_data&#x27;\\n&quot;\n &quot;    - &#x27;/app/.heroku/python/share/nltk_data&#x27;\\n&quot;\n
+    &quot;    - &#x27;/app/.heroku/python/lib/nltk_data&#x27;\\n&quot;\n &quot;    -
+    &#x27;/usr/share/nltk_data&#x27;\\n&quot;\n &quot;    - &#x27;/usr/local/share/nltk_data&#x27;\\n&quot;\n
+    &quot;    - &#x27;/usr/lib/nltk_data&#x27;\\n&quot;\n &quot;    - &#x27;/usr/local/lib/nltk_data&#x27;\\n&quot;\n
+    &quot;    - &#x27;&#x27;\\n&quot;\n &#x27;**********************************************************************\\n&#x27;)</pre></td>\n
+    \                 </tr>\n                \n                  <tr>\n                    <td>resource_zipname</td>\n
+    \                   <td class=\"code\"><pre>&#x27;punkt&#x27;</pre></td>\n                  </tr>\n
+    \               \n                  <tr>\n                    <td>sep</td>\n                    <td
+    class=\"code\"><pre>&#x27;**********************************************************************&#x27;</pre></td>\n
+    \                 </tr>\n                \n                  <tr>\n                    <td>zipentry</td>\n
+    \                   <td class=\"code\"><pre>None</pre></td>\n                  </tr>\n
+    \               \n                  <tr>\n                    <td>zipfile</td>\n
+    \                   <td class=\"code\"><pre>None</pre></td>\n                  </tr>\n
+    \               \n              </tbody>\n            </table>\n          \n        </li>\n
+    \     \n    </ul>\n  </div>\n  <form action=\"https://dpaste.com/\" name=\"pasteform\"
+    id=\"pasteform\" method=\"post\">\n\n  <div id=\"pastebinTraceback\" class=\"pastebin\">\n
+    \   <input type=\"hidden\" name=\"language\" value=\"PythonConsole\">\n    <input
+    type=\"hidden\" name=\"title\"\n      value=\"LookupError at /api/\">\n    <input
+    type=\"hidden\" name=\"source\" value=\"Django Dpaste Agent\">\n    <input type=\"hidden\"
+    name=\"poster\" value=\"Django\">\n    <textarea name=\"content\" id=\"traceback_area\"
+    cols=\"140\" rows=\"25\">\nEnvironment:\n\n\nRequest Method: POST\nRequest URL:
+    https://api-makemetechie.herokuapp.com/api/\n\nDjango Version: 3.2.5\nPython Version:
+    3.9.6\nInstalled Applications:\n[&#x27;django.contrib.admin&#x27;,\n &#x27;django.contrib.auth&#x27;,\n
+    &#x27;django.contrib.contenttypes&#x27;,\n &#x27;django.contrib.sessions&#x27;,\n
+    &#x27;django.contrib.messages&#x27;,\n &#x27;django.contrib.staticfiles&#x27;,\n
+    &#x27;webBackend.apps.WebbackendConfig&#x27;,\n &#x27;web.myappconfig.MyAppConfig&#x27;]\nInstalled
+    Middleware:\n(&#x27;whitenoise.middleware.WhiteNoiseMiddleware&#x27;,\n &#x27;django.middleware.security.SecurityMiddleware&#x27;,\n
+    &#x27;django.contrib.sessions.middleware.SessionMiddleware&#x27;,\n &#x27;django.middleware.common.CommonMiddleware&#x27;,\n
+    &#x27;django.contrib.auth.middleware.AuthenticationMiddleware&#x27;,\n &#x27;django.contrib.messages.middleware.MessageMiddleware&#x27;,\n
+    &#x27;django.middleware.clickjacking.XFrameOptionsMiddleware&#x27;)\n\n\n\nTraceback
+    (most recent call last):\n  File \"/app/.heroku/python/lib/python3.9/site-packages/django/core/handlers/exception.py\",
+    line 47, in inner\n    response = get_response(request)\n  File \"/app/.heroku/python/lib/python3.9/site-packages/django/core/handlers/base.py\",
+    line 181, in _get_response\n    response = wrapped_callback(request, *callback_args,
+    **callback_kwargs)\n  File \"/app/webBackend/views.py\", line 11, in index\n    return
+    HttpResponse(NltkOperations.get_summary(json_data[&#x27;url&#x27;]))\n  File \"/app/webBackend/nltkOperations.py\",
+    line 42, in get_summary\n    sentence_list = nltk.sent_tokenize(article_text)\n
+    \ File \"/app/.heroku/python/lib/python3.9/site-packages/nltk/tokenize/__init__.py\",
+    line 107, in sent_tokenize\n    tokenizer = load(&quot;tokenizers/punkt/{0}.pickle&quot;.format(language))\n
+    \ File \"/app/.heroku/python/lib/python3.9/site-packages/nltk/data.py\", line
+    750, in load\n    opened_resource = _open(resource_url)\n  File \"/app/.heroku/python/lib/python3.9/site-packages/nltk/data.py\",
+    line 875, in _open\n    return find(path_, path + [&quot;&quot;]).open()\n  File
+    \"/app/.heroku/python/lib/python3.9/site-packages/nltk/data.py\", line 583, in
+    find\n    raise LookupError(resource_not_found)\n\nException Type: LookupError
+    at /api/\nException Value: \n**********************************************************************\n
+    \ Resource \e[93mpunkt\e[0m not found.\n  Please use the NLTK Downloader to obtain
+    the resource:\n\n  \e[31m&gt;&gt;&gt; import nltk\n  &gt;&gt;&gt; nltk.download(&#x27;punkt&#x27;)\n
+    \ \e[0m\n  For more information see: https://www.nltk.org/data.html\n\n  Attempted
+    to load \e[93mtokenizers/punkt/PY3/english.pickle\e[0m\n\n  Searched in:\n    -
+    &#x27;/app/nltk_data&#x27;\n    - &#x27;/app/.heroku/python/nltk_data&#x27;\n
+    \   - &#x27;/app/.heroku/python/share/nltk_data&#x27;\n    - &#x27;/app/.heroku/python/lib/nltk_data&#x27;\n
+    \   - &#x27;/usr/share/nltk_data&#x27;\n    - &#x27;/usr/local/share/nltk_data&#x27;\n
+    \   - &#x27;/usr/lib/nltk_data&#x27;\n    - &#x27;/usr/local/lib/nltk_data&#x27;\n
+    \   - &#x27;&#x27;\n**********************************************************************\n\n</textarea>\n
+    \ <br><br>\n  <input type=\"submit\" value=\"Share this traceback on a public
+    website\">\n  </div>\n</form>\n</div>\n\n\n\n<div id=\"requestinfo\">\n  <h2>Request
+    information</h2>\n\n\n  \n    <h3 id=\"user-info\">USER</h3>\n    <p>AnonymousUser</p>\n
+    \ \n\n  <h3 id=\"get-info\">GET</h3>\n  \n    <p>No GET data</p>\n  \n\n  <h3
+    id=\"post-info\">POST</h3>\n  \n    <p>No POST data</p>\n  \n  <h3 id=\"files-info\">FILES</h3>\n
+    \ \n    <p>No FILES data</p>\n  \n\n\n  <h3 id=\"cookie-info\">COOKIES</h3>\n
+    \ \n    <p>No cookie data</p>\n  \n\n  <h3 id=\"meta-info\">META</h3>\n  <table
+    class=\"req\">\n    <thead>\n      <tr>\n        <th>Variable</th>\n        <th>Value</th>\n
+    \     </tr>\n    </thead>\n    <tbody>\n      \n        <tr>\n          <td>CONTENT_LENGTH</td>\n
+    \         <td class=\"code\"><pre>&#x27;98&#x27;</pre></td>\n        </tr>\n      \n
+    \       <tr>\n          <td>CONTENT_TYPE</td>\n          <td class=\"code\"><pre>&#x27;application/json&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>HTTP_ACCEPT</td>\n          <td
+    class=\"code\"><pre>&#x27;*/*&#x27;</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>HTTP_ACCEPT_ENCODING</td>\n          <td class=\"code\"><pre>&#x27;gzip;q=1.0,deflate;q=0.6,identity;q=0.3&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>HTTP_CONNECTION</td>\n          <td
+    class=\"code\"><pre>&#x27;close&#x27;</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>HTTP_CONNECT_TIME</td>\n          <td class=\"code\"><pre>&#x27;1&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>HTTP_HOST</td>\n          <td
+    class=\"code\"><pre>&#x27;api-makemetechie.herokuapp.com&#x27;</pre></td>\n        </tr>\n
+    \     \n        <tr>\n          <td>HTTP_TOTAL_ROUTE_TIME</td>\n          <td
+    class=\"code\"><pre>&#x27;14143&#x27;</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>HTTP_USER_AGENT</td>\n          <td class=\"code\"><pre>&#x27;Ruby&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>HTTP_VIA</td>\n          <td
+    class=\"code\"><pre>&#x27;1.1 vegur&#x27;</pre></td>\n        </tr>\n      \n
+    \       <tr>\n          <td>HTTP_X_FORWARDED_FOR</td>\n          <td class=\"code\"><pre>&#x27;52.179.134.92&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>HTTP_X_FORWARDED_PORT</td>\n
+    \         <td class=\"code\"><pre>&#x27;443&#x27;</pre></td>\n        </tr>\n
+    \     \n        <tr>\n          <td>HTTP_X_FORWARDED_PROTO</td>\n          <td
+    class=\"code\"><pre>&#x27;https&#x27;</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>HTTP_X_REQUEST_ID</td>\n          <td class=\"code\"><pre>&#x27;72c86cb7-694f-40fa-af08-8955aabb0260&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>HTTP_X_REQUEST_START</td>\n
+    \         <td class=\"code\"><pre>&#x27;1626158225348&#x27;</pre></td>\n        </tr>\n
+    \     \n        <tr>\n          <td>PATH_INFO</td>\n          <td class=\"code\"><pre>&#x27;/api/&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>QUERY_STRING</td>\n          <td
+    class=\"code\"><pre>&#x27;&#x27;</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>RAW_URI</td>\n          <td class=\"code\"><pre>&#x27;/api/&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>REMOTE_ADDR</td>\n          <td
+    class=\"code\"><pre>&#x27;10.33.255.116&#x27;</pre></td>\n        </tr>\n      \n
+    \       <tr>\n          <td>REMOTE_PORT</td>\n          <td class=\"code\"><pre>&#x27;29141&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>REQUEST_METHOD</td>\n          <td
+    class=\"code\"><pre>&#x27;POST&#x27;</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>SCRIPT_NAME</td>\n          <td class=\"code\"><pre>&#x27;&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>SERVER_NAME</td>\n          <td
+    class=\"code\"><pre>&#x27;0.0.0.0&#x27;</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>SERVER_PORT</td>\n          <td class=\"code\"><pre>&#x27;18605&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>SERVER_PROTOCOL</td>\n          <td
+    class=\"code\"><pre>&#x27;HTTP/1.1&#x27;</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>SERVER_SOFTWARE</td>\n          <td class=\"code\"><pre>&#x27;gunicorn/20.0.4&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>gunicorn.socket</td>\n          <td
+    class=\"code\"><pre>&lt;socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM,
+    proto=0, laddr=(&#x27;172.19.112.162&#x27;, 18605), raddr=(&#x27;10.33.255.116&#x27;,
+    29141)&gt;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>wsgi.errors</td>\n
+    \         <td class=\"code\"><pre>&lt;gunicorn.http.wsgi.WSGIErrorsWrapper object
+    at 0x7f1cddc36430&gt;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>wsgi.file_wrapper</td>\n
+    \         <td class=\"code\"><pre>&lt;class &#x27;gunicorn.http.wsgi.FileWrapper&#x27;&gt;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>wsgi.input</td>\n          <td
+    class=\"code\"><pre>&lt;gunicorn.http.body.Body object at 0x7f1cddc366a0&gt;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>wsgi.input_terminated</td>\n
+    \         <td class=\"code\"><pre>True</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>wsgi.multiprocess</td>\n          <td class=\"code\"><pre>True</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>wsgi.multithread</td>\n          <td
+    class=\"code\"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>wsgi.run_once</td>\n
+    \         <td class=\"code\"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>wsgi.url_scheme</td>\n          <td class=\"code\"><pre>&#x27;https&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>wsgi.version</td>\n          <td
+    class=\"code\"><pre>(1, 0)</pre></td>\n        </tr>\n      \n    </tbody>\n  </table>\n\n\n
+    \ <h3 id=\"settings-info\">Settings</h3>\n  <h4>Using settings module <code>web.settings</code></h4>\n
+    \ <table class=\"req\">\n    <thead>\n      <tr>\n        <th>Setting</th>\n        <th>Value</th>\n
+    \     </tr>\n    </thead>\n    <tbody>\n      \n        <tr>\n          <td>ABSOLUTE_URL_OVERRIDES</td>\n
+    \         <td class=\"code\"><pre>{}</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>ADMINS</td>\n          <td class=\"code\"><pre>[]</pre></td>\n        </tr>\n
+    \     \n        <tr>\n          <td>ALLOWED_HOSTS</td>\n          <td class=\"code\"><pre>[&#x27;*&#x27;]</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>APPEND_SLASH</td>\n          <td
+    class=\"code\"><pre>True</pre></td>\n        </tr>\n      \n        <tr>\n          <td>AUTHENTICATION_BACKENDS</td>\n
+    \         <td class=\"code\"><pre>[&#x27;django.contrib.auth.backends.ModelBackend&#x27;]</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>AUTH_PASSWORD_VALIDATORS</td>\n
+    \         <td class=\"code\"><pre>&#x27;********************&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>AUTH_USER_MODEL</td>\n          <td
+    class=\"code\"><pre>&#x27;auth.User&#x27;</pre></td>\n        </tr>\n      \n
+    \       <tr>\n          <td>BASE_DIR</td>\n          <td class=\"code\"><pre>PosixPath(&#x27;/app&#x27;)</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>CACHES</td>\n          <td
+    class=\"code\"><pre>{&#x27;default&#x27;: {&#x27;BACKEND&#x27;: &#x27;django.core.cache.backends.locmem.LocMemCache&#x27;}}</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>CACHE_MIDDLEWARE_ALIAS</td>\n
+    \         <td class=\"code\"><pre>&#x27;default&#x27;</pre></td>\n        </tr>\n
+    \     \n        <tr>\n          <td>CACHE_MIDDLEWARE_KEY_PREFIX</td>\n          <td
+    class=\"code\"><pre>&#x27;********************&#x27;</pre></td>\n        </tr>\n
+    \     \n        <tr>\n          <td>CACHE_MIDDLEWARE_SECONDS</td>\n          <td
+    class=\"code\"><pre>600</pre></td>\n        </tr>\n      \n        <tr>\n          <td>CSRF_COOKIE_AGE</td>\n
+    \         <td class=\"code\"><pre>31449600</pre></td>\n        </tr>\n      \n
+    \       <tr>\n          <td>CSRF_COOKIE_DOMAIN</td>\n          <td class=\"code\"><pre>None</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>CSRF_COOKIE_HTTPONLY</td>\n
+    \         <td class=\"code\"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>CSRF_COOKIE_NAME</td>\n          <td class=\"code\"><pre>&#x27;csrftoken&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>CSRF_COOKIE_PATH</td>\n          <td
+    class=\"code\"><pre>&#x27;/&#x27;</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>CSRF_COOKIE_SAMESITE</td>\n          <td class=\"code\"><pre>&#x27;Lax&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>CSRF_COOKIE_SECURE</td>\n          <td
+    class=\"code\"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>CSRF_FAILURE_VIEW</td>\n
+    \         <td class=\"code\"><pre>&#x27;django.views.csrf.csrf_failure&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>CSRF_HEADER_NAME</td>\n          <td
+    class=\"code\"><pre>&#x27;HTTP_X_CSRFTOKEN&#x27;</pre></td>\n        </tr>\n      \n
+    \       <tr>\n          <td>CSRF_TRUSTED_ORIGINS</td>\n          <td class=\"code\"><pre>[]</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>CSRF_USE_SESSIONS</td>\n          <td
+    class=\"code\"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DATABASES</td>\n
+    \         <td class=\"code\"><pre>{&#x27;default&#x27;: {&#x27;ATOMIC_REQUESTS&#x27;:
+    False,\n             &#x27;AUTOCOMMIT&#x27;: True,\n             &#x27;CONN_MAX_AGE&#x27;:
+    600,\n             &#x27;ENGINE&#x27;: &#x27;django.db.backends.postgresql_psycopg2&#x27;,\n
+    \            &#x27;HOST&#x27;: &#x27;ec2-52-6-77-239.compute-1.amazonaws.com&#x27;,\n
+    \            &#x27;NAME&#x27;: &#x27;dpe0b8nvsktst&#x27;,\n             &#x27;OPTIONS&#x27;:
+    {&#x27;sslmode&#x27;: &#x27;require&#x27;},\n             &#x27;PASSWORD&#x27;:
+    &#x27;********************&#x27;,\n             &#x27;PORT&#x27;: 5432,\n             &#x27;TEST&#x27;:
+    {&#x27;CHARSET&#x27;: None,\n                      &#x27;COLLATION&#x27;: None,\n
+    \                     &#x27;MIGRATE&#x27;: True,\n                      &#x27;MIRROR&#x27;:
+    None,\n                      &#x27;NAME&#x27;: None},\n             &#x27;TIME_ZONE&#x27;:
+    None,\n             &#x27;USER&#x27;: &#x27;ifykwxvktsdtav&#x27;}}</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>DATABASE_ROUTERS</td>\n          <td
+    class=\"code\"><pre>[]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DATA_UPLOAD_MAX_MEMORY_SIZE</td>\n
+    \         <td class=\"code\"><pre>2621440</pre></td>\n        </tr>\n      \n
+    \       <tr>\n          <td>DATA_UPLOAD_MAX_NUMBER_FIELDS</td>\n          <td
+    class=\"code\"><pre>1000</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DATETIME_FORMAT</td>\n
+    \         <td class=\"code\"><pre>&#x27;N j, Y, P&#x27;</pre></td>\n        </tr>\n
+    \     \n        <tr>\n          <td>DATETIME_INPUT_FORMATS</td>\n          <td
+    class=\"code\"><pre>[&#x27;%Y-%m-%d %H:%M:%S&#x27;,\n &#x27;%Y-%m-%d %H:%M:%S.%f&#x27;,\n
+    &#x27;%Y-%m-%d %H:%M&#x27;,\n &#x27;%m/%d/%Y %H:%M:%S&#x27;,\n &#x27;%m/%d/%Y
+    %H:%M:%S.%f&#x27;,\n &#x27;%m/%d/%Y %H:%M&#x27;,\n &#x27;%m/%d/%y %H:%M:%S&#x27;,\n
+    &#x27;%m/%d/%y %H:%M:%S.%f&#x27;,\n &#x27;%m/%d/%y %H:%M&#x27;]</pre></td>\n        </tr>\n
+    \     \n        <tr>\n          <td>DATE_FORMAT</td>\n          <td class=\"code\"><pre>&#x27;N
+    j, Y&#x27;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>DATE_INPUT_FORMATS</td>\n
+    \         <td class=\"code\"><pre>[&#x27;%Y-%m-%d&#x27;,\n &#x27;%m/%d/%Y&#x27;,\n
+    &#x27;%m/%d/%y&#x27;,\n &#x27;%b %d %Y&#x27;,\n &#x27;%b %d, %Y&#x27;,\n &#x27;%d
+    %b %Y&#x27;,\n &#x27;%d %b, %Y&#x27;,\n &#x27;%B %d %Y&#x27;,\n &#x27;%B %d, %Y&#x27;,\n
+    &#x27;%d %B %Y&#x27;,\n &#x27;%d %B, %Y&#x27;]</pre></td>\n        </tr>\n      \n
+    \       <tr>\n          <td>DEBUG</td>\n          <td class=\"code\"><pre>True</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>DEBUG_PROPAGATE_EXCEPTIONS</td>\n
+    \         <td class=\"code\"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>DECIMAL_SEPARATOR</td>\n          <td class=\"code\"><pre>&#x27;.&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>DEFAULT_AUTO_FIELD</td>\n          <td
+    class=\"code\"><pre>&#x27;django.db.models.AutoField&#x27;</pre></td>\n        </tr>\n
+    \     \n        <tr>\n          <td>DEFAULT_CHARSET</td>\n          <td class=\"code\"><pre>&#x27;utf-8&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>DEFAULT_EXCEPTION_REPORTER</td>\n
+    \         <td class=\"code\"><pre>&#x27;django.views.debug.ExceptionReporter&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>DEFAULT_EXCEPTION_REPORTER_FILTER</td>\n
+    \         <td class=\"code\"><pre>&#x27;django.views.debug.SafeExceptionReporterFilter&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>DEFAULT_FILE_STORAGE</td>\n
+    \         <td class=\"code\"><pre>&#x27;django.core.files.storage.FileSystemStorage&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>DEFAULT_FROM_EMAIL</td>\n          <td
+    class=\"code\"><pre>&#x27;webmaster@localhost&#x27;</pre></td>\n        </tr>\n
+    \     \n        <tr>\n          <td>DEFAULT_HASHING_ALGORITHM</td>\n          <td
+    class=\"code\"><pre>&#x27;sha256&#x27;</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>DEFAULT_INDEX_TABLESPACE</td>\n          <td class=\"code\"><pre>&#x27;&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>DEFAULT_TABLESPACE</td>\n          <td
+    class=\"code\"><pre>&#x27;&#x27;</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>DISALLOWED_USER_AGENTS</td>\n          <td class=\"code\"><pre>[]</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>EMAIL_BACKEND</td>\n          <td
+    class=\"code\"><pre>&#x27;django.core.mail.backends.smtp.EmailBackend&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>EMAIL_HOST</td>\n          <td
+    class=\"code\"><pre>&#x27;localhost&#x27;</pre></td>\n        </tr>\n      \n
+    \       <tr>\n          <td>EMAIL_HOST_PASSWORD</td>\n          <td class=\"code\"><pre>&#x27;********************&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>EMAIL_HOST_USER</td>\n          <td
+    class=\"code\"><pre>&#x27;&#x27;</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>EMAIL_PORT</td>\n          <td class=\"code\"><pre>25</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>EMAIL_SSL_CERTFILE</td>\n          <td
+    class=\"code\"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n          <td>EMAIL_SSL_KEYFILE</td>\n
+    \         <td class=\"code\"><pre>&#x27;********************&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>EMAIL_SUBJECT_PREFIX</td>\n
+    \         <td class=\"code\"><pre>&#x27;[Django] &#x27;</pre></td>\n        </tr>\n
+    \     \n        <tr>\n          <td>EMAIL_TIMEOUT</td>\n          <td class=\"code\"><pre>None</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>EMAIL_USE_LOCALTIME</td>\n
+    \         <td class=\"code\"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>EMAIL_USE_SSL</td>\n          <td class=\"code\"><pre>False</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>EMAIL_USE_TLS</td>\n          <td
+    class=\"code\"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>FILE_UPLOAD_DIRECTORY_PERMISSIONS</td>\n
+    \         <td class=\"code\"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>FILE_UPLOAD_HANDLERS</td>\n          <td class=\"code\"><pre>[&#x27;django.core.files.uploadhandler.MemoryFileUploadHandler&#x27;,\n
+    &#x27;django.core.files.uploadhandler.TemporaryFileUploadHandler&#x27;]</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>FILE_UPLOAD_MAX_MEMORY_SIZE</td>\n
+    \         <td class=\"code\"><pre>2621440</pre></td>\n        </tr>\n      \n
+    \       <tr>\n          <td>FILE_UPLOAD_PERMISSIONS</td>\n          <td class=\"code\"><pre>420</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>FILE_UPLOAD_TEMP_DIR</td>\n
+    \         <td class=\"code\"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>FIRST_DAY_OF_WEEK</td>\n          <td class=\"code\"><pre>0</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>FIXTURE_DIRS</td>\n          <td
+    class=\"code\"><pre>[]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>FORCE_SCRIPT_NAME</td>\n
+    \         <td class=\"code\"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>FORMAT_MODULE_PATH</td>\n          <td class=\"code\"><pre>None</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>FORM_RENDERER</td>\n          <td
+    class=\"code\"><pre>&#x27;django.forms.renderers.DjangoTemplates&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>IGNORABLE_404_URLS</td>\n          <td
+    class=\"code\"><pre>[]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>INSTALLED_APPS</td>\n
+    \         <td class=\"code\"><pre>[&#x27;django.contrib.admin&#x27;,\n &#x27;django.contrib.auth&#x27;,\n
+    &#x27;django.contrib.contenttypes&#x27;,\n &#x27;django.contrib.sessions&#x27;,\n
+    &#x27;django.contrib.messages&#x27;,\n &#x27;django.contrib.staticfiles&#x27;,\n
+    &#x27;webBackend.apps.WebbackendConfig&#x27;,\n &#x27;web.myappconfig.MyAppConfig&#x27;]</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>INTERNAL_IPS</td>\n          <td
+    class=\"code\"><pre>[]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>LANGUAGES</td>\n
+    \         <td class=\"code\"><pre>[(&#x27;af&#x27;, &#x27;Afrikaans&#x27;),\n
+    (&#x27;ar&#x27;, &#x27;Arabic&#x27;),\n (&#x27;ar-dz&#x27;, &#x27;Algerian Arabic&#x27;),\n
+    (&#x27;ast&#x27;, &#x27;Asturian&#x27;),\n (&#x27;az&#x27;, &#x27;Azerbaijani&#x27;),\n
+    (&#x27;bg&#x27;, &#x27;Bulgarian&#x27;),\n (&#x27;be&#x27;, &#x27;Belarusian&#x27;),\n
+    (&#x27;bn&#x27;, &#x27;Bengali&#x27;),\n (&#x27;br&#x27;, &#x27;Breton&#x27;),\n
+    (&#x27;bs&#x27;, &#x27;Bosnian&#x27;),\n (&#x27;ca&#x27;, &#x27;Catalan&#x27;),\n
+    (&#x27;cs&#x27;, &#x27;Czech&#x27;),\n (&#x27;cy&#x27;, &#x27;Welsh&#x27;),\n
+    (&#x27;da&#x27;, &#x27;Danish&#x27;),\n (&#x27;de&#x27;, &#x27;German&#x27;),\n
+    (&#x27;dsb&#x27;, &#x27;Lower Sorbian&#x27;),\n (&#x27;el&#x27;, &#x27;Greek&#x27;),\n
+    (&#x27;en&#x27;, &#x27;English&#x27;),\n (&#x27;en-au&#x27;, &#x27;Australian
+    English&#x27;),\n (&#x27;en-gb&#x27;, &#x27;British English&#x27;),\n (&#x27;eo&#x27;,
+    &#x27;Esperanto&#x27;),\n (&#x27;es&#x27;, &#x27;Spanish&#x27;),\n (&#x27;es-ar&#x27;,
+    &#x27;Argentinian Spanish&#x27;),\n (&#x27;es-co&#x27;, &#x27;Colombian Spanish&#x27;),\n
+    (&#x27;es-mx&#x27;, &#x27;Mexican Spanish&#x27;),\n (&#x27;es-ni&#x27;, &#x27;Nicaraguan
+    Spanish&#x27;),\n (&#x27;es-ve&#x27;, &#x27;Venezuelan Spanish&#x27;),\n (&#x27;et&#x27;,
+    &#x27;Estonian&#x27;),\n (&#x27;eu&#x27;, &#x27;Basque&#x27;),\n (&#x27;fa&#x27;,
+    &#x27;Persian&#x27;),\n (&#x27;fi&#x27;, &#x27;Finnish&#x27;),\n (&#x27;fr&#x27;,
+    &#x27;French&#x27;),\n (&#x27;fy&#x27;, &#x27;Frisian&#x27;),\n (&#x27;ga&#x27;,
+    &#x27;Irish&#x27;),\n (&#x27;gd&#x27;, &#x27;Scottish Gaelic&#x27;),\n (&#x27;gl&#x27;,
+    &#x27;Galician&#x27;),\n (&#x27;he&#x27;, &#x27;Hebrew&#x27;),\n (&#x27;hi&#x27;,
+    &#x27;Hindi&#x27;),\n (&#x27;hr&#x27;, &#x27;Croatian&#x27;),\n (&#x27;hsb&#x27;,
+    &#x27;Upper Sorbian&#x27;),\n (&#x27;hu&#x27;, &#x27;Hungarian&#x27;),\n (&#x27;hy&#x27;,
+    &#x27;Armenian&#x27;),\n (&#x27;ia&#x27;, &#x27;Interlingua&#x27;),\n (&#x27;id&#x27;,
+    &#x27;Indonesian&#x27;),\n (&#x27;ig&#x27;, &#x27;Igbo&#x27;),\n (&#x27;io&#x27;,
+    &#x27;Ido&#x27;),\n (&#x27;is&#x27;, &#x27;Icelandic&#x27;),\n (&#x27;it&#x27;,
+    &#x27;Italian&#x27;),\n (&#x27;ja&#x27;, &#x27;Japanese&#x27;),\n (&#x27;ka&#x27;,
+    &#x27;Georgian&#x27;),\n (&#x27;kab&#x27;, &#x27;Kabyle&#x27;),\n (&#x27;kk&#x27;,
+    &#x27;Kazakh&#x27;),\n (&#x27;km&#x27;, &#x27;Khmer&#x27;),\n (&#x27;kn&#x27;,
+    &#x27;Kannada&#x27;),\n (&#x27;ko&#x27;, &#x27;Korean&#x27;),\n (&#x27;ky&#x27;,
+    &#x27;Kyrgyz&#x27;),\n (&#x27;lb&#x27;, &#x27;Luxembourgish&#x27;),\n (&#x27;lt&#x27;,
+    &#x27;Lithuanian&#x27;),\n (&#x27;lv&#x27;, &#x27;Latvian&#x27;),\n (&#x27;mk&#x27;,
+    &#x27;Macedonian&#x27;),\n (&#x27;ml&#x27;, &#x27;Malayalam&#x27;),\n (&#x27;mn&#x27;,
+    &#x27;Mongolian&#x27;),\n (&#x27;mr&#x27;, &#x27;Marathi&#x27;),\n (&#x27;my&#x27;,
+    &#x27;Burmese&#x27;),\n (&#x27;nb&#x27;, &#x27;Norwegian Bokml&#x27;),\n (&#x27;ne&#x27;,
+    &#x27;Nepali&#x27;),\n (&#x27;nl&#x27;, &#x27;Dutch&#x27;),\n (&#x27;nn&#x27;,
+    &#x27;Norwegian Nynorsk&#x27;),\n (&#x27;os&#x27;, &#x27;Ossetic&#x27;),\n (&#x27;pa&#x27;,
+    &#x27;Punjabi&#x27;),\n (&#x27;pl&#x27;, &#x27;Polish&#x27;),\n (&#x27;pt&#x27;,
+    &#x27;Portuguese&#x27;),\n (&#x27;pt-br&#x27;, &#x27;Brazilian Portuguese&#x27;),\n
+    (&#x27;ro&#x27;, &#x27;Romanian&#x27;),\n (&#x27;ru&#x27;, &#x27;Russian&#x27;),\n
+    (&#x27;sk&#x27;, &#x27;Slovak&#x27;),\n (&#x27;sl&#x27;, &#x27;Slovenian&#x27;),\n
+    (&#x27;sq&#x27;, &#x27;Albanian&#x27;),\n (&#x27;sr&#x27;, &#x27;Serbian&#x27;),\n
+    (&#x27;sr-latn&#x27;, &#x27;Serbian Latin&#x27;),\n (&#x27;sv&#x27;, &#x27;Swedish&#x27;),\n
+    (&#x27;sw&#x27;, &#x27;Swahili&#x27;),\n (&#x27;ta&#x27;, &#x27;Tamil&#x27;),\n
+    (&#x27;te&#x27;, &#x27;Telugu&#x27;),\n (&#x27;tg&#x27;, &#x27;Tajik&#x27;),\n
+    (&#x27;th&#x27;, &#x27;Thai&#x27;),\n (&#x27;tk&#x27;, &#x27;Turkmen&#x27;),\n
+    (&#x27;tr&#x27;, &#x27;Turkish&#x27;),\n (&#x27;tt&#x27;, &#x27;Tatar&#x27;),\n
+    (&#x27;udm&#x27;, &#x27;Udmurt&#x27;),\n (&#x27;uk&#x27;, &#x27;Ukrainian&#x27;),\n
+    (&#x27;ur&#x27;, &#x27;Urdu&#x27;),\n (&#x27;uz&#x27;, &#x27;Uzbek&#x27;),\n (&#x27;vi&#x27;,
+    &#x27;Vietnamese&#x27;),\n (&#x27;zh-hans&#x27;, &#x27;Simplified Chinese&#x27;),\n
+    (&#x27;zh-hant&#x27;, &#x27;Traditional Chinese&#x27;)]</pre></td>\n        </tr>\n
+    \     \n        <tr>\n          <td>LANGUAGES_BIDI</td>\n          <td class=\"code\"><pre>[&#x27;he&#x27;,
+    &#x27;ar&#x27;, &#x27;ar-dz&#x27;, &#x27;fa&#x27;, &#x27;ur&#x27;]</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>LANGUAGE_CODE</td>\n          <td
+    class=\"code\"><pre>&#x27;en-us&#x27;</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>LANGUAGE_COOKIE_AGE</td>\n          <td class=\"code\"><pre>None</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>LANGUAGE_COOKIE_DOMAIN</td>\n
+    \         <td class=\"code\"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>LANGUAGE_COOKIE_HTTPONLY</td>\n          <td class=\"code\"><pre>False</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>LANGUAGE_COOKIE_NAME</td>\n
+    \         <td class=\"code\"><pre>&#x27;django_language&#x27;</pre></td>\n        </tr>\n
+    \     \n        <tr>\n          <td>LANGUAGE_COOKIE_PATH</td>\n          <td class=\"code\"><pre>&#x27;/&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>LANGUAGE_COOKIE_SAMESITE</td>\n
+    \         <td class=\"code\"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>LANGUAGE_COOKIE_SECURE</td>\n          <td class=\"code\"><pre>False</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>LOCALE_PATHS</td>\n          <td
+    class=\"code\"><pre>[]</pre></td>\n        </tr>\n      \n        <tr>\n          <td>LOGGING</td>\n
+    \         <td class=\"code\"><pre>{&#x27;disable_existing_loggers&#x27;: False,\n
+    &#x27;formatters&#x27;: {&#x27;simple&#x27;: {&#x27;format&#x27;: &#x27;%(levelname)s
+    %(message)s&#x27;},\n                &#x27;verbose&#x27;: {&#x27;datefmt&#x27;:
+    &#x27;%Y-%m-%d %H:%M:%S&#x27;,\n                            &#x27;format&#x27;:
+    &#x27;%(asctime)s [%(process)d] &#x27;\n                                      &#x27;[%(levelname)s]
+    pathname=%(pathname)s &#x27;\n                                      &#x27;lineno=%(lineno)s
+    funcname=%(funcName)s &#x27;\n                                      &#x27;%(message)s&#x27;}},\n
+    &#x27;handlers&#x27;: {&#x27;console&#x27;: {&#x27;class&#x27;: &#x27;logging.StreamHandler&#x27;,\n
+    \                         &#x27;formatter&#x27;: &#x27;verbose&#x27;,\n                          &#x27;level&#x27;:
+    &#x27;DEBUG&#x27;},\n              &#x27;null&#x27;: {&#x27;class&#x27;: &#x27;logging.NullHandler&#x27;,
+    &#x27;level&#x27;: &#x27;DEBUG&#x27;}},\n &#x27;loggers&#x27;: {&#x27;testlogger&#x27;:
+    {&#x27;handlers&#x27;: [&#x27;console&#x27;], &#x27;level&#x27;: &#x27;INFO&#x27;}},\n
+    &#x27;version&#x27;: 1}</pre></td>\n        </tr>\n      \n        <tr>\n          <td>LOGGING_CONFIG</td>\n
+    \         <td class=\"code\"><pre>&#x27;logging.config.dictConfig&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>LOGIN_REDIRECT_URL</td>\n          <td
+    class=\"code\"><pre>&#x27;/accounts/profile/&#x27;</pre></td>\n        </tr>\n
+    \     \n        <tr>\n          <td>LOGIN_URL</td>\n          <td class=\"code\"><pre>&#x27;/accounts/login/&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>LOGOUT_REDIRECT_URL</td>\n
+    \         <td class=\"code\"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>MANAGERS</td>\n          <td class=\"code\"><pre>[]</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>MEDIA_ROOT</td>\n          <td
+    class=\"code\"><pre>&#x27;&#x27;</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>MEDIA_URL</td>\n          <td class=\"code\"><pre>&#x27;/&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>MESSAGE_STORAGE</td>\n          <td
+    class=\"code\"><pre>&#x27;django.contrib.messages.storage.fallback.FallbackStorage&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>MIDDLEWARE</td>\n          <td
+    class=\"code\"><pre>(&#x27;whitenoise.middleware.WhiteNoiseMiddleware&#x27;,\n
+    &#x27;django.middleware.security.SecurityMiddleware&#x27;,\n &#x27;django.contrib.sessions.middleware.SessionMiddleware&#x27;,\n
+    &#x27;django.middleware.common.CommonMiddleware&#x27;,\n &#x27;django.contrib.auth.middleware.AuthenticationMiddleware&#x27;,\n
+    &#x27;django.contrib.messages.middleware.MessageMiddleware&#x27;,\n &#x27;django.middleware.clickjacking.XFrameOptionsMiddleware&#x27;)</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>MIGRATION_MODULES</td>\n          <td
+    class=\"code\"><pre>{}</pre></td>\n        </tr>\n      \n        <tr>\n          <td>MONTH_DAY_FORMAT</td>\n
+    \         <td class=\"code\"><pre>&#x27;F j&#x27;</pre></td>\n        </tr>\n
+    \     \n        <tr>\n          <td>NUMBER_GROUPING</td>\n          <td class=\"code\"><pre>0</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>PASSWORD_HASHERS</td>\n          <td
+    class=\"code\"><pre>&#x27;********************&#x27;</pre></td>\n        </tr>\n
+    \     \n        <tr>\n          <td>PASSWORD_RESET_TIMEOUT</td>\n          <td
+    class=\"code\"><pre>&#x27;********************&#x27;</pre></td>\n        </tr>\n
+    \     \n        <tr>\n          <td>PASSWORD_RESET_TIMEOUT_DAYS</td>\n          <td
+    class=\"code\"><pre>&#x27;********************&#x27;</pre></td>\n        </tr>\n
+    \     \n        <tr>\n          <td>PREPEND_WWW</td>\n          <td class=\"code\"><pre>False</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>ROOT_URLCONF</td>\n          <td
+    class=\"code\"><pre>&#x27;web.urls&#x27;</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>SECRET_KEY</td>\n          <td class=\"code\"><pre>&#x27;********************&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>SECURE_BROWSER_XSS_FILTER</td>\n
+    \         <td class=\"code\"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>SECURE_CONTENT_TYPE_NOSNIFF</td>\n          <td class=\"code\"><pre>True</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>SECURE_HSTS_INCLUDE_SUBDOMAINS</td>\n
+    \         <td class=\"code\"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>SECURE_HSTS_PRELOAD</td>\n          <td class=\"code\"><pre>False</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>SECURE_HSTS_SECONDS</td>\n
+    \         <td class=\"code\"><pre>0</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>SECURE_PROXY_SSL_HEADER</td>\n          <td class=\"code\"><pre>None</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>SECURE_REDIRECT_EXEMPT</td>\n
+    \         <td class=\"code\"><pre>[]</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>SECURE_REFERRER_POLICY</td>\n          <td class=\"code\"><pre>&#x27;same-origin&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>SECURE_SSL_HOST</td>\n          <td
+    class=\"code\"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SECURE_SSL_REDIRECT</td>\n
+    \         <td class=\"code\"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>SERVER_EMAIL</td>\n          <td class=\"code\"><pre>&#x27;root@localhost&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>SESSION_CACHE_ALIAS</td>\n
+    \         <td class=\"code\"><pre>&#x27;default&#x27;</pre></td>\n        </tr>\n
+    \     \n        <tr>\n          <td>SESSION_COOKIE_AGE</td>\n          <td class=\"code\"><pre>1209600</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>SESSION_COOKIE_DOMAIN</td>\n
+    \         <td class=\"code\"><pre>None</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>SESSION_COOKIE_HTTPONLY</td>\n          <td class=\"code\"><pre>True</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>SESSION_COOKIE_NAME</td>\n
+    \         <td class=\"code\"><pre>&#x27;sessionid&#x27;</pre></td>\n        </tr>\n
+    \     \n        <tr>\n          <td>SESSION_COOKIE_PATH</td>\n          <td class=\"code\"><pre>&#x27;/&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>SESSION_COOKIE_SAMESITE</td>\n
+    \         <td class=\"code\"><pre>&#x27;Lax&#x27;</pre></td>\n        </tr>\n
+    \     \n        <tr>\n          <td>SESSION_COOKIE_SECURE</td>\n          <td
+    class=\"code\"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SESSION_ENGINE</td>\n
+    \         <td class=\"code\"><pre>&#x27;django.contrib.sessions.backends.db&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>SESSION_EXPIRE_AT_BROWSER_CLOSE</td>\n
+    \         <td class=\"code\"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>SESSION_FILE_PATH</td>\n          <td class=\"code\"><pre>None</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>SESSION_SAVE_EVERY_REQUEST</td>\n
+    \         <td class=\"code\"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>SESSION_SERIALIZER</td>\n          <td class=\"code\"><pre>&#x27;django.contrib.sessions.serializers.JSONSerializer&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>SETTINGS_MODULE</td>\n          <td
+    class=\"code\"><pre>&#x27;web.settings&#x27;</pre></td>\n        </tr>\n      \n
+    \       <tr>\n          <td>SHORT_DATETIME_FORMAT</td>\n          <td class=\"code\"><pre>&#x27;m/d/Y
+    P&#x27;</pre></td>\n        </tr>\n      \n        <tr>\n          <td>SHORT_DATE_FORMAT</td>\n
+    \         <td class=\"code\"><pre>&#x27;m/d/Y&#x27;</pre></td>\n        </tr>\n
+    \     \n        <tr>\n          <td>SIGNING_BACKEND</td>\n          <td class=\"code\"><pre>&#x27;django.core.signing.TimestampSigner&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>SILENCED_SYSTEM_CHECKS</td>\n
+    \         <td class=\"code\"><pre>[]</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>STATICFILES_DIRS</td>\n          <td class=\"code\"><pre>[]</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>STATICFILES_FINDERS</td>\n
+    \         <td class=\"code\"><pre>[&#x27;django.contrib.staticfiles.finders.FileSystemFinder&#x27;,\n
+    &#x27;django.contrib.staticfiles.finders.AppDirectoriesFinder&#x27;]</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>STATICFILES_STORAGE</td>\n
+    \         <td class=\"code\"><pre>&#x27;whitenoise.storage.CompressedManifestStaticFilesStorage&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>STATIC_ROOT</td>\n          <td
+    class=\"code\"><pre>&#x27;/app/staticfiles&#x27;</pre></td>\n        </tr>\n      \n
+    \       <tr>\n          <td>STATIC_URL</td>\n          <td class=\"code\"><pre>&#x27;/static/&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>TEMPLATES</td>\n          <td
+    class=\"code\"><pre>[{&#x27;APP_DIRS&#x27;: True,\n  &#x27;BACKEND&#x27;: &#x27;django.template.backends.django.DjangoTemplates&#x27;,\n
+    \ &#x27;DIRS&#x27;: [],\n  &#x27;OPTIONS&#x27;: {&#x27;context_processors&#x27;:
+    [&#x27;django.template.context_processors.debug&#x27;,\n                                     &#x27;django.template.context_processors.request&#x27;,\n
+    \                                    &#x27;django.contrib.auth.context_processors.auth&#x27;,\n
+    \                                    &#x27;django.contrib.messages.context_processors.messages&#x27;]}}]</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>TEST_NON_SERIALIZED_APPS</td>\n
+    \         <td class=\"code\"><pre>[]</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>TEST_RUNNER</td>\n          <td class=\"code\"><pre>&#x27;django.test.runner.DiscoverRunner&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>THOUSAND_SEPARATOR</td>\n          <td
+    class=\"code\"><pre>&#x27;,&#x27;</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>TIME_FORMAT</td>\n          <td class=\"code\"><pre>&#x27;P&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>TIME_INPUT_FORMATS</td>\n          <td
+    class=\"code\"><pre>[&#x27;%H:%M:%S&#x27;, &#x27;%H:%M:%S.%f&#x27;, &#x27;%H:%M&#x27;]</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>TIME_ZONE</td>\n          <td
+    class=\"code\"><pre>&#x27;UTC&#x27;</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>USE_I18N</td>\n          <td class=\"code\"><pre>True</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>USE_L10N</td>\n          <td
+    class=\"code\"><pre>True</pre></td>\n        </tr>\n      \n        <tr>\n          <td>USE_THOUSAND_SEPARATOR</td>\n
+    \         <td class=\"code\"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>USE_TZ</td>\n          <td class=\"code\"><pre>True</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>USE_X_FORWARDED_HOST</td>\n
+    \         <td class=\"code\"><pre>False</pre></td>\n        </tr>\n      \n        <tr>\n
+    \         <td>USE_X_FORWARDED_PORT</td>\n          <td class=\"code\"><pre>False</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>WSGI_APPLICATION</td>\n          <td
+    class=\"code\"><pre>&#x27;web.wsgi.application&#x27;</pre></td>\n        </tr>\n
+    \     \n        <tr>\n          <td>X_FRAME_OPTIONS</td>\n          <td class=\"code\"><pre>&#x27;DENY&#x27;</pre></td>\n
+    \       </tr>\n      \n        <tr>\n          <td>YEAR_MONTH_FORMAT</td>\n          <td
+    class=\"code\"><pre>&#x27;F Y&#x27;</pre></td>\n        </tr>\n      \n    </tbody>\n
+    \ </table>\n\n</div>\n\n  <div id=\"explanation\">\n    <p>\n      Youre seeing
+    this error because you have <code>DEBUG = True</code> in your\n      Django settings
+    file. Change that to <code>False</code>, and Django will\n      display a standard
+    page generated by the handler for this status code.\n    </p>\n  </div>\n\n</body>\n</html>\n"
+- source:
+    id: engadget
+    name: Engadget
+  author: https://www.engadget.com/about/editors/mariella-moon
+  title: Cryptofarm with thousands of PS4 Pros raided in Ukraine | Engadget
+  description: The Security Service of Ukraine has discovered and raided a cryptocurrency
+    mining farm that allegedly stole electricity from the country's power grid..
+  url: https://www.engadget.com/cryptofarm-ps-4-pro-raided-ukraine-045118233.html
+  urlToImage: https://s.yimg.com/os/creatr-uploaded-images/2021-07/3d9343c0-e38c-11eb-b7ff-9fe6dc9effe8
+  publishedAt: '2021-07-13T05:07:20.4861435Z'
+  content: The Security Service of Ukraine or SBU has discovered and raided a cryptocurrency
+    mining farm that allegedly stole electricity from the country's power grid. But
+    instead of findings computers, the ag… [+1422 chars]
+  page_url: "/cryptofarm-ps-4-pro-raided-ukraine-045118233.html"
+  summary: 'The Security Service of Ukraine or SBU has discovered and raided a cryptocurrency
+    mining farm that allegedly stole electricity from the country''s power grid. Apparently,
+    the operators used special electricity meters to prevent authorities from discovering
+    the theft, which amounted to as much as US$257,000. Vinnytsiaoblenergo denied
+    any involvement in a statement sent to the Kyiv Post: "The equipment used for
+    cryptocurrency mining has never operated on premises owned by our enterprise."
+    It''s the largest cryptofarm the SBU has discovered so far, and the agency believes
+    it''s being operated by people living in the cities of Kyiv and Vinnytsia. But
+    instead of findings computers, the agency found racks with thousands of PS4 Pros
+    stacked vertically side-by-side. It also said that it didn''t find any evidence
+    of electric theft and that the SBU''s findings "does not correspond to reality."
+    As Kotaku notes, 3,800 consoles mean an investment of around US$1,500,000, assuming
+    all of them are PS4 Pros.Please enter a valid email address'
+- source:
+    id: engadget
+    name: Engadget
+  author: https://www.engadget.com/about/editors/jon-fingas
+  title: Verizon's call filtering app now blocks area code spoofing | Engadget
+  description: Verizon's Call Filter app can now blocks neighborhood spoofing scams
+    that use highly similar phone numbers..
+  url: https://www.engadget.com/verizon-call-filter-neighborhood-spoofing-142918590.html
+  urlToImage: https://s.yimg.com/os/creatr-uploaded-images/2021-07/9115a580-e317-11eb-bfac-e5e6b7860112
+  publishedAt: '2021-07-13T00:22:24.2707604Z'
+  content: Spoofed scam calls are bad enough, but neighborhood spoofing is worse it
+    can all be too tempting to answer when you see a number eerily similar to your
+    own. Verizon (currently Engadget's parent compa… [+928 chars]
+  page_url: "/verizon-call-filter-neighborhood-spoofing-142918590.html"
+  summary: It's updating its free Call Filter app with a "Neighborhood Filter" that
+    blocks calls from numbers that share your area code and prefix. A simple filter
+    could lead to far fewer annoyances, not to mention greater trust in those calls
+    that do come in.Verizon owns Engadget's parent company, Verizon Media. This kind
+    of spamming is frequent, to the point where you might get multiple calls per day.
+    Neighborhood filtering isn't the most sophisticated defense against scam calls,
+    but it's arguably overdue. Verizon (currently Engadget's parent company) might
+    have a solution. Engadget remains editorially independent.Please enter a valid
+    email address And yes, you can make exceptions.
+- source:
+    id: engadget
+    name: Engadget
+  author: https://www.engadget.com/about/editors/kris-holt
+  title: Google rolls out a new Drive desktop app for syncing files and photos | Engadget
+  description: It's replacing the Backup and Sync and Drive File Stream apps..
+  url: https://www.engadget.com/google-drive-for-desktop-app-file-syncing-backup-172510389.html
+  urlToImage: https://s.yimg.com/os/creatr-uploaded-images/2021-07/556004e0-e335-11eb-b7e2-0ad4d5374263
+  publishedAt: '2021-07-13T00:22:19.7875005Z'
+  content: "Google is streamlining how Drive\r\n users backup and sync their files.
+    The company is rolling out the new Drive for desktop app on Mac and Windows.\r\nDrive
+    for desktop will replace the Backup and Sync … [+1247 chars]"
+  page_url: "/google-drive-for-desktop-app-file-syncing-backup-172510389.html"
+  summary: From October 1st, Backup and Sync will stop working, so you'll need to
+    make the transition to keep backing up your files with Drive.Please enter a valid
+    email address Google renamed the app to Drive for desktop, and it will gain features
+    from Backup and Sync in the coming months. Google will prompt Backup and Sync
+    users to switch over to Drive for desktop. Google is streamlining how Drive users
+    backup and sync their files. You will be able to upload and sync your photos and
+    videos across Google Photos as well as Drive. There's the option to sync external
+    storage devices with the cloud as well.
+- source:
+    id: engadget
+    name: Engadget
+  author: https://www.engadget.com/about/editors/igor-bonifacic
+  title: Acer's new Chromebook Spin 713 is $80 off at Best Buy | Engadget
+  description: At $80 off, Acer's excellent Chromebook Spin 713 is an even better
+    value..
+  url: https://www.engadget.com/acer-chromebook-spin-713-best-buy-deal-221524448.html
+  urlToImage: https://s.yimg.com/os/creatr-uploaded-images/2021-06/28c55b10-cd37-11eb-9c7d-c457511f17df
+  publishedAt: '2021-07-12T22:22:19.1122095Z'
+  content: The Acer Chromebook Spin 713, one of our more recent Chrome OS favorites,
+    is on sale at Best Buy. The retailer has discounted the laptop by $80, marking
+    one of the first times weve seen it on sale si… [+1324 chars]
+  page_url: "/acer-chromebook-spin-713-best-buy-deal-221524448.html"
+  summary: The retailer has discounted the laptop by $80, marking one of the first
+    times weve seen it on sale since it came out earlier in the year. The display
+    on the Spin 713 is also bright and sharp with a pixel density of 200 pixels per
+    inch. The taller screen also means you get a more generous trackpad than youll
+    find on your average Chromebook. Combine that with a solid keyboard, a capable
+    processor and just the right amount of RAM for Chrome OS and you have a device
+    thats solid. Part of what makes it stand out in the crowded Chrome OS market is
+    that it features a display with a 3:2 aspect ratio. Most Chromebooks feature 16:9
+    displays, making them well-suited for watching video content but less than ideal
+    if you need to do any work on them. Aside from average battery life, one of the
+    few complaints we had with the Spin 713 was the asking price.
+- source:
+    id: engadget
+    name: Engadget
+  author: https://www.engadget.com/about/editors/igor-bonifacic
+  title: Verizon settles with Huawei over patent disagreement | Engadget
+  description: The disagreement dates back to 2019 when Huawei said it approached
+    Verizon about licensing some of its technologies.
+  url: https://www.engadget.com/huawei-verizon-patent-settlement-205915191.html
+  urlToImage: https://s.yimg.com/os/creatr-uploaded-images/2021-06/79281300-ca61-11eb-93d6-a1edda9f485c
+  publishedAt: '2021-07-12T21:07:22.3846508Z'
+  content: Huawei and Verizon (Engadgets parent company) have settled their long-standing
+    patent dispute. The disagreement dates back to 2019 when Huawei said it approached
+    Verizon about licensing some of its t… [+1306 chars]
+  page_url: "/huawei-verizon-patent-settlement-205915191.html"
+  summary: While the US and other parts of the world have barred it from their national
+    5G networks, the Chinese company is ideally situated to make money on licensing
+    fees. Huawei and Verizon (Engadgets parent company) have settled their long-standing
+    patent dispute. The disagreement dates back to 2019 when Huawei said it approached
+    Verizon about licensing some of its technologies. Verizon is happy with the settlement
+    reached with Huawei involving patent lawsuits. At the time, Verizon dismissed
+    the lawsuits, claiming they were nothing more than a PR stunt.It has since changed
+    its tune. It has among the most 5G-related standards-relevant patents of any company
+    in the world. At the center of the feud were 12 standards-relevant patents that
+    Huawei said Verizon was using in its infrastructure.
+- source:
+    id: engadget
+    name: Engadget
+  author: https://www.engadget.com/about/editors/kris-holt
+  title: Sony reveals a new version of its lamp-style portable speaker | Engadget
+  description: Orders for the $350 LSPX-S3 glass Bluetooth speaker will open in August..
+  url: https://www.engadget.com/sony-lspx-s3-glass-sound-speaker-bluetooth-portable-195849720.html
+  urlToImage: https://s.yimg.com/os/creatr-uploaded-images/2021-07/3742f840-e340-11eb-bd57-7e81176d77c9
+  publishedAt: '2021-07-12T20:07:22.7330357Z'
+  content: "Sony has revealed a cheaper model of its speaker that looks like a lamp.
+    Style-conscious audiophiles will be able to order the LSPX-S3 glass sound speaker
+    starting in August.\r\nThe Bluetooth-enabled d… [+1385 chars]"
+  page_url: "/sony-lspx-s3-glass-sound-speaker-bluetooth-portable-195849720.html"
+  summary: It also has LDAC support for high-resolution audio.The speaker won't light
+    up an entire room, but the flickering candlelight-style illumination should provide
+    a cozy ambiance for nighttime reading. The company claims the tweeter "produces
+    clear and powerful high tones" and spreads sound evenly throughout a space. You
+    can recharge it via the USB-C charging port.There's also an option to link two
+    units for stereo playback and it can form part of a multi-room audio system. Sony
+    has revealed a cheaper model of its speaker that looks like a lamp. The LSPX-S3
+    has a 46mm speaker unit and you can adjust the levels via the Sony Music Center
+    app. It weighs around 1.1kg and has a battery that Sony says can power the device
+    for up to eight hours on a single charge. The LED can pulse in sync with music
+    and there are several lighting modes and brightness levels.You can take the LSPX-S3
+    outdoors, too.
+- source:
+    id: engadget
+    name: Engadget
+  author: https://www.engadget.com/about/editors/igor-bonifacic
+  title: LeBron James comes to 'Fortnite' on July 14th | Engadget
+  description: 'On July 14th, two days before "Space Jam: A New Legacy" comes out
+    in the US, Epic will start selling two different LeBron skins..'
+  url: https://www.engadget.com/fortnite-lebron-james-193107259.html
+  urlToImage: https://s.yimg.com/os/creatr-uploaded-images/2021-07/5561a2d0-e346-11eb-b7f2-7048e87f5d42
+  publishedAt: '2021-07-12T19:37:20.1092025Z'
+  content: 'With Space Jam: A New Legacy coming out this week, LA Lakers small forward
+    LeBron James is making his way to Fortnite. On July 14th, two days before the
+    movie comes out in the US, Epic will start sel… [+924 chars]'
+  page_url: "/fortnite-lebron-james-193107259.html"
+  summary: 'The first draws inspiration from the stars pregame style and sees him
+    wearing a blazer, hoodie, shorts and shirt and tie. On July 14th, two days before
+    the movie comes out in the US, Epic will start selling two different King James
+    skins. Naturally, all of the skins feature LeBron wearing his latest signature
+    Nikes  which, as you might have guessed, come out this month as well. At this
+    point, Fortnite is another channel companies can use to market their latest products.Please
+    enter a valid email address The second outfit gives lets you dress up James either
+    in his Tune Squad uniform or a Taco Tuesday-themed getup. Given that Epic frequently
+    does crossover events with other brands, its not surprising to see James get that
+    same treatment now. With Space Jam: A New Legacy coming out this week, LA Lakers
+    small forward LeBron James is making his way to Fortnite.'
+- source:
+    id: engadget
+    name: Engadget
+  author: https://www.engadget.com/about/editors/jon-fingas
+  title: Elon Musk booked a trip to space with Virgin Galactic | Engadget
+  description: Elon Musk bought a ticket to space aboard Virgin Galactic, suggesting
+    that SpaceX and Virgin aren't quite the bitter enemies you might expect..
+  url: https://www.engadget.com/elon-musk-virgin-galactic-spaceflight-ticket-152514962.html
+  urlToImage: https://s.yimg.com/os/creatr-uploaded-images/2021-07/527bf9c0-e31f-11eb-b9ff-ff99c4484188
+  publishedAt: '2021-07-12T15:37:22.2494392Z'
+  content: You'd think that Elon Musk and Richard Branson would hold grudges against
+    each other when they both have space tourism plans, but that's not true if anything,
+    they're surprisingly buddy-buddy. Virgin… [+1468 chars]
+  page_url: "/elon-musk-virgin-galactic-spaceflight-ticket-152514962.html"
+  summary: Virgin Galactic is aimed primarily at space tourists content with suborbital
+    flights, while Virgin Orbit is focused on launching satellites for outfits that
+    can't justify expensive conventional rockets. This isn't to say the two execs
+    will start feuding if their businesses truly overlap  just don't count on the
+    positive vibes lasting forever.Big day ahead. SpaceX, meanwhile, has focused its
+    tourism efforts on lunar flybys and usually carries costlier payloads into space.
+    It's not certain just where the SpaceX founder is in the queue, but it's safe
+    to say his ride will garner some attention.The feeling is mutual. Feeling good,
+    feeling excited, feeling ready. He even went so far as to tweet a photo showing
+    him and Musk together.Just don't expect that kind of warmth and camaraderie from
+    Jeff Bezos. In an interview with the Sunday Times, Branson said Musk was a "friend"
+    and suggested he might fly on a SpaceX ship "one day."
+- source:
+    id: engadget
+    name: Engadget
+  author: https://www.engadget.com/about/editors/saqib-shah
+  title: Samsung's Galaxy Unpacked line-up seemingly revealed in extensive leak |
+    Engadget
+  description: Samsung's Galaxy Unpacked line-up of folding phones, smartwatches and
+    earbuds has been leaked..
+  url: https://www.engadget.com/samsungs-galaxy-unpacked-line-up-revealed-in-huge-new-leak-095533534.html
+  urlToImage: https://s.yimg.com/os/creatr-uploaded-images/2021-07/a65ce8e0-e2ef-11eb-bf7f-792c7a055e1f
+  publishedAt: '2021-07-12T10:07:25.147719Z'
+  content: The latest in a series of leaks ahead of Samsung's upcoming Unpacked event
+    is the most comprehensive yet. We already had a firm grasp on what to expect folding
+    phones, a couple of Wear OS smartwatche… [+894 chars]
+  page_url: "/samsungs-galaxy-unpacked-line-up-revealed-in-huge-new-leak-095533534.html"
+  summary: The latest in a series of leaks ahead of Samsung's upcoming Unpacked event
+    is the most comprehensive yet. By the time the actual event rolls around, you
+    should be well-versed on what to expect.Please enter a valid email address If
+    history is anything to go by, we'll probably see more leaks and teasers (including
+    from Samsung itself) in the run-up to Unpacked.
