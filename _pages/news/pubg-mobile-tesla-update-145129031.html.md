@@ -2,8 +2,8 @@
 layout: page
 permalink: /pubg-mobile-tesla-update-145129031.html
 canonical_url: /pubg-mobile-tesla-update-145129031.html
-title: 'PUBG Mobile' update adds a self-driving Tesla Model Y | Engadget
-description: The newest 'PUBG Mobile' update adds a slew of Tesla tie-ins, including a self-driving Model Y and a Gigafactory..
+title: PUBG Mobile update adds a self-driving Tesla Model Y | Engadget
+description: The newest PUBG Mobile update adds a slew of Tesla tie-ins, including a self-driving Model Y and a Gigafactory..
 url: /pubg-mobile-tesla-update-145129031.html
 comments: false
 ---

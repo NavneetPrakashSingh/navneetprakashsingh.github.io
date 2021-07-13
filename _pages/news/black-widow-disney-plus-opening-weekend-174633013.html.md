@@ -2,8 +2,8 @@
 layout: page
 permalink: /black-widow-disney-plus-opening-weekend-174633013.html
 canonical_url: /black-widow-disney-plus-opening-weekend-174633013.html
-title: 'Black Widow' made $60 million from Disney+ viewers during its opening weekend | Engadget
-description: Marvel movie 'Black Widow' raked in $60 million just from Disney+ customers paying for Premier Access on opening weekend — a large chunk of the blockbuster's sales..
+title: Black Widow made $60 million from Disney+ viewers during its opening weekend | Engadget
+description: Marvel movie Black Widow raked in $60 million just from Disney+ customers paying for Premier Access on opening weekend — a large chunk of the blockbuster's sales..
 url: /black-widow-disney-plus-opening-weekend-174633013.html
 comments: false
 ---
