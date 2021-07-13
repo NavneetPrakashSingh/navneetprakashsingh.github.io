@@ -2,8 +2,8 @@
 layout: page
 permalink: /fifa-22-release-date-163029621.html
 canonical_url: /fifa-22-release-date-163029621.html
-title: 'FIFA 22' brings more realistic soccer to next-gen consoles on October 1st | Engadget
-description: 'FIFA 22' will add more realistic motion and gameplay when it reaches consoles and PCs on October 1st..
+title: FIFA 22 brings more realistic soccer to next-gen consoles on October 1st | Engadget
+description: FIFA 22 will add more realistic motion and gameplay when it reaches consoles and PCs on October 1st..
 url: /fifa-22-release-date-163029621.html
 comments: false
 ---
